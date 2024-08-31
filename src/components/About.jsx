@@ -4,10 +4,12 @@ import Button from "../layouts/Button";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center lg:px-32 px-5 bg-backgroundColor">
-      <h1 className="font-semibold text-center text-4xl lg:mt-14 mt-24 mb-8">
-        About Us
-      </h1>
+    <div className="min-h-screen flex flex-col items-center lg:px-32 px-5 bg-backgroundColor">
+      <div className="text">
+        <h1 className=" lg:my-20 font-semibold text-center text-4xl mb-8">
+          About Us
+        </h1>
+      </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-5">
         <div className="w-full lg:w-2/4">
@@ -26,7 +28,25 @@ const About = () => {
           <Button title="Learning More" />
         </div>
       </div>
-      <div className="mt-12">We Are located at:</div>
+
+      <div className="mt-12 my-32">
+        <div className="text-center">
+          <h1 className="font-semibold text-center text-4xl lg:mt-14 mt-24 mb-8">
+            We Are Located!
+          </h1>
+        </div>
+        <div className="responsive-map ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465.13995350420055!2d85.33307952000318!3d27.670030689843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b9079a4adb%3A0xab20f3b73dc8adac!2sINAYA%20CAFE!5e0!3m2!1sen!2snp!4v1724670038571!5m2!1sen!2snp"
+            width="900"
+            height="650"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-xl"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };

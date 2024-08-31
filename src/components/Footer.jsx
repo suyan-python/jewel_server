@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] text-black rounded-t-3xl mt-8 md:mt-0">
+    <div className="bg-gradient-to-r from-[#FFDCAB] to-[#AB6B2E] text-black rounded-t-3xl mt-32 ">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className="w-full md:w-1/4">
           <h1 className="font-semibold text-xl pb-4">iNaya</h1>
@@ -73,13 +73,13 @@ const Footer = () => {
               className="hover:text-backgroundColor transition-all cursor-pointer"
               href="menu"
             >
-              mail@gmail.com
+              jewel.himalayan.2021@gmail.com
             </a>
             <a
               className="hover:text-backgroundColor transition-all cursor-pointer"
               href="about"
             >
-              +977 9800000000
+              +977 9817576110, 9841208219
             </a>
             <a
               className="hover:text-backgroundColor transition-all cursor-pointer"

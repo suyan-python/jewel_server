@@ -6,13 +6,28 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
+import Login from "./components/Login";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <NavBar />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/product" element={<Products />} />
+          <Route exact path="/review" element={<Review />} />
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </Router>
+
       <main>
-        <div id="home">
+        {/* <div id="home">
           <Home />
         </div>
 
@@ -30,9 +45,8 @@ const App = () => {
 
         <div id="reviews">
           <Review />
-        </div>
+        </div> */}
       </main>
-      <Footer />
     </div>
   );
 };
