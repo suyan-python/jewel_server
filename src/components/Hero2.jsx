@@ -10,7 +10,7 @@ function Hero2() {
           <div className="text">Seed Farming</div>
         </div>
         <div className="images pt-28">
-          <Link to={"/inaya"}>
+          <Link to={"/farming"}>
             <Button title="Visit Us ⤴" />
           </Link>
         </div>

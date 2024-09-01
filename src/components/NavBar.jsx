@@ -36,7 +36,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="group relative inline-block cursor-pointer hover:text-brightColor"
+              className="group relative inline-block cursor-pointer hover:text-seed"
             >
               Home
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
@@ -46,7 +46,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="group relative inline-block cursor-pointer hover:text-brightColor"
+              className="group relative inline-block cursor-pointer hover:text-seed"
             >
               Menu
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
@@ -56,7 +56,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="group relative inline-block cursor-pointer hover:text-brightColor"
+              className="group relative inline-block cursor-pointer hover:text-seed"
             >
               About Us
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
@@ -66,7 +66,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="group relative inline-block cursor-pointer hover:text-brightColor"
+              className="group relative inline-block cursor-pointer hover:text-seed"
             >
               Products
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
@@ -76,7 +76,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              className="group relative inline-block cursor-pointer hover:text-brightColor"
+              className="group relative inline-block cursor-pointer hover:text-seed"
             >
               Reviews
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
@@ -112,7 +112,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="group relative inline-block cursor-pointer hover:text-brightColor"
+            className="group relative inline-block cursor-pointer hover:text-seed"
             onClick={closeMenu}
           >
             Home
@@ -123,7 +123,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="group relative inline-block cursor-pointer hover:text-brightColor"
+            className="group relative inline-block cursor-pointer hover:text-seed"
             onClick={closeMenu}
           >
             Menu
@@ -134,7 +134,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="group relative inline-block cursor-pointer hover:text-brightColor"
+            className="group relative inline-block cursor-pointer hover:text-seed"
             onClick={closeMenu}
           >
             About Us
@@ -145,7 +145,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="group relative inline-block cursor-pointer hover:text-brightColor"
+            className="group relative inline-block cursor-pointer hover:text-seed"
             onClick={closeMenu}
           >
             Products
@@ -156,7 +156,7 @@ const NavBar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="group relative inline-block cursor-pointer hover:text-brightColor"
+            className="group relative inline-block cursor-pointer hover:text-seed"
             onClick={closeMenu}
           >
             Reviews
