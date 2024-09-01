@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { FiCoffee } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Button from "../layouts/Button";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import Login from "./Login";
-import Logo from "../assets/pictures/png/iNaya.png";
+import Title from "../layouts/Title";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
@@ -23,14 +22,12 @@ const NavBar = () => {
   return (
     <div className="w-full z-10">
       <div>
-        <div className="flex flex-row justify-between p-5 lg:px-32 px-5 bg-gradient-to-r from-backgroundColor to-brightColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <div className="flex flex-row justify-between p-5 lg:px-32 px-5">
           <div className="flex flex-row items-center cursor-pointer gap-2">
             {/* <span>
               <FiCoffee size={25} />
             </span> */}
-            <div className="image-area">
-              <img className="w-1/4" src={Logo} alt="" />
-            </div>
+            <Title />
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
@@ -88,7 +85,7 @@ const NavBar = () => {
 
           <div className="hidden lg:flex">
             <button
-              className="px-6 py-1 border-2 border-white bg-[#FFDCAB] hover:text-[#AB6B2E] transition-all rounded-full"
+              className="px-6 py-1 border-2 border-white hover:text-[#AB6B2E] transition-all rounded-full"
               onClick={() => setShowModal(true)}
               title="Menu"
             >

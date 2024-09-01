@@ -7,6 +7,8 @@ import Products from "./components/Products";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Hero from "./components/Hero";
+import Landing from "./components/Landing";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -16,7 +18,8 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/inaya" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/product" element={<Products />} />
