@@ -1,0 +1,35 @@
+.slider {
+  position: relative;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.image {
+  width: 850px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #b0b57e;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #b0b57e;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #b0b57e;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}

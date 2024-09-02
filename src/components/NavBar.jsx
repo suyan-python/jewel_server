@@ -41,7 +41,7 @@ const NavBar = () => {
               Home
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
             </Link>
-            <Link
+            {/* <Link
               to="menu"
               spy={true}
               smooth={true}
@@ -50,9 +50,9 @@ const NavBar = () => {
             >
               Menu
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
-            </Link>
+            </Link> */}
             <Link
-              to="/about"
+              to="/farming"
               spy={true}
               smooth={true}
               duration={500}
@@ -62,16 +62,16 @@ const NavBar = () => {
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
             </Link>
             <Link
-              to="/product"
+              to="/contact"
               spy={true}
               smooth={true}
               duration={500}
               className="group relative inline-block cursor-pointer hover:text-seed"
             >
-              Products
+              Contact
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
             </Link>
-            <Link
+            {/* <Link
               to="/review"
               spy={true}
               smooth={true}
@@ -80,7 +80,7 @@ const NavBar = () => {
             >
               Reviews
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="hidden lg:flex">
@@ -118,7 +118,7 @@ const NavBar = () => {
             Home
             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
           </Link>
-          <Link
+          {/* <Link
             to="menu"
             spy={true}
             smooth={true}
@@ -128,7 +128,7 @@ const NavBar = () => {
           >
             Menu
             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span>
-          </Link>
+          </Link> */}
           <Link
             to="about"
             spy={true}

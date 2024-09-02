@@ -1,14 +1,15 @@
 import React from "react";
 import img from "../assets/pictures/coffeepics/coffeehand.jpg";
 import Button from "../layouts/Button";
+import iNaya from "../assets/pictures/png/iNaya.png";
 
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col items-center lg:px-32 px-5 bg-backgroundColor">
       <div className="text">
-        <h1 className=" lg:my-20 font-semibold text-center text-4xl mb-8">
-          About Us
-        </h1>
+        <div className=" lg:my-20 mb-8 flex justify-center">
+          <img src={iNaya} alt="" className="w-2/4" />
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-5">

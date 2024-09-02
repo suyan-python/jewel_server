@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FarmingHero from "./components/farming/FarmingHero";
 import { FaLandmark } from "react-icons/fa";
 import LandingFarm from "./components/farming/LandingFarm";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route exact path="/review" element={<Review />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/farming" element={<LandingFarm />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

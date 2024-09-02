@@ -7,6 +7,7 @@ export default {
         brightColor: "#AB6B2E",
         backgroundColor: "#FDE9CC",
         seed: "#B0B57E",
+        prim: "#0f5f53",
       },
     },
   },

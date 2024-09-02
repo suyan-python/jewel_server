@@ -16,9 +16,14 @@ const Home = () => {
 
         <div className="flex flex-row gap-6">
           <Link to={"/about"}>
-            <Button title="We are Here!" />
+            <Button title="ABOUT ⤴" />
           </Link>
-          <Button title="More Menu" />
+          <Link to={"/product"}>
+            <Button title="Products ⤴" />
+          </Link>
+          {/* <Link to={"/review"}>
+            <Button title="Reviews" />
+          </Link> */}
         </div>
       </div>
       <div className="relative">
