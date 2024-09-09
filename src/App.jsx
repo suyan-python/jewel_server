@@ -6,7 +6,7 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
-import Login from "./components/Login";
+import Login from "./components/Modal";
 import Hero from "./components/Hero";
 import Landing from "./components/Landing";
 
@@ -15,6 +15,10 @@ import FarmingHero from "./components/farming/FarmingHero";
 import { FaLandmark } from "react-icons/fa";
 import LandingFarm from "./components/farming/LandingFarm";
 import Contact from "./components/contact/Contact";
+import SourceHero from "./components/sources/SourceHero";
+import LandingProcess from "./components/processing/LandingProcess";
+import AddCart from "./components/addtocart/Cart";
+import ExpandableDiv from "./components/processing/Expandable";
 
 const App = () => {
   return (
@@ -31,6 +35,10 @@ const App = () => {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/farming" element={<LandingFarm />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/source" element={<SourceHero />} />
+          <Route exact path="/process" element={<LandingProcess />} />
+          <Route exact path="/addcart" element={<AddCart />} />
+          <Route exact path="/expand" element={<ExpandableDiv />} />
         </Routes>
         <Footer />
       </Router>

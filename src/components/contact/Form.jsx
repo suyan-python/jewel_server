@@ -1,125 +1,121 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class Form extends Component {
-  constructor(props) {
-    super(props);
+function Form() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-    this.state = {
-      username: "",
-      lastname: "",
-      email: "",
-      phone: "",
-      comments: "",
-    };
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   }
-  handleUsernameChange = (event) => {
-    this.setState({
-      username: event.target.value,
-    });
-  };
 
-  handelLastnameChange = () => {
-    this.setState({
-      lastname: event.target.value,
-    });
-  };
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("Form Data: ", formData);
+    // Handle form submission logic here (e.g., send data to server)
+  }
 
-  handelEmailChange = () => {
-    this.setState({
-      email: event.target.value,
-    });
-  };
-
-  handelPhoneChange = () => {
-    this.setState({
-      phone: event.target.value,
-    });
-  };
-
-  handleCommentsChange = (event) => {
-    this.setState({
-      comments: event.target.value,
-    });
-  };
-
-  handleSubmit = () => {
-    alert(`${this.state.username}, your form is Submitted`);
-    event.preventDefault();
-  };
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit} className="">
-        <div className="hero px-7">
-          <div className="head">
-            <div className="title text-4xl font-medium">Get in Touch</div>
-            <div className="sub-title my-2">You can reach us anytime</div>
-          </div>
-
-          <div className="bottom flex flex-col items-center">
-            <div className="py-5">
-              <div className="flex flex-row gap-7 justify-between">
-                <input
-                  type="text"
-                  value={this.state.username}
-                  onChange={this.handleUsernameChange}
-                  className="w-2/4"
-                  placeholder="First Name"
-                  required
-                />
-                <input
-                  type="text"
-                  value={this.state.lastname}
-                  onChange={this.handelLastnameChange}
-                  className="w-2/4"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div className="mail flex flex-col items-center  my-3">
-                <input
-                  type="mail"
-                  value={this.state.email}
-                  onChange={this.handelEmailChange}
-                  className="w-full"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div className="phone flex flex-col items-center">
-                <input
-                  type="number"
-                  value={this.state.phone}
-                  onChange={this.handelPhoneChange}
-                  className="w-full"
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
+  return (
+    <div className="flex items-center justify-center min-h-screen ">
+      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8">
+          Get in Touch
+        </h2>
+        <form onSubmit={handleSubmit}>
+          {/* First Name and Last Name */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-4">
+            <div className="w-full sm:w-1/2">
+              <label htmlFor="firstName" className="block text-gray-700 mb-2">
+                First Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              />
             </div>
-            <div className="flex flex-col items-center">
-              <textarea
-                value={this.state.comments}
-                onChange={this.handleCommentsChange}
-                placeholder="How can we Help?"
-                className="w-full mx-4 resize-none"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="bg-blue-500 text-white rounded-full py-1 px-10 my-3 hover:text-slate-300"
-              >
-                Submit
-              </button>
-              <div className="agreement text-center w-4/5">
-                <p className="text-slate-500">
-                  By contacting us, you agree to out <b>Terms of service</b> and
-                  <b> Privacy Policy</b>
-                </p>
-              </div>
+            <div className="w-full sm:w-1/2">
+              <label htmlFor="lastName" className="block text-gray-700 mb-2">
+                Last Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              />
             </div>
           </div>
-        </div>
-      </form>
-    );
-  }
+
+          {/* Email Address */}
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-gray-700 mb-2">
+              Email Address <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+
+          {/* Phone Number */}
+          <div className="mb-4">
+            <label htmlFor="phone" className="block text-gray-700 mb-2">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+
+          {/* Message */}
+          <div className="mb-6">
+            <label htmlFor="message" className="block text-gray-700 mb-2">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full py-3 bg-blue text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200 hover:bg-[#2254a4]"
+          >
+            Send Feedback
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
+
 export default Form;

@@ -2,38 +2,75 @@ import React from "react";
 
 function FarmingHero5() {
   return (
-    <>
-      <div className="text-center pt-16">
-        <p className="font-medium text-5xl text-seed">Our Sources</p>
-        <p className="py-2">
-          We source coffee from small-scale Arabica farmers:
-        </p>
-        <p className="text-seed text-2xl font-semibold">
-          Kavre, Sindhupalchowk, and Ilam districts.
-        </p>
+    <div className="flex justify-center items-center py-16 ">
+      <div className="w-3/4 bg-white shadow-lg rounded-lg p-8">
+        <h2 className="text-4xl font-bold text-center  mb-8 text-green-600">
+          Our Values
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Sub-point: Ethical */}
+          <div className="p-6 rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Ethical
+            </h3>
+            <p className="text-gray-700">
+              We prioritize ethical practices in all aspects of our business,
+              ensuring fairness, honesty, and respect for all stakeholders.
+            </p>
+          </div>
+          {/* Sub-point: Transparency and Traceability */}
+          <div className="p-6 rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Transparency & Traceability
+            </h3>
+            <p className="text-gray-700">
+              We maintain open communication and trace our products from farm to
+              cup, ensuring clarity and accountability.
+            </p>
+          </div>
+          {/* Sub-point: Responsibility */}
+          <div className="p-6  rounded-lg  hover:shadow-xl  transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Responsibility
+            </h3>
+            <p className="text-gray-700">
+              Our commitment is to be responsible stewards of the environment
+              and our communities.
+            </p>
+          </div>
+          {/* Sub-point: Collaboration */}
+          <div className="p-6 bg-gradient-to-r from-purple-200 to-purple-500 rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Collaboration
+            </h3>
+            <p className="text-gray-700">
+              We believe in working together with farmers, employees, and
+              partners to create a positive impact.
+            </p>
+          </div>
+          {/* Sub-point: Perseverance */}
+          <div className="p-6  rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Perseverance
+            </h3>
+            <p className="text-gray-700">
+              Facing challenges with resilience, we are dedicated to continual
+              improvement and progress.
+            </p>
+          </div>
+          {/* Sub-point: Relationship */}
+          <div className="p-6  rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+            <h3 className="text-xl font-semibold  mb-3 text-green-600">
+              Relationship
+            </h3>
+            <p className="text-gray-700">
+              Building strong, lasting relationships is at the heart of
+              everything we do.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div className="images flex justify-around py-7">
-        <div className="one  rounded-2xl p-3 shadow-md w-1/4 h-60 ">
-          <div className="title flex justify-center">
-            <div className="text font-semibold text-seed">Kavre</div>
-          </div>
-          <div className="images pt-28 text-center">Visit</div>
-        </div>
-        <div className="one  rounded-2xl p-3 shadow-md w-1/4 h-60 ">
-          <div className="title flex justify-center">
-            <div className="text font-semibold text-seed">Sindhupalchowk</div>
-          </div>
-          <div className="images pt-28 text-center">Visit</div>
-        </div>
-        <div className="one  rounded-2xl p-3 shadow-md w-1/4 h-60 ">
-          <div className="title flex justify-center">
-            <div className="text font-semibold text-seed">Ilam</div>
-          </div>
-          <div className="images pt-28 text-center">Visit</div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
 

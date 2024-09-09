@@ -1,0 +1,16 @@
+.active {
+  color: #b0b57e;
+  text-decoration: none;
+}
+
+.active.contact {
+  color: #3b82f6;
+}
+
+.active.process {
+  color: #78350f;
+}
+
+.active.about {
+  color: #b0b57e;
+}

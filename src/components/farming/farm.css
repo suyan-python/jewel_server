@@ -10,7 +10,7 @@
   width: 850px;
   height: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 20px #b0b57e;
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.478);
 }
 
 .right-arrow {
@@ -18,7 +18,7 @@
   top: 50%;
   right: 32px;
   font-size: 3rem;
-  color: #b0b57e;
+  color: rgb(22 163 74);
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -28,7 +28,7 @@
   top: 50%;
   left: 32px;
   font-size: 3rem;
-  color: #b0b57e;
+  color: rgb(22 163 74);
   z-index: 10;
   cursor: pointer;
   user-select: none;

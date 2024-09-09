@@ -21,7 +21,7 @@ const FarmingHero3 = ({ slides }) => {
   return (
     <>
       <div className="text-center pt-8">
-        <p className="font-medium text-5xl text-seed">From our Farm</p>
+        <p className="font-medium text-5xl text-green-600">From our Farm</p>
       </div>
       <section className="slider my-3">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />

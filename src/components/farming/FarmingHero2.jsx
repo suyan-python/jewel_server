@@ -4,14 +4,14 @@ function FarmingHero2() {
   return (
     <div className=" rounded-xl flex flex-col justify-center items-center ">
       <div className="title flex flex-col justify-center my-8 items-center p-7  w-3/4 shadow-inner rounded-2xl">
-        <div className="text text-5xl font-medium text-seed">
+        <div className="text text-5xl font-medium text-green-600">
           Behind the Business
         </div>
         <div className="description w-3/4">
           <p className="text-center py-4">
             Jewel Himalayan Products is officially registered as a Private
             Limited Company owned by <br />
-            <b>Mrs. MoonMoon Hada.</b>
+            <b className="text-green-600 text-xl">Mrs. MoonMoon Hada.</b>
           </p>
         </div>
 
@@ -20,7 +20,9 @@ function FarmingHero2() {
         </div>
 
         <div className="key-person mt-16">
-          <p className="font-medium">Key persons associated with JHP are:</p>
+          <p className="font-medium text-2xl">
+            Key persons associated with JHP are:
+          </p>
         </div>
 
         <div className="images flex flex-row justify-around  w-full  gap-5">
@@ -28,7 +30,7 @@ function FarmingHero2() {
             <div className="img flex justify-center">
               <img src="Img" alt="Image" />
             </div>
-            <div className="Name-title font-medium text-center">
+            <div className="Name-title font-medium text-center text-green-600 text-xl">
               Mr. Binayak Malla
             </div>
             <div className="description  text-center">
@@ -40,7 +42,7 @@ function FarmingHero2() {
             <div className="img flex justify-center">
               <img src="Img" alt="Image" />
             </div>
-            <div className="Name-title font-medium text-center">
+            <div className="Name-title font-medium text-center text-green-600 text-xl">
               Mr. Pranit Gurung
             </div>
             <div className="description  text-center">
@@ -53,25 +55,12 @@ function FarmingHero2() {
             <div className="img flex justify-center">
               <img src="Img" alt="Image" />
             </div>
-            <div className="Name-title font-medium text-center">
+            <div className="Name-title font-medium text-center text-green-600 text-xl">
               Ms. Dilasha Shakya
             </div>
             <div className="description  text-center">
               Operation Head. She manages daily logistics, accounting, and
               distribution of coffee to vendors
-            </div>
-          </div>
-          <div className="img4 w-1/4  py-7">
-            <div className="img flex justify-center">
-              <img src="Img" alt="Image" />
-            </div>
-            <div className="Name-title font-medium text-center">
-              Ms. Alina Khadgi
-            </div>
-            <div className="description text-center">
-              Marketing and Branding Consultant. She looks after the local
-              market, particularly branding, marketing, website, and social
-              media
             </div>
           </div>
         </div>
