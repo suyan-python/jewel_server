@@ -12,8 +12,8 @@ const Footer = () => {
           </h1>
         </div>
 
-        {/* Links */}
-        <div className="mb-6 md:mb-0">
+        {/* Links - Hidden on Mobile */}
+        <div className="hidden md:block mb-6 md:mb-0">
           <h1 className="font-medium text-lg md:text-xl pb-4">Links</h1>
           <nav className="flex flex-col gap-2 text-sm md:text-base">
             <a
@@ -43,8 +43,8 @@ const Footer = () => {
           </nav>
         </div>
 
-        {/* Menu */}
-        <div className="mb-6 md:mb-0">
+        {/* Menu - Hidden on Mobile */}
+        <div className="hidden md:block mb-6 md:mb-0">
           <h1 className="font-medium text-lg md:text-xl pb-4">Menu</h1>
           <nav className="flex flex-col gap-2 text-sm md:text-base">
             <a
@@ -68,8 +68,8 @@ const Footer = () => {
           </nav>
         </div>
 
-        {/* Contact */}
-        <div>
+        {/* Contact - Always visible */}
+        <div className="w-full md:w-auto">
           <h1 className="font-medium text-lg md:text-xl pb-4">Contact Us</h1>
           <nav className="flex flex-col gap-2 text-sm md:text-base">
             <a
