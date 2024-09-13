@@ -21,14 +21,14 @@ function Form() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen ">
-      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8">
+    <div className="flex items-center justify-center min-h-screen  py-8 px-4">
+      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-8 text-center">
           Get in Touch
         </h2>
         <form onSubmit={handleSubmit}>
           {/* First Name and Last Name */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-4">
+          <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <div className="w-full sm:w-1/2">
               <label htmlFor="firstName" className="block text-gray-700 mb-2">
                 First Name <span className="text-red-500">*</span>
@@ -60,7 +60,7 @@ function Form() {
           </div>
 
           {/* Email Address */}
-          <div className="mb-4">
+          <div className="mb-6">
             <label htmlFor="email" className="block text-gray-700 mb-2">
               Email Address <span className="text-red-500">*</span>
             </label>
@@ -76,7 +76,7 @@ function Form() {
           </div>
 
           {/* Phone Number */}
-          <div className="mb-4">
+          <div className="mb-6">
             <label htmlFor="phone" className="block text-gray-700 mb-2">
               Phone Number
             </label>
@@ -108,7 +108,7 @@ function Form() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-blue text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200 hover:bg-[#2254a4]"
+            className="w-full py-3 bg-blue text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200"
           >
             Send Feedback
           </button>

@@ -6,33 +6,42 @@ import { Link } from "react-router-dom";
 
 function ProcessHero() {
   return (
-    <>
-      <div className=" bg-processback bg-cover rounded-3xl ">
-        <div className="flex flex-row-reverse justify-around h-2/4 rounded-3xl shadow-sm py-52 backdrop-blur-sm">
-          <div className="text-area flex flex-col w-3/4 text-center justify-center items-center ">
-            <div className="slog rounded-full flex w-2/5 justify-center px-3 py-2 gap-3">
-              <Title />
-            </div>
-            <div className="title text-5xl py-3 font-medium w-3/4 text-white">
-              Our Coffee Processing from scratch
-            </div>
-            <div className="description text-slate-200 w-2/3">
-              We source our delicious, premium Arabica from our sister company,
-              Jewel Himalayan Coffee Beans (JHCB), in Province No 1, Ilam
-              district.
-            </div>
-            <div className="book py-3">
-              <Link to={"/contact"}>
-                {/* <Button title="Contact JHP for premium Arabic from the Himalaya ⤴" /> */}
-              </Link>
-            </div>
+    <div className="bg-processback bg-cover bg-center bg-no-repeat rounded-3xl">
+      <div className="flex flex-col lg:flex-row-reverse justify-center items-center lg:justify-between h-auto lg:h-[70vh] rounded-3xl shadow-lg backdrop-blur-sm py-10 lg:py-20 px-5 lg:px-16">
+        {/* Text Area */}
+        <div className="text-area flex flex-col items-center lg:items-start w-full lg:w-1/2 text-center lg:text-left">
+          <div className="slog rounded-full flex justify-center px-4 py-2 gap-3 mb-4">
+            <Title />
           </div>
-          <div className="image-area flex flex-col w-3/4 justify-center items-center">
-            {/* <img className="" style={{ height: "80vh" }} src={Person} alt="" /> */}
+          <div className="title text-3xl lg:text-5xl font-semibold text-white mb-4">
+            Our Coffee Processing from Scratch
+          </div>
+          <div className="description text-slate-200 text-base lg:text-lg mb-6 px-4 lg:px-0">
+            We source our delicious, premium Arabica from our sister company,
+            Jewel Himalayan Coffee Beans (JHCB), in Province No 1, Ilam
+            district.
+          </div>
+          <div className="book">
+            <Link to="/contact">
+              <Button
+                title="Contact JHP for premium Arabica from the Himalaya ⤴"
+                color="white"
+              />
+            </Link>
           </div>
         </div>
+
+        {/* Image Area */}
+        {/* <div className="image-area flex flex-col items-center lg:items-end w-full lg:w-1/2">
+          <img
+            src={Person}
+            alt="Person"
+            className="object-cover rounded-lg shadow-md h-auto max-w-full lg:max-w-md"
+            style={{ height: "auto", maxWidth: "90%" }}
+          />
+        </div> */}
       </div>
-    </>
+    </div>
   );
 }
 

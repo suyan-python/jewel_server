@@ -2,65 +2,93 @@ import React from "react";
 
 function FarmingHero2() {
   return (
-    <div className=" rounded-xl flex flex-col justify-center items-center ">
-      <div className="title flex flex-col justify-center my-8 items-center p-7  w-3/4 shadow-inner rounded-2xl">
-        <div className="text text-5xl font-medium text-green-600">
+    <div className="rounded-xl flex flex-col justify-center items-center p-5">
+      {/* Title Section */}
+      <div className="title flex flex-col justify-center items-center my-8 p-7 w-full lg:w-3/4 shadow-inner rounded-2xl">
+        <div className="text text-3xl lg:text-5xl font-medium text-green-600 text-center">
           Behind the Business
         </div>
-        <div className="description w-3/4">
-          <p className="text-center py-4">
+
+        <div className="description w-full lg:w-3/4">
+          <p className="text-center py-4 text-base lg:text-lg">
             Jewel Himalayan Products is officially registered as a Private
             Limited Company owned by <br />
-            <b className="text-green-600 text-xl">Mrs. MoonMoon Hada.</b>
+            <b className="text-green-600 text-lg lg:text-xl">
+              Mrs. MoonMoon Hada.
+            </b>
           </p>
         </div>
 
-        <div className="Moon-image">
-          <img src="img" alt="" />
+        {/* MoonMoon Image */}
+        <div className="Moon-image my-6 lg:my-8">
+          <img
+            src="img"
+            alt=""
+            className="rounded-full w-40 h-40 lg:w-60 lg:h-60"
+          />
         </div>
 
-        <div className="key-person mt-16">
-          <p className="font-medium text-2xl">
+        {/* Key Persons Section */}
+        <div className="key-person mt-10 lg:mt-16">
+          <p className="font-medium text-2xl lg:text-3xl text-center">
             Key persons associated with JHP are:
           </p>
         </div>
 
-        <div className="images flex flex-row justify-around  w-full  gap-5">
-          <div className="img1 w-1/4  py-7">
+        {/* Images and Descriptions */}
+        <div className="images flex flex-col lg:flex-row justify-around items-center w-full gap-8 lg:gap-5 mt-8 lg:mt-12">
+          {/* Binayak Malla */}
+          <div className="img1 w-full lg:w-1/4 py-7 flex flex-col items-center">
             <div className="img flex justify-center">
-              <img src="Img" alt="Image" />
+              <img
+                src="Img"
+                alt="Image"
+                className="rounded-full w-32 h-32 lg:w-40 lg:h-40"
+              />
             </div>
-            <div className="Name-title font-medium text-center text-green-600 text-xl">
+            <div className="Name-title font-medium text-center text-green-600 text-xl mt-4">
               Mr. Binayak Malla
             </div>
-            <div className="description  text-center">
+            <div className="description text-center text-sm lg:text-base px-3 lg:px-0">
               Advisor on marketing, sales, and finance. He looks at the
-              international market and develops business strategies
+              international market and develops business strategies.
             </div>
           </div>
-          <div className="img2 w-1/4  py-7">
+
+          {/* Pranit Gurung */}
+          <div className="img2 w-full lg:w-1/4 py-7 flex flex-col items-center">
             <div className="img flex justify-center">
-              <img src="Img" alt="Image" />
+              <img
+                src="Img"
+                alt="Image"
+                className="rounded-full w-32 h-32 lg:w-40 lg:h-40"
+              />
             </div>
-            <div className="Name-title font-medium text-center text-green-600 text-xl">
+            <div className="Name-title font-medium text-center text-green-600 text-xl mt-4">
               Mr. Pranit Gurung
             </div>
-            <div className="description  text-center">
-              Processing, packaging, and distribution. He looks at technical
-              aspects e.g., coffee quality and profiles, working with roasters,
-              and supporting domestic buyers
+            <div className="description text-center text-sm lg:text-base px-3 lg:px-0">
+              Processing, packaging, and distribution. He oversees technical
+              aspects like coffee quality, working with roasters, and supporting
+              domestic buyers.
             </div>
           </div>
-          <div className="img3 w-1/4  py-7">
+
+          {/* Dilasha Shakya */}
+          <div className="img3 w-full lg:w-1/4 py-7 flex flex-col items-center">
             <div className="img flex justify-center">
-              <img src="Img" alt="Image" />
+              <img
+                src="Img"
+                alt="Image"
+                className="rounded-full w-32 h-32 lg:w-40 lg:h-40"
+              />
             </div>
-            <div className="Name-title font-medium text-center text-green-600 text-xl">
+            <div className="Name-title font-medium text-center text-green-600 text-xl mt-4">
               Ms. Dilasha Shakya
             </div>
-            <div className="description  text-center">
+            <div className="description text-center text-sm lg:text-base px-3 lg:px-0">
               Operation Head. She manages daily logistics, accounting, and
-              distribution of coffee to vendors
+              distribution of coffee to vendors.
             </div>
           </div>
         </div>

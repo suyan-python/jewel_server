@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SliderData } from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import "./farm.css";
+import "./farm.css"; // Custom CSS for styling
 
 const FarmingHero3 = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -10,6 +10,7 @@ const FarmingHero3 = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
+
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
@@ -21,11 +22,19 @@ const FarmingHero3 = ({ slides }) => {
   return (
     <>
       <div className="text-center pt-8">
-        <p className="font-medium text-5xl text-green-600">From our Farm</p>
+        <p className="font-medium text-3xl lg:text-5xl text-green-600">
+          From our Farm
+        </p>
       </div>
       <section className="slider my-3">
-        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        <FaArrowAltCircleLeft
+          className="left-arrow text-3xl lg:text-5xl"
+          onClick={prevSlide}
+        />
+        <FaArrowAltCircleRight
+          className="right-arrow text-3xl lg:text-5xl"
+          onClick={nextSlide}
+        />
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -33,7 +42,11 @@ const FarmingHero3 = ({ slides }) => {
               key={index}
             >
               {index === current && (
-                <img src={slide.image} alt="Farm Image" className="image" />
+                <img
+                  src={slide.image}
+                  alt="Farm Image"
+                  className="image w-full h-60 lg:h-96 object-cover"
+                />
               )}
             </div>
           );

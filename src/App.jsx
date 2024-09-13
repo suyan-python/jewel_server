@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
@@ -7,22 +8,22 @@ import Products from "./components/Products";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
 import Login from "./components/Modal";
-import Hero from "./components/Hero";
 import Landing from "./components/Landing";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import FarmingHero from "./components/farming/FarmingHero";
-import { FaLandmark } from "react-icons/fa";
 import LandingFarm from "./components/farming/LandingFarm";
 import Contact from "./components/contact/Contact";
 import SourceHero from "./components/sources/SourceHero";
 import LandingProcess from "./components/processing/LandingProcess";
 import AddCart from "./components/addtocart/Cart";
-import ExpandableDiv from "./components/processing/Expandable";
+import Preloader from "./components/PreLoader";
+
+import "./App.css";
 
 const App = () => {
   return (
     <div>
+      {/* <Preloader /> */}
       <Router>
         <NavBar />
         <Routes>
@@ -37,33 +38,10 @@ const App = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/source" element={<SourceHero />} />
           <Route exact path="/process" element={<LandingProcess />} />
-          <Route exact path="/addcart" element={<AddCart />} />
-          <Route exact path="/expand" element={<ExpandableDiv />} />
+          <Route exact path="/order" element={<AddCart />} />
         </Routes>
         <Footer />
       </Router>
-
-      <main>
-        {/* <div id="home">
-          <Home />
-        </div>
-
-        <div id="menu">
-          <Menu />
-        </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        <div id="products">
-          <Products />
-        </div>
-
-        <div id="reviews">
-          <Review />
-        </div> */}
-      </main>
     </div>
   );
 };

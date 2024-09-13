@@ -13,37 +13,36 @@ const ExpandableDivs = () => {
   };
 
   return (
-    <div className="flex gap-8 p-4 justify-around my-10 mx-14">
+    <div className="flex flex-col lg:flex-row gap-8 p-4 lg:p-10 mx-auto max-w-6xl my-10">
       {/* First Div */}
-      <div className="border p-4 rounded-2xl shadow-lg w-full max-w-md flex flex-col justify-end text-white bg-processing w-2/4 bg-contain h-96">
-        <div className="backdrop-blur-sm ">
-          <div className="flex-1 pb-5">
-            <h2 className="text-lg font-semibold text-center">Processing</h2>
-            <div
-              className={`transition-max-height duration-300 ease-in-out overflow-hidden py-6 ${
-                isExpandedDiv1 ? "max-h-[500px]" : "max-h-0"
-              }`}
-            >
-              <p className="text-justify px-2">
-                We have a newly set up coffee processing facility at our farm at
-                Deumai, Ilam. It will do both natural and fully washed
-                processing starting from 2023. We have a wet and dry mill and
-                are planning experimental lots.
-                {isExpandedDiv1 && (
-                  <span className="text-justify">
-                    <br />
-                    <br />
-                    We also support two coffee washing stations (CWS) in Kavre
-                    and Sindhupalchowk. We provide training in maintaining
-                    quality and following standard operating protocols.
-                  </span>
-                )}
-              </p>
-            </div>
+      <div className="relative border p-4 rounded-2xl shadow-lg flex flex-col justify-between bg-processing bg-cover bg-center text-white w-full lg:w-1/2 h-auto max-w-md mx-auto overflow-hidden">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="relative z-10 p-4 flex flex-col justify-between h-full">
+          <h2 className="text-2xl font-bold text-center mb-4">Processing</h2>
+          <div
+            className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+              isExpandedDiv1 ? "max-h-[500px] py-4" : "max-h-0 py-0"
+            }`}
+          >
+            <p className="text-justify">
+              We have a newly set up coffee processing facility at our farm at
+              Deumai, Ilam. It will do both natural and fully washed processing
+              starting from 2023. We have a wet and dry mill and are planning
+              experimental lots.
+              {isExpandedDiv1 && (
+                <span>
+                  <br />
+                  <br />
+                  We also support two coffee washing stations (CWS) in Kavre and
+                  Sindhupalchowk. We provide training in maintaining quality and
+                  following standard operating protocols.
+                </span>
+              )}
+            </p>
           </div>
-          <div className="mt-auto mb-4 text-center">
+          <div className="mt-4 text-center">
             <button
-              className="px-6 py-1 border-2 border-white hover:text-seed transition-all rounded-full"
+              className="px-6 py-2 border-2 border-white text-white hover:bg-gray-800 transition-all rounded-full"
               onClick={toggleExpandDiv1}
             >
               {isExpandedDiv1 ? "Show Less" : "Learn More"}
@@ -52,36 +51,34 @@ const ExpandableDivs = () => {
         </div>
       </div>
 
-      {/* second div  */}
-      <div className="border p-4 rounded-2xl shadow-lg w-full max-w-md flex flex-col justify-end text-white bg-roasting w-2/4 bg-contain h-96">
-        <div className="backdrop-blur-sm ">
-          <div className="flex-1 pb-5">
-            <h2 className="text-lg font-semibold text-center">Roasting</h2>
-            <div
-              className={`transition-max-height duration-300 ease-in-out overflow-hidden py-6 ${
-                isExpandedDiv2 ? "max-h-[500px]" : "max-h-0"
-              }`}
-            >
-              <p className="text-justify px-2">
-                In Kathmandu, we plan to have our own roastery by 2023.
-                {isExpandedDiv2 && (
-                  <span className="text-justify ">
-                    <br />
-                    <br />
-                    For now, Nepali coffee expert, Mr. Nima Tenzing Sherpa,
-                    roasts our beans in a light medium roast in 6kg batches. We
-                    produced 500kg of single origin, mild roasted coffee beans
-                    in 2021. What we like about roasting is the craft, sharing
-                    beans with customers, value adding, sales and meeting
-                    customers.
-                  </span>
-                )}
-              </p>
-            </div>
+      {/* Second Div */}
+      <div className="relative border p-4 rounded-2xl shadow-lg flex flex-col justify-between bg-roasting bg-cover bg-center text-white w-full lg:w-1/2 h-auto max-w-md mx-auto overflow-hidden">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="relative z-10 p-4 flex flex-col justify-between h-full">
+          <h2 className="text-2xl font-bold text-center mb-4">Roasting</h2>
+          <div
+            className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+              isExpandedDiv2 ? "max-h-[500px] py-4" : "max-h-0 py-0"
+            }`}
+          >
+            <p className="text-justify">
+              In Kathmandu, we plan to have our own roastery by 2023.
+              {isExpandedDiv2 && (
+                <span>
+                  <br />
+                  <br />
+                  For now, Nepali coffee expert, Mr. Nima Tenzing Sherpa, roasts
+                  our beans in a light medium roast in 6kg batches. We produced
+                  500kg of single origin, mild roasted coffee beans in 2021.
+                  What we like about roasting is the craft, sharing beans with
+                  customers, value adding, sales, and meeting customers.
+                </span>
+              )}
+            </p>
           </div>
-          <div className="mt-auto mb-4 text-center">
+          <div className="mt-4 text-center">
             <button
-              className="px-6 py-1 border-2 border-white hover:text-seed transition-all rounded-full"
+              className="px-6 py-2 border-2 border-white text-white hover:bg-gray-800 transition-all rounded-full"
               onClick={toggleExpandDiv2}
             >
               {isExpandedDiv2 ? "Show Less" : "Learn More"}

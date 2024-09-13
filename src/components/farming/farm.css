@@ -1,35 +1,52 @@
+/* Custom styling for the slider */
 .slider {
   position: relative;
-  height: 72vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-}
-.image {
-  width: 850px;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.478);
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.left-arrow,
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: rgb(22 163 74);
+  font-size: 24px;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
+
 .left-arrow {
-  position: absolute;
-  top: 50%;
   left: 32px;
-  font-size: 3rem;
-  color: rgb(22 163 74);
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
+}
+
+.right-arrow {
+  right: 32px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .left-arrow,
+  .right-arrow {
+    font-size: 40px;
+  }
+
+  .image {
+    height: 400px;
+  }
 }

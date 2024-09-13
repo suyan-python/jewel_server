@@ -8,27 +8,32 @@ function FarmingHero4() {
   }
 
   return (
-    <div className="flex justify-center pt-16 mx-52">
-      <div className="flex gap-2">
-        <div className="w-2/4">
-          <div className="title text-5xl w-2/4">GAP & organic farming</div>
-          <div className="sub-title w-3/4 text-justify py-5 text-green-600">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:pt-16 pt-8 px-5 lg:px-32">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full max-w-screen-xl">
+        {/* Left Section: Title and Subtitle */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <div className="title  text-4xl lg:text-5xl font-medium text-green-800 mb-4">
+            GAP & Organic Farming
+          </div>
+          <div className="sub-title text-lg lg:text-xl text-justify text-green-600 mb-6">
             <b>Good Agricultural Practices (GAP)</b> is our prime focus on the
             farm. We want to build on the foundation of organic farming.
           </div>
         </div>
-        <div className="p-4 rounded-lg w-full max-w-md flex flex-col">
+
+        {/* Right Section: Content */}
+        <div className="bg-white p-6 rounded-xl shadow-lg w-full lg:w-1/2 flex flex-col justify-between">
           <div className="flex-1">
-            <h2 className="text-lg font-semibold py-3 text-justify">
+            <h2 className="text-xl font-semibold py-3 text-justify text-gray-800">
               Since the 1980s, coffee growing in Nepal has proved effective in
               preventing natural disasters such as landslides and floods.
             </h2>
             <div
               className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                isExpanded ? "max-h-[500px]" : "max-h-0"
+                isExpanded ? "max-h-[600px]" : "max-h-24"
               }`}
             >
-              <p>
+              <p className="text-gray-700">
                 We only use organic fertilizers and encourage a bird-friendly
                 environment by planting shade trees, which also improve air
                 quality. Medulla trees grow in this eastern, hilly part of
@@ -58,12 +63,13 @@ function FarmingHero4() {
               </p>
             </div>
           </div>
-          <div className="mt-auto mb-4 text-center">
+
+          <div className="mt-auto text-center lg:text-left">
             <button
-              className="flex items-center justify-center text-blue-500 hover:text-blue-700 focus:outline-none"
+              className="flex items-center justify-center lg:justify-start text-green-600 hover:text-green-800 focus:outline-none"
               onClick={toggleExpand}
             >
-              <span className="mr-2 border px-4 py-1 rounded-md hover:text-green-600">
+              <span className="mr-2 border border-green-600 px-4 py-2 rounded-md hover:bg-green-600 hover:text-white transition-colors duration-300">
                 {isExpanded ? "Show Less" : "Learn More"}
               </span>
               <svg
