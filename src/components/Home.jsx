@@ -1,45 +1,60 @@
 import React from "react";
 import Button from "../layouts/Button";
-import Cup from "../assets/pictures/person/avatar6.png";
+import Cup from "../assets/pictures/person/avatar6.PNG";
 import { Link } from "react-router-dom";
+import Home2 from "./Home2";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-cafe bg-cover flex flex-col items-center justify-center rounded-3xl">
-      <div className="min-h-screen flex flex-col justify-center lg:flex-row lg:justify-between items-center lg:px-32 px-5 gap-10 backdrop-blur-md rounded-3xl">
-        <div className="w-full lg:w-2/4 space-y-4 mt-14 lg:mt-0 text-white">
-          <h1 className="font-medium text-5xl text-center lg:text-start leading-tight">
-            Start your Day with
-            <br />
-            The Mystical Coffee by JHP
-          </h1>
-          <p>
-            Boost your productivity and build your mood with Mystical Coffee
-          </p>
+    <>
+      <div className="relative min-h-screen bg-cafe bg-cover bg-center flex flex-col items-center justify-center py-16 px-4 lg:px-16 rounded-3xl">
+        {/* Overlay for Text and Image */}
+        <div className="absolute inset-0 bg-black opacity-30"></div>
 
-          <div className="flex flex-row gap-6">
-            <Link to={"/about"}>
-              <Button title="ABOUT ⤴" />
-            </Link>
-            <Link to={"/product"}>
-              <Button title="Products ⤴" />
-            </Link>
-            {/* <Link to={"/review"}>
-            <Button title="Reviews" />
-          </Link> */}
+        <div className="relative z-10 flex flex-col lg:flex-row lg:justify-between items-center gap-10 rounded-3xl p-8 bg-white bg-opacity-70 shadow-lg">
+          {/* Text Section */}
+          <div className="w-full lg:w-2/4 text-center lg:text-left space-y-6">
+            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Start Your Day with
+              <br />
+              <span className="text-yellow-500">iNaya</span>
+            </h1>
+            <p className="text-md lg:text-lg text-gray-700 font-medium">
+              Boost your productivity and elevate your mood with Mystical
+              Coffee.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
+              <Link to="/about">
+                <Button title="ABOUT ⤴" />
+              </Link>
+              <Link to="/product">
+                <Button title="PRODUCTS ⤴" />
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="relative">
-          <img className="rounded-full w-96" src={Cup} alt="img" />
-          <div className="absolute bg-white px-8 py-2 top-5 right-0 rounded-full">
-            <h2 className="font-semibold">The Coffee Is Really Good!</h2>
+
+          {/* Image Section */}
+          <div className="relative">
+            <img
+              className="w-64 h-64 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl"
+              src={Cup}
+              alt="Mystical Coffee Cup"
+            />
+            {/* Floating Text Box */}
+            <div className="absolute top-4 right-0 bg-yellow-400 px-4 py-2 rounded-full shadow-lg animate-bounce">
+              <h2 className="text-white font-semibold">
+                The Coffee Is Really Good!
+              </h2>
+            </div>
           </div>
-          {/* <div className="absolute bg-white px-8 py-2 bottom-0 -left-10 rounded-full">
-            <h2>Cappuccino</h2>
-          </div> */}
         </div>
       </div>
-    </div>
+      <div className="py-7">
+        <Home2 />
+      </div>
+    </>
   );
 };
 

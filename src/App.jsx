@@ -19,6 +19,8 @@ import AddCart from "./components/addtocart/Cart";
 import Preloader from "./components/PreLoader";
 
 import "./App.css";
+import Home2 from "./components/Home2";
+import FooterBT from "./components/FooterBt";
 
 const App = () => {
   return (
@@ -41,6 +43,7 @@ const App = () => {
           <Route exact path="/order" element={<AddCart />} />
         </Routes>
         <Footer />
+        <FooterBT />
       </Router>
     </div>
   );

@@ -6,6 +6,7 @@ import Modal from "./Modal";
 import Title from "../layouts/Title";
 
 import "./NavBar.css";
+import NavbarTop from "./FooterBt";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
