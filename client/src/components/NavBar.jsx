@@ -57,6 +57,15 @@ const NavBar = () => {
           >
             Process
           </NavLink>
+
+          <NavLink
+            to="/sustainability"
+            className="nav-link"
+            activeClassName="active"
+            onClick={closeMenu}
+          >
+            Sustainability
+          </NavLink>
           <NavLink
             to="/contact"
             className="nav-link"

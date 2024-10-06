@@ -53,7 +53,7 @@ const Home2 = () => {
             <img
               src={img}
               alt={`Slide ${index}`}
-              className="w-full h-full object-cover rounded-3xl"
+              className="w-full h-full object-cover rounded-3xl shadow-lg"
             />
           </div>
         ))}
@@ -62,14 +62,14 @@ const Home2 = () => {
       {/* Previous and Next Buttons */}
       <button
         onClick={goToPreviousSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-4 rounded-full hover:bg-opacity-75 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300"
       >
         &#10094;
       </button>
 
       <button
         onClick={goToNextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-4 rounded-full hover:bg-opacity-75 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300"
       >
         &#10095;
       </button>
@@ -81,11 +81,21 @@ const Home2 = () => {
             key={index}
             className={`w-4 h-4 rounded-full transition-all duration-300 ${
               currentIndex === index
-                ? "bg-white scale-125 shadow-lg"
+                ? "bg-yellow-500 scale-125 shadow-lg"
                 : "bg-gray-400"
             }`}
           ></span>
         ))}
+      </div>
+
+      {/* Slide Description */}
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 rounded-lg p-4 shadow-md">
+        <h2 className="text-lg font-bold text-gray-800">
+          Experience the Aroma
+        </h2>
+        <p className="text-gray-600">
+          Discover the rich flavors of our sustainable coffee.
+        </p>
       </div>
     </div>
   );

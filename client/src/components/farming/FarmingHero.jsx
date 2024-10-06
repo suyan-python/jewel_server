@@ -10,7 +10,9 @@ function FarmingHero() {
         {/* Text Area */}
         <div className="text-area flex flex-col w-full lg:w-3/4 text-center lg:text-left justify-center items-center lg:items-start text-white px-5 lg:px-10 ">
           <div className="slog rounded-full flex w-3/4 lg:w-2/5 justify-center lg:justify-start  py-2 gap-3 mb-4">
-            <Title />
+            <h1 className="text-3xl font-medium">
+              Jewel Himalayan Coffee Beans
+            </h1>
           </div>
           <div className="title text-3xl lg:text-5xl py-3 font-medium w-full lg:w-3/4">
             Premium Arabica coffee from the Himalaya

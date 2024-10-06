@@ -8,8 +8,8 @@ export default {
         backgroundColor: "#FDE9CC",
         seed: "#B0B57E",
         prim: "#0f5f53",
-        blue: "#3b82f6",
-        purple: "#8e44ad",
+        bluee: "#3b82f6",
+        purplee: "#8e44ad",
       },
       transitionProperty: {
         "max-height": "max-height",

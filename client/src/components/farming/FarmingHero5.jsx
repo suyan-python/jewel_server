@@ -39,7 +39,7 @@ function FarmingHero5() {
             </p>
           </div>
           {/* Sub-point: Collaboration */}
-          <div className="p-6 bg-gradient-to-r from-purple-200 to-purple-500 rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
+          <div className="p-6  rounded-lg  hover:shadow-xl transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold  mb-3 text-green-600">
               Collaboration
             </h3>

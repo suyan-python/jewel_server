@@ -6,52 +6,57 @@ import iNaya from "../assets/pictures/png/iNaya.png";
 
 function Hero2() {
   return (
-    <div className="sub flex flex-col md:flex-row justify-around h-full py-5 my-7 gap-3">
-      {/* Farming Section */}
-      <div className="bg-farm bg-cover w-full md:w-2/5 rounded-2xl shadow-md">
-        <div className="two backdrop-blur-sm rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
-          <div className="title flex justify-center">
-            <div className="text font-medium text-3xl md:text-4xl">Farming</div>
-          </div>
-          <div className="images flex justify-center text-base md:text-lg">
-            Visit our Farm
-          </div>
-          <Link to={"/farming"}>
-            <Button title="Visit Us ⤴" color="white" />
-          </Link>
-        </div>
+    <>
+      <div className="mt-32 text-center font-medium text-4xl">
+        Our Businesses
       </div>
-
-      {/* Coffee Trading Section */}
-      <div className="two rounded-2xl p-3 w-full md:w-2/5 h-96 flex flex-col text-center justify-center gap-6">
-        <div className="title flex justify-center">
-          <div className="text font-medium text-3xl md:text-5xl">
-            Coffee Trading
+      <div className="sub flex flex-col md:flex-row justify-around h-full py-2 my-7 gap-3">
+        {/* Farming Section */}
+        <div className="bg-farm bg-cover w-full md:w-2/5 rounded-2xl shadow-md">
+          <div className="two backdrop-blur-sm rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
+            <div className="title flex justify-center">
+              <div className="text font-medium text-3xl md:text-4xl">
+                Farming
+              </div>
+            </div>
+            <div className="images flex justify-center text-base md:text-lg">
+              Visit our Farm
+            </div>
+            <Link to={"/farming"}>
+              <Button title="Visit Us ⤴" color="white" />
+            </Link>
           </div>
         </div>
-        <div className="images flex justify-center">
-          <img className="w-2/4" src={Mystical} alt="Mystical Coffee" />
-        </div>
-        <Button title="Learn More ⤴" />
-      </div>
-
-      {/* Food Coffee Conversation Section */}
-      <div className="bg-cafe w-full md:w-2/5 rounded-2xl shadow-md bg-cover">
-        <div className="three rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 backdrop-blur-sm">
-          <div className="images flex justify-center">
-            <img className="w-2/4" src={iNaya} alt="iNaya" />
-          </div>
+        {/* Coffee Trading Section */}
+        <div className="two rounded-2xl p-3 w-full md:w-2/5 h-96 flex flex-col text-center justify-center gap-6">
           <div className="title flex justify-center">
-            <div className="text font-medium text-lg md:text-xl text-white">
-              Food Coffee Conversation
+            <div className="text font-medium text-3xl md:text-5xl">
+              Coffee Trading
             </div>
           </div>
-          <Link to={"/inaya"}>
-            <Button title="Visit Us ⤴" color="white" />
-          </Link>
+          <div className="images flex justify-center">
+            <img className="w-2/4" src={Mystical} alt="Mystical Coffee" />
+          </div>
+          <Button title="Learn More ⤴" />
+        </div>
+        {/* Food Coffee Conversation Section */}
+        <div className="bg-cafe w-full md:w-2/5 rounded-2xl shadow-md bg-cover">
+          <div className="three rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 backdrop-blur-sm">
+            <div className="images flex justify-center">
+              <img className="w-2/4" src={iNaya} alt="iNaya" />
+            </div>
+            <div className="title flex justify-center">
+              <div className="text font-medium text-lg md:text-xl text-white">
+                Food Coffee Conversation
+              </div>
+            </div>
+            <Link to={"/inaya"}>
+              <Button title="Visit Us ⤴" color="white" />
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

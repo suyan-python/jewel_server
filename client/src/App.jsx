@@ -21,27 +21,31 @@ import Preloader from "./components/PreLoader";
 import "./App.css";
 import Home2 from "./components/Home2";
 import FooterBT from "./components/FooterBt";
+import SusLanding from "./components/sustainability/SusLanding";
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* <Preloader /> */}
       <Router>
         <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Landing />} />
-          <Route exact path="/inaya" element={<Home />} />
-          <Route exact path="/menu" element={<Menu />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/product" element={<Products />} />
-          <Route exact path="/review" element={<Review />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/farming" element={<LandingFarm />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/source" element={<SourceHero />} />
-          <Route exact path="/process" element={<LandingProcess />} />
-          <Route exact path="/order" element={<AddCart />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/inaya" element={<Home />} />
+            <Route exact path="/menu" element={<Menu />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/product" element={<Products />} />
+            <Route exact path="/sustainability" element={<SusLanding />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/review" element={<Review />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/farming" element={<LandingFarm />} />
+            <Route exact path="/source" element={<SourceHero />} />
+            <Route exact path="/process" element={<LandingProcess />} />
+            <Route exact path="/order" element={<AddCart />} />
+          </Routes>
+        </main>
         <Footer />
         <FooterBT />
       </Router>

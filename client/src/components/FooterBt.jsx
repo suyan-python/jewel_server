@@ -8,9 +8,11 @@ const FooterBT = () => {
   const getNavbarBackgroundColor = () => {
     switch (location.pathname) {
       case "/process":
-        return "bg-black"; // Change this to your desired color for the Process section
+        return "bg-black"; // Color for Process section
       case "/farming":
-        return "bg-prim"; // Change this to your desired color for the Farming section
+        return "bg-prim"; // Color for Farming section
+      case "/sustainability":
+        return "bg-bluee"; // Color for Sustainability section
       default:
         return "bg-gray-800"; // Default color
     }
@@ -18,9 +20,9 @@ const FooterBT = () => {
 
   return (
     <footer
-      className={`${getNavbarBackgroundColor()} text-white py-4 px-6 shadow-md rounded-3xl`}
+      className={`${getNavbarBackgroundColor()} text-white py-4 w-full fixed bottom-0 left-0`}
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         <Link
           to="/"
           className="text-2xl font-bold hover:text-yellow-400 transition duration-300 mb-4 md:mb-0"
