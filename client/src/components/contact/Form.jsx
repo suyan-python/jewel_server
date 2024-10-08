@@ -21,14 +21,14 @@ function Form() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen  py-8 px-4">
-      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-8 text-center">
+    <div className="flex items-center min-h-screen px-4">
+      <div className="w-full max-w-lg bg-white p-10 rounded-lg shadow-2xl border border-gray-300">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10 text-center">
           Get in Touch
         </h2>
         <form onSubmit={handleSubmit}>
           {/* First Name and Last Name */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row gap-6 mb-6">
             <div className="w-full sm:w-1/2">
               <label htmlFor="firstName" className="block text-gray-700 mb-2">
                 First Name <span className="text-red-500">*</span>
@@ -40,7 +40,7 @@ function Form() {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               />
             </div>
             <div className="w-full sm:w-1/2">
@@ -54,7 +54,7 @@ function Form() {
                 value={formData.lastName}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ function Form() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
@@ -86,7 +86,7 @@ function Form() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
@@ -101,14 +101,14 @@ function Form() {
               value={formData.message}
               onChange={handleChange}
               rows="4"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none resize-none"
             ></textarea>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-bluee text-white  font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200"
+            className="w-full py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200"
           >
             Send Feedback
           </button>

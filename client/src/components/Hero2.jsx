@@ -13,7 +13,7 @@ function Hero2() {
       <div className="sub flex flex-col md:flex-row justify-around h-full py-2 my-7 gap-3">
         {/* Farming Section */}
         <div className="bg-farm bg-cover w-full md:w-2/5 rounded-2xl shadow-md">
-          <div className="two backdrop-blur-sm rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
+          <div className="two rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
             <div className="title flex justify-center">
               <div className="text font-medium text-3xl md:text-4xl">
                 Farming
@@ -35,15 +35,25 @@ function Hero2() {
             </div>
           </div>
           <div className="images flex justify-center">
-            <img className="w-2/4" src={Mystical} alt="Mystical Coffee" />
+            <img
+              className="w-2/4"
+              src={Mystical}
+              alt="Mystical Coffee"
+              loading="lazy" /* Lazy loading for faster page load */
+            />
           </div>
           <Button title="Learn More ⤴" />
         </div>
         {/* Food Coffee Conversation Section */}
         <div className="bg-cafe w-full md:w-2/5 rounded-2xl shadow-md bg-cover">
-          <div className="three rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 backdrop-blur-sm">
+          <div className="three rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 ">
             <div className="images flex justify-center">
-              <img className="w-2/4" src={iNaya} alt="iNaya" />
+              <img
+                className="w-2/4"
+                src={iNaya}
+                alt="iNaya"
+                loading="lazy" /* Lazy loading for faster page load */
+              />
             </div>
             <div className="title flex justify-center">
               <div className="text font-medium text-lg md:text-xl text-white">

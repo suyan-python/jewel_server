@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="bg-herobean bg-cover bg-center rounded-3xl h-auto">
-      <div className="flex flex-col md:flex-row-reverse justify-between rounded-3xl shadow-xl backdrop-blur-sm py-20 md:py-40 px-4 md:px-16">
+      <div className="flex flex-col md:flex-row-reverse justify-between rounded-3xl shadow-xl py-20 md:py-40 px-4 md:px-16">
         {/* Text Area */}
         <div className="text-area flex flex-col w-full md:w-3/4 text-center justify-center items-center">
           <div className="slog text-4xl text-white rounded-full flex w-3/4 md:w-2/5 justify-center py-2 px-4 gap-3 shadow-lg">
@@ -30,12 +30,13 @@ function Hero() {
           </div>
         </div>
 
-        {/* Image Area */}
+        {/* Image Area with Lazy Loading */}
         <div className="image-area hidden md:flex w-full md:w-1/2 justify-center items-center">
           <img
             className="rounded-full shadow-lg object-cover h-72 md:h-96"
             src={"path-to-coffee-farming-image.jpg"}
             alt="Coffee Farming in Illam"
+            loading="lazy"
           />
         </div>
       </div>

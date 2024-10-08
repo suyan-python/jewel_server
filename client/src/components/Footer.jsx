@@ -16,10 +16,13 @@ const Footer = () => {
         setBgColor("bg-gradient-to-b from-green-800 to-white");
         break;
       case "/process":
-        setBgColor("bg-gradient-to-b from-black to-white");
+        setBgColor("bg-gradient-to-b from-gray-700 to-white");
         break;
       case "/sustainability":
         setBgColor("bg-gradient-to-b from-pink-400 to-white");
+        break;
+      case "/contact":
+        setBgColor("bg-gradient-to-b from-gray-500 to-white");
         break;
       default:
         setBgColor("bg-gradient-to-b from-seed to-white"); // Default color
@@ -122,7 +125,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="text-sm text-center py-4 font-medium">
         <p>
-          &copy;2023 developed by{" "}
+          &copy;2022 developed by{" "}
           <b className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
             Jewel Himalayan
           </b>

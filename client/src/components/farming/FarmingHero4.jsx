@@ -12,7 +12,7 @@ function FarmingHero4() {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full max-w-screen-xl">
         {/* Left Section: Title and Subtitle */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <div className="title  text-4xl lg:text-5xl font-medium text-green-800 mb-4">
+          <div className="title  text-4xl lg:text-5xl font-medium text-green-600 mb-4">
             GAP & Organic Farming
           </div>
           <div className="sub-title text-lg lg:text-xl text-justify text-green-600 mb-6">

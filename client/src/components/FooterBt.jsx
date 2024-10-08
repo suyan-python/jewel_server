@@ -7,12 +7,16 @@ const FooterBT = () => {
   // Determine background color based on the current path
   const getNavbarBackgroundColor = () => {
     switch (location.pathname) {
+      case "/":
+        return "bg-seed"; // Color for Process section
       case "/process":
         return "bg-black"; // Color for Process section
       case "/farming":
         return "bg-prim"; // Color for Farming section
       case "/sustainability":
         return "bg-pink-400"; // Color for Sustainability section
+      case "/contact":
+        return "bg-gray-500"; // Color for Sustainability section
       default:
         return "bg-gray-800"; // Default color
     }
