@@ -1,111 +1,116 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
+import { useLocation } from "react-router-dom"; // Import useLocation for route tracking
 
 const Footer = () => {
+  const location = useLocation(); // Get the current route
+  const [bgColor, setBgColor] = useState("bg-gradient-to-b from-seed to-white");
+
+  useEffect(() => {
+    // Update footer background color based on the current page
+    switch (location.pathname) {
+      case "/":
+        setBgColor("bg-gradient-to-b from-seed to-white");
+        break;
+      case "/farming":
+        setBgColor("bg-gradient-to-b from-green-800 to-white");
+        break;
+      case "/process":
+        setBgColor("bg-gradient-to-b from-black to-white");
+        break;
+      case "/sustainability":
+        setBgColor("bg-gradient-to-b from-pink-400 to-white");
+        break;
+      default:
+        setBgColor("bg-gradient-to-b from-seed to-white"); // Default color
+        break;
+    }
+  }, [location]);
+
   return (
-    <footer className="bg-gradient-to-b from-seed to-white text-black rounded-t-3xl mt-16 md:mt-32 mx-4 md:mx-14 footer">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        {/* Company Name - Centered on mobile */}
+    <footer
+      className={`${bgColor} text-black rounded-t-3xl mt-16 md:mt-32 mx-4 md:mx-14 mb-16`}
+    >
+      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5 gap-8">
+        {/* Company Name */}
         <div className="w-full md:w-1/4 flex justify-center md:justify-start items-center mb-6 md:mb-0">
           <h1 className="font-semibold text-lg md:text-xl">
             Jewel Himalayan Products
           </h1>
         </div>
 
-        {/* Links - Hidden on Mobile */}
+        {/* Links */}
         <div className="hidden md:block mb-6 md:mb-0">
           <h1 className="font-medium text-lg md:text-xl pb-4">Links</h1>
           <nav className="flex flex-col gap-2 text-sm md:text-base">
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="menu"
+              href="/menu"
             >
               Menu
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="about"
+              href="/about"
             >
               About Us
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="products"
+              href="/products"
             >
               Products
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="reviews"
+              href="/reviews"
             >
               Reviews
             </a>
           </nav>
         </div>
 
-        {/* Menu - Hidden on Mobile */}
-        <div className="hidden md:block mb-6 md:mb-0">
-          <h1 className="font-medium text-lg md:text-xl pb-4">Menu</h1>
-          <nav className="flex flex-col gap-2 text-sm md:text-base">
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="menu"
-            >
-              Cappuccino
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="about"
-            >
-              Latte
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="products"
-            >
-              Americano
-            </a>
-          </nav>
+        {/* Mission Statement */}
+        <div className="w-full md:w-1/4">
+          <h1 className="font-medium text-lg md:text-xl pb-4">Our Mission</h1>
+          <p className="text-sm md:text-base text-gray-600">
+            At iNaya Cafe, we’re passionate about crafting the finest coffee
+            from the rich soils of Illam. Every cup tells the story of our
+            commitment to sustainability, quality, and supporting women in
+            coffee farming.
+          </p>
         </div>
 
-        {/* Contact - Centered on mobile */}
-        <div className="w-full md:w-auto flex flex-col items-center md:items-start mb-6 md:mb-0">
+        {/* Contact Info */}
+        <div className="w-full md:w-1/4">
           <h1 className="font-medium text-lg md:text-xl pb-4">Contact Us</h1>
-          <nav className="flex flex-col gap-2 text-sm md:text-base text-center md:text-left">
+          <nav className="flex flex-col gap-2 text-sm md:text-base">
             <a
-              className="hover:text-brightColor transition-all cursor-pointer"
               href="mailto:jewel.himalayan.2021@gmail.com"
+              className="hover:text-brightColor transition-all"
             >
               jewel.himalayan.2021@gmail.com
             </a>
             <a
-              className="transition-all cursor-pointer"
               href="tel:+9779817576110"
+              className="hover:text-brightColor transition-all"
             >
-              +977{" "}
-              <a className="hover:text-brightColor" href="tel:+9779817576110">
-                9817576110,
-              </a>
-              <a className="hover:text-brightColor" href="tel:+9779841208219">
-                {" "}
-                9841208219
-              </a>
+              +977 9817576110, 9841208219
             </a>
-            {/* Social Media */}
-            <div className="social-medias flex gap-6 pt-2 justify-center md:justify-start">
+            <div className="social-medias flex gap-6 pt-2">
               <a
-                className="hover:text-red transition-all cursor-pointer"
                 href="https://www.instagram.com/inaya_cafe_2023/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-red transition-all"
               >
                 <SiInstagram size={35} />
               </a>
               <a
-                className="hover:text-brightColor transition-all cursor-pointer"
                 href="https://www.facebook.com/profile.php?id=61556765843404"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-brightColor transition-all"
               >
                 <SiFacebook size={35} />
               </a>
@@ -115,16 +120,13 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-sm text-center py-4">
+      <div className="text-sm text-center py-4 font-medium">
         <p>
-          &copy; developed by
-          <span className="text-seed">
-            {" "}
-            <b className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
-              Jewel Himalayan Org.
-            </b>{" "}
-          </span>{" "}
-          | All rights reserved | 2023
+          &copy;2023 developed by{" "}
+          <b className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            Jewel Himalayan
+          </b>
+          . All rights reserved.
         </p>
       </div>
     </footer>

@@ -12,7 +12,7 @@ const FooterBT = () => {
       case "/farming":
         return "bg-prim"; // Color for Farming section
       case "/sustainability":
-        return "bg-bluee"; // Color for Sustainability section
+        return "bg-pink-400"; // Color for Sustainability section
       default:
         return "bg-gray-800"; // Default color
     }

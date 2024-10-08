@@ -108,7 +108,7 @@ function Form() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-blue text-white font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200"
+            className="w-full py-3 bg-bluee text-white  font-bold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200"
           >
             Send Feedback
           </button>

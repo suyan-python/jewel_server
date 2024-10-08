@@ -9,7 +9,7 @@ const Sustainability = () => {
     <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
       <div className="container mx-auto">
         {/* Title */}
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-pink-500 mb-6">
           Women in Coffee Project
         </h2>
 
@@ -43,8 +43,8 @@ const Sustainability = () => {
         {/* Details in Divs */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Div */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">
+          <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
               Field Interviews & Project Impact
             </h3>
             <p className="text-gray-700">
@@ -57,8 +57,10 @@ const Sustainability = () => {
           </div>
 
           {/* Second Div */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Future Goals</h3>
+          <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+              Future Goals
+            </h3>
             <p className="text-gray-700">
               We aim to work more with this community and boost their incomes
               from coffee. We will teach them about plant nutrition, water
@@ -69,8 +71,8 @@ const Sustainability = () => {
           </div>
 
           {/* Third Div */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">
+          <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
               Improving Coffee Quality
             </h3>
             <p className="text-gray-700">
@@ -81,8 +83,10 @@ const Sustainability = () => {
           </div>
 
           {/* Fourth Div */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Social Investment</h3>
+          <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+              Social Investment
+            </h3>
             <p className="text-gray-700">
               Coffee is an important source of income to many small-scale women
               farmers to cover daily expenses. As a company, we look to invest

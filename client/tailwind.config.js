@@ -18,6 +18,7 @@ export default {
         back: "url('/src/assets/pictures/background/back.png')",
         backfarm: "url('/src/assets/pictures/background/backfarm.jpeg')",
         farm: "url('/src/assets/pictures/background/farm.jpeg')",
+        illam: "url('/src/assets/pictures/background/illam.jpg')",
         cafe: "url('/src/assets/pictures/background/cafe.jpeg')",
         backpurple: "url('/src/assets/pictures/background/backpurple.jpg')",
         aboutback: "url('/src/assets/pictures/background/aboutus.jpg')",
