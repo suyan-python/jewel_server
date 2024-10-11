@@ -24,7 +24,7 @@ const FooterBT = () => {
 
   return (
     <footer
-      className={`${getNavbarBackgroundColor()} text-white py-4 w-full fixed bottom-0 left-0`}
+      className={`${getNavbarBackgroundColor()} text-white py-4 w-full fixed bottom-0 left-0 z-50`}
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         <Link
@@ -41,15 +41,17 @@ const FooterBT = () => {
           </div>
           <div className="flex items-center space-x-2 animate-pulse">
             <span className="font-semibold">Location:</span>
-            <span className="text-yellow-300">Illam</span>
+            <span className="text-yellow-300">Balkhu, Kathmandu</span>
           </div>
           <div className="flex items-center space-x-2 animate-pulse">
             <span className="font-semibold">Contact:</span>
-            <span className="text-yellow-300">+977 98000000</span>
+            <span className="text-yellow-300">+977 9851174646</span>
           </div>
           <div className="flex items-center space-x-2 animate-pulse">
             <span className="font-semibold">Email:</span>
-            <span className="text-yellow-300">jewelhimalayanproducts</span>
+            <span className="text-yellow-300">
+              jewel.himalayan.2021@gmail.com
+            </span>
           </div>
         </div>
       </div>

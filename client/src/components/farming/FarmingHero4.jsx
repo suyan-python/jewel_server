@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import farm from "../../assets/pictures/png/farm.svg";
 
 function FarmingHero4() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,19 +13,26 @@ function FarmingHero4() {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full max-w-screen-xl">
         {/* Left Section: Title and Subtitle */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <div className="title  text-4xl lg:text-5xl font-medium text-green-600 mb-4">
+          <div className="title text-4xl lg:text-5xl font-medium text-green-600 mb-4">
             GAP & Organic Farming
           </div>
           <div className="sub-title text-lg lg:text-xl text-justify text-green-600 mb-6">
             <b>Good Agricultural Practices (GAP)</b> is our prime focus on the
             farm. We want to build on the foundation of organic farming.
           </div>
+          <div className="text-center flex justify-center lg:justify-start">
+            <img
+              className="w-full h-auto max-w-sm lg:max-w-md" // Responsive styling for the image
+              src={farm}
+              alt="Farming"
+            />
+          </div>
         </div>
 
         {/* Right Section: Content */}
-        <div className="bg-white p-6 rounded-xl shadow-lg w-full lg:w-1/2 flex flex-col justify-between">
+        <div className="bg-gradient-to-br from-green-400 via-green-500 to-green-600 p-6 rounded-xl shadow-lg w-full lg:w-1/2 flex flex-col justify-between">
           <div className="flex-1">
-            <h2 className="text-xl font-semibold py-3 text-justify text-gray-800">
+            <h2 className="text-xl font-semibold py-3 text-justify text-white">
               Since the 1980s, coffee growing in Nepal has proved effective in
               preventing natural disasters such as landslides and floods.
             </h2>
@@ -33,7 +41,7 @@ function FarmingHero4() {
                 isExpanded ? "max-h-[600px]" : "max-h-24"
               }`}
             >
-              <p className="text-gray-700">
+              <p className="text-white font-medium">
                 We only use organic fertilizers and encourage a bird-friendly
                 environment by planting shade trees, which also improve air
                 quality. Medulla trees grow in this eastern, hilly part of
@@ -66,7 +74,7 @@ function FarmingHero4() {
 
           <div className="mt-auto text-center lg:text-left">
             <button
-              className="flex items-center justify-center lg:justify-start text-green-600 hover:text-green-800 focus:outline-none"
+              className="flex items-center justify-center lg:justify-start text-green-600 hover:text-green-800 focus:outline-none font-bold text-white"
               onClick={toggleExpand}
             >
               <span className="mr-2 border border-green-600 px-4 py-2 rounded-md hover:bg-green-600 hover:text-white transition-colors duration-300">

@@ -26,26 +26,28 @@ const FarmingHero3 = ({ slides }) => {
           From our Farm
         </p>
       </div>
-      <section className="slider my-3">
+      <section className="slider relative w-full h-96 lg:h-[70vh] overflow-hidden my-3 rounded-3xl">
         <FaArrowAltCircleLeft
-          className="left-arrow text-3xl lg:text-5xl"
+          className="left-arrow absolute top-1/2 transform -translate-y-1/2 left-8 text-3xl lg:text-5xl text-white cursor-pointer z-10"
           onClick={prevSlide}
         />
         <FaArrowAltCircleRight
-          className="right-arrow text-3xl lg:text-5xl"
+          className="right-arrow absolute top-1/2 transform -translate-y-1/2 right-8 text-3xl lg:text-5xl text-white cursor-pointer z-10"
           onClick={nextSlide}
         />
         {SliderData.map((slide, index) => {
           return (
             <div
-              className={index === current ? "slide active" : "slide"}
+              className={`slide ${
+                index === current ? "active" : ""
+              } w-full h-full`}
               key={index}
             >
               {index === current && (
                 <img
                   src={slide.image}
                   alt="Farm Image"
-                  className="image w-full h-60 lg:h-96 object-cover"
+                  className="image w-full h-full object-cover shadow-lg"
                 />
               )}
             </div>

@@ -5,9 +5,7 @@ function SourceHero() {
     <>
       {/* Heading Section */}
       <div className="text-center pt-16">
-        <p className="font-medium text-4xl lg:text-5xl text-seed">
-          Our Sources
-        </p>
+        <p className="font-bold text-4xl lg:text-5xl text-seed">Our Sources</p>
         <p className="py-2 text-lg text-gray-700">
           We source coffee from small-scale Arabica farmers:
         </p>

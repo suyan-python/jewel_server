@@ -16,7 +16,7 @@ function FarmingHero() {
           <div className="title text-3xl lg:text-5xl py-3 font-medium w-full lg:w-3/4">
             Premium Arabica coffee from the Himalaya
           </div>
-          <div className="description text-slate-200 text-sm lg:text-base w-full lg:w-2/3">
+          <div className="description text-slate-200 text-sm lg:text-base w-full lg:w-2/3 font-medium">
             We source our delicious, premium Arabica from our sister company,
             Jewel Himalayan Coffee Beans (JHCB), in Province No 1, Ilam
             district.

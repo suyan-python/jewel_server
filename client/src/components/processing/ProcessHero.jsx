@@ -12,7 +12,7 @@ function ProcessHero() {
           <div className="title text-3xl lg:text-5xl font-semibold text-white mb-4">
             Our Coffee Processing from Scratch
           </div>
-          <div className="description text-slate-200 text-base lg:text-lg mb-6 px-4 lg:px-0">
+          <div className="description text-slate-200 text-base lg:text-lg mb-6 px-4 lg:px-0 font-medium">
             We source our delicious, premium Arabica from our sister company,
             Jewel Himalayan Coffee Beans (JHCB), in Province No 1, Ilam
             district.

@@ -13,10 +13,10 @@ const Footer = () => {
         setBgColor("bg-gradient-to-b from-seed to-white");
         break;
       case "/farming":
-        setBgColor("bg-gradient-to-b from-green-800 to-white");
+        setBgColor("bg-gradient-to-b from-green-700 to-white");
         break;
       case "/process":
-        setBgColor("bg-gradient-to-b from-gray-700 to-white");
+        setBgColor("bg-gradient-to-b from-gray-500 to-white");
         break;
       case "/sustainability":
         setBgColor("bg-gradient-to-b from-pink-400 to-white");

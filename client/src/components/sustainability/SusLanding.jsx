@@ -1,9 +1,9 @@
 import React from "react";
 
 // You can replace these with the actual image paths
-import ProjectImage1 from "../../assets/pictures/person/farmer.jpg";
-import ProjectImage2 from "../../assets/pictures/person/farmer.jpg";
-import ProjectImage3 from "../../assets/pictures/person/farmer.jpg";
+import ProjectImage1 from "../../assets/pictures/person/women1.jpg";
+import ProjectImage2 from "../../assets/pictures/person/women3.jpg";
+import ProjectImage3 from "../../assets/pictures/person/women2.jpg";
 const Sustainability = () => {
   return (
     <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
@@ -27,16 +27,19 @@ const Sustainability = () => {
             src={ProjectImage1}
             alt="Women Farmers 1"
             className="w-full h-64 object-cover rounded-lg shadow-md"
+            loading="lazy"
           />
           <img
             src={ProjectImage2}
             alt="Women Farmers 2"
             className="w-full h-64 object-cover rounded-lg shadow-md"
+            loading="lazy"
           />
           <img
             src={ProjectImage3}
             alt="Women Farmers 3"
             className="w-full h-64 object-cover rounded-lg shadow-md"
+            loading="lazy"
           />
         </div>
 

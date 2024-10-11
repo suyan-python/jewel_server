@@ -4,7 +4,7 @@ function FarmingHero5() {
   return (
     <div className="flex justify-center items-center py-16 ">
       <div className="w-3/4 bg-white shadow-lg rounded-lg p-8">
-        <h2 className="text-4xl font-bold text-center  mb-8 text-green-600">
+        <h2 className="text-4xl lg:text-5xl font-medium text-center  mb-8 text-green-600">
           Our Values
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
