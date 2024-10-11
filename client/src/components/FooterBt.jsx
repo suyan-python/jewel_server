@@ -16,7 +16,9 @@ const FooterBT = () => {
       case "/sustainability":
         return "bg-pink-400"; // Color for Sustainability section
       case "/contact":
-        return "bg-gray-500"; // Color for Sustainability section
+        return "bg-gray-500"; // Color for Contact section
+      case "/order":
+        return "bg-orange-700"; // Color for Order section
       default:
         return "bg-gray-800"; // Default color
     }

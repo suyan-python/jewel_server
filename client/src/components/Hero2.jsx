@@ -16,10 +16,10 @@ function Hero2() {
           <div className="two rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
             <div className="title flex justify-center">
               <div className="text font-medium text-3xl md:text-4xl">
-                Farming
+                Jewel Himalayan Coffee Beans
               </div>
             </div>
-            <div className="images flex justify-center text-base md:text-lg">
+            <div className="images flex justify-center text-base md:text-lg font-medium">
               Visit our Farm
             </div>
             <Link to={"/farming"}>

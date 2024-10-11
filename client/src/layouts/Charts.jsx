@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Customer from "../assets/pictures/person/customer.svg";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -115,15 +116,25 @@ const Charts = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center py-8 px-4 md:px-10 bg-white rounded-xl shadow-lg w-full bg-gradient-to-tl ">
-      <h2 className="text-4xl font-bold mb-6 text-center text-gray-800">
-        Customer Satisfaction Levels
-      </h2>
-      <p className="text-gray-600 mb-8 text-center text-lg">
-        Our customers share their experience with the quality of our coffee.
-      </p>
-      <div className="w-full md:w-3/4 lg:w-2/4 h-[400px] md:h-[450px]">
-        <Bar ref={chartRef} data={data} options={options} />
+    <div className="flex flex-col md:flex-row items-center justify-center px-4 md:px-10 py-8">
+      <div className="flex-shrink-0 hidden md:block w-full  md:w-1/2 mb-6 md:mb-0">
+        <img
+          src={Customer}
+          alt="Customer Satisfaction"
+          className="w-full h-auto rounded-xl shadow-lg"
+        />
+      </div>
+
+      <div className="flex flex-col justify-center items-center w-full md:w-1/2 px-4 rounded-xl">
+        <h2 className="text-4xl font-bold mb-6 text-center text-seed">
+          Customer Satisfaction Levels
+        </h2>
+        <p className="text-gray-600 mb-8 text-center text-lg">
+          Our customers share their experience with the quality of our coffee.
+        </p>
+        <div className="w-full h-[400px] md:h-[450px]">
+          <Bar ref={chartRef} data={data} options={options} />
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Element } from "react-scroll";
 import { Link } from "react-router-dom";
 import QRCode from "react-qr-code"; // Import QRCode
+import Payment from "../../assets/pictures/person/payment.svg";
 
 function AddCart() {
   const [cart, setCart] = useState([]);
@@ -41,10 +42,10 @@ function AddCart() {
   const paymentUrl = "https://www.example.com/payments";
 
   return (
-    <div className="mx-8 my-10 px-5 py-3 bg-gradient-to-r from-red-600 to-red-400 rounded-3xl shadow-md">
+    <div className="mx-8 my-10 px-20 py-3 bg-gradient-to-r from-orange-800 via-orange-600 to-orange-800 rounded-3xl shadow-md font-medium">
       <Element name="menu" spy={true}>
         <div className="text-center mt-4">
-          <h2 className="text-3xl font-medium text-white">Our Special</h2>
+          <h2 className="text-5xl font-medium text-white">Our Special</h2>
         </div>
 
         <div className="mt-6">
@@ -103,71 +104,83 @@ function AddCart() {
       </div>
 
       {/* Checkout Section */}
-      <div className="mt-10">
-        <h2 className="text-white text-lg mb-4">Checkout</h2>
-        <div className="flex flex-col items-center gap-4">
-          <button
-            className={`px-4 py-2 rounded-md shadow-md ${
-              checkoutOption === "qr"
-                ? "bg-yellow-500 text-white"
-                : "bg-white text-red-600"
-            }`}
-            onClick={() => setCheckoutOption("qr")}
-          >
-            Pay via QR Code
-          </button>
-          <button
-            className={`px-4 py-2 rounded-md shadow-md ${
-              checkoutOption === "book"
-                ? "bg-yellow-500 text-white"
-                : "bg-white text-red-600"
-            }`}
-            onClick={() => setCheckoutOption("book")}
-          >
-            Advance Booking
-          </button>
-        </div>
-
-        {checkoutOption === "qr" && (
-          <div className="mt-6 text-center flex flex-col items-center">
-            <p className="text-white mb-4">
-              Scan the QR code to make a payment:
-            </p>
-            <QRCode value={paymentUrl} size={128} />
+      <div className="mt-10 justify-around">
+        <h2 className="text-white text-4xl text-center font-medium mb-4">
+          Checkout
+        </h2>
+        <div className="flex justify-around">
+          <div>
+            <img src={Payment} alt="" />
           </div>
-        )}
 
-        {checkoutOption === "book" && (
-          <div className="mt-6 text-center">
-            <p className="text-white">Book your table and pay at the cafe:</p>
-            <form className="flex flex-col items-center gap-4 mt-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="px-3 py-2 rounded-md border border-gray-300"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="px-3 py-2 rounded-md border border-gray-300"
-                required
-              />
-              <input
-                type="tel"
-                placeholder="Your Phone"
-                className="px-3 py-2 rounded-md border border-gray-300"
-                required
-              />
+          <div className="bg-orange-300 px-5 py-8 rounded-lg">
+            <div className="flex flex-col items-center gap-4">
               <button
-                type="submit"
-                className="px-4 py-2 bg-yellow-500 text-white rounded shadow-md mt-4"
+                className={`px-4 py-2 rounded-md shadow-md ${
+                  checkoutOption === "qr"
+                    ? "bg-yellow-500 text-white"
+                    : "bg-white text-red-600"
+                }`}
+                onClick={() => setCheckoutOption("qr")}
               >
-                Confirm Booking
+                Pay via QR Code
               </button>
-            </form>
+              <button
+                className={`px-4 py-2 rounded-md shadow-md ${
+                  checkoutOption === "book"
+                    ? "bg-yellow-500 text-white"
+                    : "bg-white text-red-600"
+                }`}
+                onClick={() => setCheckoutOption("book")}
+              >
+                Advance Booking
+              </button>
+            </div>
+
+            {checkoutOption === "qr" && (
+              <div className="mt-6 text-center flex flex-col items-center">
+                <p className="text-white mb-4">
+                  Scan the QR code to make a payment:
+                </p>
+                <QRCode value={paymentUrl} size={128} />
+              </div>
+            )}
+
+            {checkoutOption === "book" && (
+              <div className="mt-6 text-center">
+                <p className="text-white">
+                  Book your table and pay at the cafe:
+                </p>
+                <form className="flex flex-col items-center gap-4 mt-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="px-3 py-2 rounded-md border border-gray-300"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="px-3 py-2 rounded-md border border-gray-300"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Your Phone"
+                    className="px-3 py-2 rounded-md border border-gray-300"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-yellow-500 text-white rounded shadow-md mt-4"
+                  >
+                    Confirm Booking
+                  </button>
+                </form>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

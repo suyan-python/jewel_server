@@ -24,6 +24,9 @@ const Footer = () => {
       case "/contact":
         setBgColor("bg-gradient-to-b from-gray-500 to-white");
         break;
+      case "/order":
+        setBgColor("bg-gradient-to-b from-orange-500 to-white");
+        break;
       default:
         setBgColor("bg-gradient-to-b from-seed to-white"); // Default color
         break;

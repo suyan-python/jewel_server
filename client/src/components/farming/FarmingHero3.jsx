@@ -21,7 +21,7 @@ const FarmingHero3 = ({ slides }) => {
 
   return (
     <>
-      <div className="text-center pt-8">
+      <div className="text-center py-8">
         <p className="font-medium text-3xl lg:text-5xl text-green-600">
           From our Farm
         </p>
