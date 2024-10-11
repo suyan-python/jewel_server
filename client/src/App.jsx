@@ -22,6 +22,7 @@ import "./App.css";
 import Home2 from "./components/Home2";
 import FooterBT from "./components/FooterBt";
 import SusLanding from "./components/sustainability/SusLanding";
+import CoffeeJourney from "./components/CoffeeJourney";
 
 const App = () => {
   return (

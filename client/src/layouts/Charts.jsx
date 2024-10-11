@@ -115,7 +115,7 @@ const Charts = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center py-8 px-4 md:px-10 bg-white rounded-xl shadow-lg w-full">
+    <div className="flex flex-col justify-center items-center py-8 px-4 md:px-10 bg-white rounded-xl shadow-lg w-full bg-gradient-to-tl ">
       <h2 className="text-4xl font-bold mb-6 text-center text-gray-800">
         Customer Satisfaction Levels
       </h2>

@@ -6,11 +6,11 @@ import iNaya from "../assets/pictures/png/iNaya.png";
 
 function Hero2() {
   return (
-    <>
-      <div className="mt-32 text-center font-medium text-4xl">
+    <div>
+      <div className="mt-32 text-center font-medium text-5xl">
         Our Businesses
       </div>
-      <div className="sub flex flex-col md:flex-row justify-around h-full py-2 my-7 gap-3">
+      <div className="sub flex flex-col md:flex-row justify-around h-full py-2 mb-32 gap-3">
         {/* Farming Section */}
         <div className="bg-farm bg-cover w-full md:w-2/5 rounded-2xl shadow-md">
           <div className="two rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
@@ -30,9 +30,9 @@ function Hero2() {
         {/* Coffee Trading Section */}
         <div className="two rounded-2xl p-3 w-full md:w-2/5 h-96 flex flex-col text-center justify-center gap-6">
           <div className="title flex justify-center">
-            <div className="text font-medium text-3xl md:text-5xl">
+            {/* <div className="text font-medium text-3xl md:text-5xl">
               Coffee Trading
-            </div>
+            </div> */}
           </div>
           <div className="images flex justify-center">
             <img
@@ -42,7 +42,6 @@ function Hero2() {
               loading="lazy" /* Lazy loading for faster page load */
             />
           </div>
-          <Button title="Learn More ⤴" />
         </div>
         {/* Food Coffee Conversation Section */}
         <div className="bg-cafe w-full md:w-2/5 rounded-2xl shadow-md bg-cover">
@@ -66,7 +65,7 @@ function Hero2() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
