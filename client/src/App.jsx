@@ -25,6 +25,7 @@ import "./App.css";
 import FooterBT from "./components/FooterBt";
 import SusLanding from "./components/sustainability/SusLanding";
 import ScrollToTop from "./components/ScrollToTop";
+import Cart from "./components/inaya/pages/Cart/Cart";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -39,7 +40,6 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Landing />} />
             <Route exact path="/inaya" element={<Home />} />
-            <Route exact path="/inaya/home" element={<Home2 />} />
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/product" element={<Products />} />
@@ -50,7 +50,9 @@ const App = () => {
             <Route exact path="/farming" element={<LandingFarm />} />
             <Route exact path="/source" element={<SourceHero />} />
             <Route exact path="/process" element={<LandingProcess />} />
-            <Route exact path="/order" element={<AddCart />} />
+            {/* <Route exact path="/order" element={<AddCart />} /> */}
+            <Route exact path="/inaya/home" element={<Home2 />} />
+            <Route exact path="/inaya/order" element={<Cart />} />
           </Routes>
         </main>
         <Footer />

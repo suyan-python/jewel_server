@@ -136,6 +136,14 @@ const NavBar = () => {
           Process
         </NavLink>
         <NavLink
+          to="/sustainability"
+          className="mobile-nav-link"
+          activeClassName="active"
+          onClick={closeMenu}
+        >
+          Sustainability
+        </NavLink>
+        <NavLink
           to="/contact"
           className="mobile-nav-link"
           activeClassName="active"
