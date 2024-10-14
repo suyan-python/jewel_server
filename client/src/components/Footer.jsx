@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
-import { useLocation } from "react-router-dom"; // Import useLocation for route tracking
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
   const [bgColor, setBgColor] = useState("bg-gradient-to-b from-seed to-white");
 
   useEffect(() => {
-    // Update footer background color based on the current page
     switch (location.pathname) {
       case "/":
         setBgColor("bg-gradient-to-b from-brownn to-white");
@@ -27,32 +26,35 @@ const Footer = () => {
       case "/order":
         setBgColor("bg-gradient-to-b from-orange-500 to-white");
         break;
+      case "/inaya":
+        setBgColor("bg-gradient-to-b from-yellow-600 to-white");
+        break;
       default:
-        setBgColor("bg-gradient-to-b from-seed to-white"); // Default color
+        setBgColor("bg-gradient-to-b from-seed to-white");
         break;
     }
   }, [location]);
 
   if (location.pathname === "/inaya/home") {
-    return null; // Return null to hide the Navbar on this page
+    return null;
   }
 
   return (
     <footer
-      className={`${bgColor} text-black rounded-t-3xl mt-16 md:mt-32 mx-4 md:mx-14 mb-16`}
+      className={`${bgColor} text-black rounded-t-3xl mt-12 md:mt-16 mx-4 md:mx-14 mb-10 md:mb-16`}
     >
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5 gap-8">
+      <div className="flex flex-col md:flex-row justify-between p-6 md:p-8 md:px-32 px-5 gap-6 md:gap-8">
         {/* Company Name */}
-        <div className="w-full md:w-1/4 flex justify-center md:justify-start items-center mb-6 md:mb-0">
-          <h1 className="font-semibold text-lg md:text-xl">
+        <div className="w-full md:w-1/4 flex justify-center md:justify-start items-center mb-4 md:mb-0">
+          <h1 className="font-semibold text-sm md:text-lg">
             Jewel Himalayan Products
           </h1>
         </div>
 
         {/* Links */}
-        <div className="hidden md:block mb-6 md:mb-0">
-          <h1 className="font-medium text-lg md:text-xl pb-4">Links</h1>
-          <nav className="flex flex-col gap-2 text-sm md:text-base">
+        <div className="hidden md:block mb-4 md:mb-0">
+          <h1 className="font-medium text-sm md:text-lg pb-3">Links</h1>
+          <nav className="flex flex-col gap-2 text-xs md:text-base">
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
               href="/menu"
@@ -82,8 +84,8 @@ const Footer = () => {
 
         {/* Mission Statement */}
         <div className="w-full md:w-1/4">
-          <h1 className="font-medium text-lg md:text-xl pb-4">Our Mission</h1>
-          <p className="text-sm md:text-base text-gray-600">
+          <h1 className="font-medium text-sm md:text-lg pb-3">Our Mission</h1>
+          <p className="text-xs md:text-base text-gray-600">
             At iNaya Cafe, we’re passionate about crafting the finest coffee
             from the rich soils of Illam. Every cup tells the story of our
             commitment to sustainability, quality, and supporting women in
@@ -93,8 +95,8 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="w-full md:w-1/4">
-          <h1 className="font-medium text-lg md:text-xl pb-4">Contact Us</h1>
-          <nav className="flex flex-col gap-2 text-sm md:text-base">
+          <h1 className="font-medium text-sm md:text-lg pb-3">Contact Us</h1>
+          <nav className="flex flex-col gap-2 text-xs md:text-base">
             <a
               href="mailto:jewel.himalayan.2021@gmail.com"
               className="hover:text-brightColor transition-all"
@@ -114,7 +116,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-red transition-all"
               >
-                <SiInstagram size={35} />
+                <SiInstagram size={30} />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61556765843404"
@@ -122,7 +124,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="hover:text-brightColor transition-all"
               >
-                <SiFacebook size={35} />
+                <SiFacebook size={30} />
               </a>
             </div>
           </nav>
@@ -130,7 +132,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-sm text-center py-4 font-medium">
+      <div className="text-xs md:text-sm text-center py-4 font-medium">
         <p>
           &copy;2022 developed by{" "}
           <b className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
