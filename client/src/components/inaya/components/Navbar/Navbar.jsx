@@ -52,7 +52,7 @@ const Navbar = ({ esetShowLogin }) => {
               href="#inaya-home"
               onClick={() => {
                 setMenu("home");
-                setIsOpen(false); // Close menu on link click
+                setIsOpen(false); // Close menu on a click
               }}
               className={`block px-4 py-2 text-gray-800 hover:text-green-600 ${
                 menu === "home" ? "font-semibold" : ""
@@ -86,7 +86,7 @@ const Navbar = ({ esetShowLogin }) => {
                 menu === "mobile-app" ? "font-semibold" : ""
               }`}
             >
-              Mobile App
+              Location
             </a>
           </li>
           <li>
@@ -103,9 +103,20 @@ const Navbar = ({ esetShowLogin }) => {
               Contact Us
             </a>
           </li>
+
+          <li className="lg:hidden">
+            <button
+              className="menu-button"
+              onClick={() => setShowModal(true)}
+              title="Menu"
+            >
+              Menu
+            </button>
+            {showModal && <Modal onClose={() => setShowModal(false)} />}
+          </li>
+          <li className="md:hidden mt-2"></li>
         </ul>
 
-        {/* Right Section (Search and Sign-in) */}
         <div className="navbar-right hidden md:flex items-center space-x-4">
           <img src={assets.search_icon} alt="Search" className="icon w-6 h-6" />
           <div className="navbar-cart relative">
@@ -123,13 +134,6 @@ const Navbar = ({ esetShowLogin }) => {
             </button>
             {showModal && <Modal onClose={() => setShowModal(false)} />}
           </div>
-
-          {/* <button
-            onClick={() => esetShowLogin(true)}
-            className="sign-in-btn bg-green-500 text-white px-4 py-2 rounded transition duration-300 hover:bg-green-600"
-          >
-            Sign In
-          </button> */}
         </div>
       </div>
     </nav>

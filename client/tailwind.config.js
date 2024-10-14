@@ -26,6 +26,7 @@ export default {
         processback: "url('/src/assets/pictures/background/processback.jpg')",
         processing: "url('/src/assets/pictures/background/processing.png')",
         roasting: "url('/src/assets/pictures/background/roasting.jpeg')",
+        cafe: "url('/src/assets/pictures/background/cafe.jpg')",
 
         herobean: "url('/src/assets/pictures/coffeepics/herobean.jpg')",
       },

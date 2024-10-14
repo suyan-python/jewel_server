@@ -6,14 +6,13 @@ import Footer from "../Footer/Footer";
 const AppDownload = () => {
   return (
     <>
-      <div className="app-download" id="app-download">
-        <p>
-          For Better Experience Download <br /> Tomato App
+      <div
+        className="app-download flex flex-col items-center justify-center bg-gray-100 p-8 md:p-16 rounded-lg shadow-lg"
+        id="app-download"
+      >
+        <p className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+          We are located <br />
         </p>
-        <div className="app-download-platforms">
-          <img src={assets.play_store} alt="" />
-          <img src={assets.app_store} alt="" />
-        </div>
       </div>
       <Footer />
     </>

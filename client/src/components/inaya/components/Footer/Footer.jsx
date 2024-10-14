@@ -5,7 +5,10 @@ import iNaya from "../../../../assets/pictures/png/iNaya.png";
 
 const Footer = () => {
   return (
-    <div className="footer bg-gray-800 text-white py-10" id="footer">
+    <div
+      className="footer bg-gradient-to-b from-orange-500 to-white text-white py-10 rounded-3xl mt-20"
+      id="footer"
+    >
       <div className="container mx-auto px-4">
         <div className="footer-content flex flex-col md:flex-row justify-between">
           <div className="footer-content-left w-full md:w-1/3 mb-8 md:mb-0">
@@ -41,15 +44,15 @@ const Footer = () => {
           <div className="footer-content-right w-full md:w-1/3">
             <h2 className="text-lg font-semibold mb-2">Get in Touch</h2>
             <ul className="text-sm">
-              <li className="mb-1">9800000000</li>
+              <li className="mb-1">9828293162</li>
               <li className="hover:text-green-400 cursor-pointer">
-                rii@gmail.com
+                inayacafe@gmail.com
               </li>
             </ul>
           </div>
         </div>
         <hr className="my-6 border-gray-700" />
-        <p className="footer-copyright text-center text-sm">
+        <p className="footer-copyright text-center text-sm text-orange-500">
           &copy; {new Date().getFullYear()} All rights reserved
         </p>
       </div>
