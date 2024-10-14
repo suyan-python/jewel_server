@@ -10,7 +10,7 @@ const Footer = () => {
     // Update footer background color based on the current page
     switch (location.pathname) {
       case "/":
-        setBgColor("bg-gradient-to-b from-seed to-white");
+        setBgColor("bg-gradient-to-b from-brownn to-white");
         break;
       case "/farming":
         setBgColor("bg-gradient-to-b from-green-700 to-white");

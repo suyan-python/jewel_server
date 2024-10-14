@@ -8,7 +8,7 @@ const FooterBT = () => {
   const getNavbarBackgroundColor = () => {
     switch (location.pathname) {
       case "/":
-        return "bg-seed"; // Color for Process section
+        return "bg-[#6A3E36]"; // Color for Process section
       case "/process":
         return "bg-black"; // Color for Process section
       case "/farming":

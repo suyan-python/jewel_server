@@ -10,6 +10,7 @@ export default {
         prim: "#0f5f53",
         bluee: "#3b82f6",
         purplee: "#8e44ad",
+        brownn: "#6A3E36",
       },
       transitionProperty: {
         "max-height": "max-height",

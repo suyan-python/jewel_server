@@ -12,6 +12,7 @@ import Login from "./components/Modal";
 import Landing from "./components/Landing";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import LandingFarm from "./components/farming/LandingFarm";
 import Contact from "./components/contact/Contact";
 import SourceHero from "./components/sources/SourceHero";
@@ -23,6 +24,7 @@ import LoginPopup from "./components/inaya/components/LoginPopup/LoginPopup";
 import "./App.css";
 import FooterBT from "./components/FooterBt";
 import SusLanding from "./components/sustainability/SusLanding";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -31,6 +33,7 @@ const App = () => {
       {showLogin ? <LoginPopup nesetShowLogin={setShowLogin} /> : <></>}
       {/* <Preloader /> */}
       <Router>
+        <ScrollToTop />
         <NavBar />
         <main className="flex-grow">
           <Routes>
