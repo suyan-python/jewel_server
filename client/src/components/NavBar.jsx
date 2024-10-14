@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom"; // Import useLocation
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import Modal from "./Modal";
@@ -11,9 +11,15 @@ import NavbarTop from "./FooterBt";
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const location = useLocation(); // Hook to get the current location
 
   const handleMenuToggle = () => setMenu(!menu);
   const closeMenu = () => setMenu(false);
+
+  // Conditionally hide Navbar if on /inaya/home
+  if (location.pathname === "/inaya/home") {
+    return null; // Return null to hide the Navbar on this page
+  }
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">

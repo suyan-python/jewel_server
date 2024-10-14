@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import Home2 from "./components/inaya/pages/Home/Home";
 import Menu from "./components/Menu";
 import About from "./components/About";
 import Products from "./components/Products";
@@ -17,16 +18,17 @@ import SourceHero from "./components/sources/SourceHero";
 import LandingProcess from "./components/processing/LandingProcess";
 import AddCart from "./components/addtocart/Cart";
 import Preloader from "./components/PreLoader";
+import LoginPopup from "./components/inaya/components/LoginPopup/LoginPopup";
 
 import "./App.css";
-import Home2 from "./components/Home2";
 import FooterBT from "./components/FooterBt";
 import SusLanding from "./components/sustainability/SusLanding";
-import CoffeeJourney from "./components/CoffeeJourney";
 
 const App = () => {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <div className="min-h-screen flex flex-col">
+      {showLogin ? <LoginPopup nesetShowLogin={setShowLogin} /> : <></>}
       {/* <Preloader /> */}
       <Router>
         <NavBar />
@@ -34,6 +36,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Landing />} />
             <Route exact path="/inaya" element={<Home />} />
+            <Route exact path="/inaya/home" element={<Home2 />} />
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/product" element={<Products />} />

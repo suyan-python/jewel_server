@@ -1,16 +1,22 @@
 import React from "react";
 import Button from "../layouts/Button";
 import Cup from "../assets/pictures/person/avatar6.PNG";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Home2 from "./Home2";
 
 const Home = () => {
+  const navigate = useNavigate(); // Hook for programmatic navigation
+
+  const handleRedirect = () => {
+    navigate("/inaya/home"); // Redirect to /inaya/home when button is clicked
+  };
+
   return (
     <>
       {/* Hero Section */}
       <div className="relative min-h-screen bg-cafe bg-cover bg-center flex flex-col items-center justify-center py-16 px-4 lg:px-16 rounded-3xl">
         {/* Overlay for Text and Image */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
         {/* Content Section */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 rounded-3xl p-8 bg-white bg-opacity-80 backdrop-blur-md shadow-xl">
@@ -52,11 +58,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Home2 Section */}
-      <div className="py-12">
-        <Home2 />
+        {/* Redirect Button Section */}
+        <div className="mt-8 z-20">
+          {" "}
+          {/* Ensure the button has a higher z-index */}
+          <button
+            onClick={handleRedirect}
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300"
+          >
+            Explore More
+          </button>
+        </div>
       </div>
     </>
   );

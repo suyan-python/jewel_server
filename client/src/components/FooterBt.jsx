@@ -23,6 +23,9 @@ const FooterBT = () => {
         return "bg-gray-800"; // Default color
     }
   };
+  if (location.pathname === "/inaya/home") {
+    return null; // Return null to hide the Navbar on this page
+  }
 
   return (
     <footer

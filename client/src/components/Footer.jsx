@@ -33,6 +33,10 @@ const Footer = () => {
     }
   }, [location]);
 
+  if (location.pathname === "/inaya/home") {
+    return null; // Return null to hide the Navbar on this page
+  }
+
   return (
     <footer
       className={`${bgColor} text-black rounded-t-3xl mt-16 md:mt-32 mx-4 md:mx-14 mb-16`}
