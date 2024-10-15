@@ -1,13 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import iNaya from "../../../../assets/pictures/png/iNaya.png";
 import { assets } from "../../assets/assets";
 import Modal from "../../../Modal";
 
 const Navbar = ({ esetShowLogin }) => {
-  const [menu, setMenu] = useState("menu");
+  const [menu, setMenu] = useState("home");
   const [isOpen, setIsOpen] = useState(false); // For mobile menu toggle
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        { id: "inaya-home", name: "home" },
+        { id: "explore-menu", name: "menu" },
+        { id: "app-download", name: "mobile-app" },
+        { id: "footer", name: "contact-us" },
+      ];
+
+      const scrollPosition = window.scrollY + 200; // Adding some offset to trigger before the section is fully scrolled into view
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const sectionTop = element.offsetTop;
+          const sectionHeight = element.offsetHeight;
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            setMenu(section.name);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav className="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
@@ -55,7 +89,7 @@ const Navbar = ({ esetShowLogin }) => {
                 setIsOpen(false); // Close menu on a click
               }}
               className={`block px-4 py-2 text-gray-800 hover:text-green-600 ${
-                menu === "home" ? "font-semibold" : ""
+                menu === "home" ? "font-semibold text-green-600" : ""
               }`}
             >
               Home
@@ -69,7 +103,7 @@ const Navbar = ({ esetShowLogin }) => {
                 setIsOpen(false);
               }}
               className={`block px-4 py-2 text-gray-800 hover:text-green-600 ${
-                menu === "menu" ? "font-semibold" : ""
+                menu === "menu" ? "font-semibold text-green-600" : ""
               }`}
             >
               Menu
@@ -83,7 +117,7 @@ const Navbar = ({ esetShowLogin }) => {
                 setIsOpen(false);
               }}
               className={`block px-4 py-2 text-gray-800 hover:text-green-600 ${
-                menu === "mobile-app" ? "font-semibold" : ""
+                menu === "mobile-app" ? "font-semibold text-green-600" : ""
               }`}
             >
               Location
@@ -97,7 +131,7 @@ const Navbar = ({ esetShowLogin }) => {
                 setIsOpen(false);
               }}
               className={`block px-4 py-2 text-gray-800 hover:text-green-600 ${
-                menu === "contact-us" ? "font-semibold" : ""
+                menu === "contact-us" ? "font-semibold text-green-600" : ""
               }`}
             >
               Contact Us
@@ -114,7 +148,6 @@ const Navbar = ({ esetShowLogin }) => {
             </button>
             {showModal && <Modal onClose={() => setShowModal(false)} />}
           </li>
-          <li className="md:hidden mt-2"></li>
         </ul>
 
         <div className="navbar-right hidden md:flex items-center space-x-4">

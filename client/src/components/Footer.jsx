@@ -20,7 +20,7 @@ const Footer = () => {
         setBgColor("bg-gradient-to-b from-gray-500 to-white");
         break;
       case "/sustainability":
-        setBgColor("bg-gradient-to-b from-pink-400 to-white");
+        setBgColor("bg-gradient-to-b from-pink-700 to-white");
         break;
       case "/contact":
         setBgColor("bg-gradient-to-b from-gray-500 to-white");

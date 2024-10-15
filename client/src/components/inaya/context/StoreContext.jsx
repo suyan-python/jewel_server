@@ -1,13 +1,19 @@
 import { createContext, useEffect, useState } from "react";
-import { food_list } from "../assets/assets"; // Ensure food_list contains your food items with id and price
+import { food_list } from "../assets/assets"; // Ensure food_list contains your food items with id, price, and image
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
 
+  // Extract prices and images from food_list
   const itemPrices = food_list.reduce((acc, item) => {
-    acc[item.id] = item.price; // Assuming each item has an id and price
+    acc[item._id] = item.price;
+    return acc;
+  }, {});
+
+  const itemImages = food_list.reduce((acc, item) => {
+    acc[item._id] = item.image; // Map item._id to its image URL
     return acc;
   }, {});
 
@@ -18,24 +24,28 @@ const StoreContextProvider = (props) => {
     }));
   };
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => {
-      if (!prev[itemId]) return prev; // Item not in cart
-      const newQuantity = prev[itemId] - 1;
-
-      if (newQuantity <= 0) {
-        const { [itemId]: _, ...rest } = prev; // Remove item if quantity is 0
-        return rest;
-      }
-
-      return { ...prev, [itemId]: newQuantity }; // Update quantity
-    });
-  };
-
   const getTotalPrice = () => {
     return Object.keys(cartItems).reduce((total, id) => {
       return total + (itemPrices[id] || 0) * cartItems[id]; // Calculate total price
     }, 0);
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => {
+      if (!prev[itemId]) return prev; // If the item is not in the cart, return previous state
+      const newQuantity = prev[itemId] - 1; // Decrease quantity by 1
+
+      if (newQuantity <= 0) {
+        const { [itemId]: _, ...rest } = prev; // Remove item if quantity is zero
+        return rest;
+      }
+
+      return { ...prev, [itemId]: newQuantity }; // Otherwise, update the quantity
+    });
+  };
+
+  const clearCart = () => {
+    setCartItems({}); // Reset cartItems to an empty object
   };
 
   useEffect(() => {
@@ -47,8 +57,10 @@ const StoreContextProvider = (props) => {
     cartItems,
     addToCart,
     removeFromCart,
+    clearCart,
     getTotalPrice,
     itemPrices, // Provide itemPrices
+    itemImages, // Provide itemImages
   };
 
   return (

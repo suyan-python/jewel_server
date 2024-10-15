@@ -37,44 +37,14 @@
   cursor: pointer;
 }
 
-.food-item-counter {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 5px;
-  border-radius: 15px;
-  color: white;
-}
-
-.food-item-counter img {
-  cursor: pointer;
-}
-
-.food-item-counter p {
-  margin: 0 10px;
-}
-
 /* Food item information */
 .food-item-info {
   padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.food-item-name-rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.food-item-name-rating p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .food-item-desc {

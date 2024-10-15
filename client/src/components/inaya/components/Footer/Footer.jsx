@@ -6,7 +6,7 @@ import iNaya from "../../../../assets/pictures/png/iNaya.png";
 const Footer = () => {
   return (
     <div
-      className="footer bg-gradient-to-b from-orange-500 to-white text-white py-10 rounded-3xl mt-20"
+      className="footer bg-gradient-to-b from-orange-700 to-white text-white py-10 rounded-3xl mt-20"
       id="footer"
     >
       <div className="container mx-auto px-4">

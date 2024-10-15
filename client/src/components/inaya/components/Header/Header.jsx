@@ -30,7 +30,7 @@ function Header() {
       {/* Floating Button */}
       <Link
         to="/"
-        className="floating-button fixed bottom-4 right-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out z-40"
+        className="floating-button fixed bottom-4 right-4 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out z-40"
       >
         Go to Jewel Himalayan
       </Link>

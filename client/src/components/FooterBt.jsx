@@ -14,7 +14,7 @@ const FooterBT = () => {
       case "/farming":
         return "bg-prim";
       case "/sustainability":
-        return "bg-pink-400";
+        return "bg-pink-700";
       case "/contact":
         return "bg-gray-500";
       case "/order":

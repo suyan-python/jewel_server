@@ -34,10 +34,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.food-item:hover {
-  transform: scale(1.05);
-}
-
 /* General responsiveness */
 @media (max-width: 768px) {
   .food-display-title {
