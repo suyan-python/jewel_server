@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
 import { useLocation } from "react-router-dom";
 
+import "./Footer.css";
+
 const Footer = () => {
   const location = useLocation();
   const [bgColor, setBgColor] = useState("bg-gradient-to-b from-seed to-white");
@@ -94,7 +96,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="w-full md:w-1/4">
+        {/* Contact Info */}
+        <div className="w-full md:w-1/4 footer-contact">
           <h1 className="font-medium text-sm md:text-lg pb-3">Contact Us</h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">
             <a

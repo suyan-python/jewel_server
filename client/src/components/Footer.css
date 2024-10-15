@@ -1,0 +1,17 @@
+/* General Styles for Contact Info */
+.footer-contact a {
+  word-break: break-all; /* Break long words to fit within the container */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Adjust the font size for iPad view */
+  .footer-contact a {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
+  .footer-contact div {
+    padding: 0.5rem; /* Ensure adequate padding */
+    margin-bottom: 1rem; /* Add some space below */
+  }
+}

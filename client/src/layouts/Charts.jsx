@@ -121,7 +121,7 @@ const Charts = () => {
         <img
           src={Customer}
           alt="Customer Satisfaction"
-          className="w-full h-auto rounded-xl shadow-lg"
+          className="w-full h-auto "
         />
       </div>
 
