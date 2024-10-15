@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import iNaya from "../../../../assets/pictures/png/iNaya.png";
 import { assets } from "../../assets/assets";
 import Modal from "../../../Modal";
+import Cart from "../../pages/Cart/Cart";
 
 const Navbar = ({ esetShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const [isOpen, setIsOpen] = useState(false); // For mobile menu toggle
   const [showModal, setShowModal] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +20,7 @@ const Navbar = ({ esetShowLogin }) => {
         { id: "footer", name: "contact-us" },
       ];
 
-      const scrollPosition = window.scrollY + 200; // Adding some offset to trigger before the section is fully scrolled into view
+      const scrollPosition = window.scrollY + 200; // Adding some offset
 
       sections.forEach((section) => {
         const element = document.getElementById(section.id);
@@ -42,6 +44,13 @@ const Navbar = ({ esetShowLogin }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // Implement your search logic here
+    // For example, you can filter items based on searchTerm
+    console.log("Searching for:", searchTerm);
+  };
 
   return (
     <nav className="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
@@ -75,7 +84,7 @@ const Navbar = ({ esetShowLogin }) => {
 
         {/* Menu Links */}
         <ul
-          className={`navbar-menu md:flex md:items-center md:space-x-6 absolute md:static bg-white md:bg-transparent transition-transform duration-300 ${
+          className={`navbar-menu md:flex md:items-center md:space-x-6 absolute md:static bg-white md:bg-transparent transition-transform duration-300  ${
             isOpen
               ? "top-12 left-0 w-full flex flex-col md:flex-row md:space-x-0"
               : "top-[-200px] md:top-0"
@@ -138,9 +147,29 @@ const Navbar = ({ esetShowLogin }) => {
             </a>
           </li>
 
-          <li className="lg:hidden">
+          {/* Search Section */}
+          <li className="md:flex md:items-center">
+            <form onSubmit={handleSearch} className="flex items-center">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+              <button
+                type="submit"
+                className="ml-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+              >
+                Search
+              </button>
+            </form>
+          </li>
+
+          {/* Mobile Menu and Cart Buttons */}
+          <li className="lg:hidden flex flex-col items-center space-y-2 my-4 ">
             <button
-              className="menu-button"
+              className=" px-4 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition"
               onClick={() => setShowModal(true)}
               title="Menu"
             >
@@ -150,19 +179,7 @@ const Navbar = ({ esetShowLogin }) => {
           </li>
         </ul>
 
-        <div className="navbar-right hidden md:flex items-center space-x-4">
-          <img src={assets.search_icon} alt="Search" className="icon w-6 h-6" />
-          <div className="navbar-cart relative">
-            <Link to={"/inaya/order"}>
-              <img
-                src={assets.basket_icon}
-                alt="Cart"
-                className="icon w-6 h-6"
-              />
-            </Link>
-            <div className="dot absolute top-0 right-0 bg-red-500 rounded-full w-3 h-3"></div>
-          </div>
-
+        <div className="navbar-right hidden md:flex items-center space-x-4 ">
           <div className="hidden lg:flex">
             <button
               className="menu-button"

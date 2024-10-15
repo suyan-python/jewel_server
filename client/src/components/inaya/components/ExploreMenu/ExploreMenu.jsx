@@ -1,6 +1,7 @@
 import React from "react";
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
+import Cart from "../../pages/Cart/Cart";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
@@ -12,6 +13,15 @@ const ExploreMenu = ({ category, setCategory }) => {
         is to satisfy your cravings and elevate your dining experience, one
         delicious meal at a time.
       </p>
+
+      {/* Fixed Div at Top Right Corner */}
+      <div className="fixed-top-right">
+        {/* Call your components here */}
+        {/* <p>Your fixed component or button here</p> */}
+        <Cart />
+        {/* Example: <YourComponent /> */}
+      </div>
+
       <div className="explore-menu-list">
         {menu_list.map((item, index) => {
           return (

@@ -63,3 +63,16 @@
   border: 0;
   border-top: 1px solid #e0e0e0;
 }
+.fixed-top-right {
+  position: fixed; /* Make the div fixed */
+  top: 50px; /* Adjust as necessary */
+  right: 50px; /* Adjust as necessary */
+  padding: 10px; /* Padding for aesthetics */
+  border-radius: 8px; /* Rounded corners */
+  z-index: 100; /* Ensure it stays above other elements */
+}
+
+/* Adjust this to customize how your fixed component looks */
+.fixed-top-right p {
+  margin: 0; /* Remove default margin */
+}
