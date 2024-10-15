@@ -17,6 +17,11 @@ const StoreContextProvider = (props) => {
     return acc;
   }, {});
 
+  const itemNames = food_list.reduce((acc, item) => {
+    acc[item._id] = item.name; // Map item._id to its image URL
+    return acc;
+  }, {});
+
   const addToCart = (itemId) => {
     setCartItems((prev) => ({
       ...prev,
@@ -61,6 +66,7 @@ const StoreContextProvider = (props) => {
     getTotalPrice,
     itemPrices, // Provide itemPrices
     itemImages, // Provide itemImages
+    itemNames,
   };
 
   return (

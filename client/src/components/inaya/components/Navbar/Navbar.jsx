@@ -153,7 +153,13 @@ const Navbar = ({ esetShowLogin }) => {
         <div className="navbar-right hidden md:flex items-center space-x-4">
           <img src={assets.search_icon} alt="Search" className="icon w-6 h-6" />
           <div className="navbar-cart relative">
-            <img src={assets.basket_icon} alt="Cart" className="icon w-6 h-6" />
+            <Link to={"/inaya/order"}>
+              <img
+                src={assets.basket_icon}
+                alt="Cart"
+                className="icon w-6 h-6"
+              />
+            </Link>
             <div className="dot absolute top-0 right-0 bg-red-500 rounded-full w-3 h-3"></div>
           </div>
 

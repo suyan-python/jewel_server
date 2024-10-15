@@ -10,6 +10,7 @@ const Cart = () => {
     itemImages,
     addToCart,
     clearCart,
+    itemNames, // Make sure to import itemNames from your context
   } = useContext(StoreContext);
 
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -40,13 +41,13 @@ const Cart = () => {
                 {/* Item Image */}
                 <img
                   src={itemImages[id]}
-                  alt={`Item ${id}`}
+                  alt={itemNames[id]} // Use item name for alt text
                   className="w-full h-32 object-cover rounded mb-4"
                 />
 
                 {/* Item Details */}
                 <div className="text-center">
-                  <span className="font-semibold block">{`Item ${id}`}</span>
+                  <span className="font-semibold block">{`${itemNames[id]} (ID: ${id})`}</span>
                   <span className="text-green-600 text-lg block">{`Price: $${(
                     itemPrices[id] * cartItems[id]
                   ).toFixed(2)}`}</span>

@@ -20,14 +20,17 @@ const FooterBT = () => {
       case "/order":
         return "bg-orange-700";
       case "/inaya":
-        return "bg-yellow-600";
+        return "bg-amber-900";
       default:
         return "bg-gray-800";
     }
   };
 
-  if (location.pathname === "/inaya/home") {
-    return null; // Hide Footer on this page
+  if (
+    location.pathname === "/inaya/home" ||
+    location.pathname === "/inaya/order"
+  ) {
+    return null; // Return null to hide the Navbar on this page
   }
 
   return (

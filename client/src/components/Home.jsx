@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../layouts/Button";
 import Cup from "../assets/pictures/person/avatar6.PNG";
 import { Link, useNavigate } from "react-router-dom";
+import inaya from "../assets/pictures/png/iNaya.png";
 import Home2 from "./Home2";
 
 const Home = () => {
@@ -22,11 +23,9 @@ const Home = () => {
         <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 rounded-3xl p-8 bg-white bg-opacity-40 backdrop-blur-md shadow-xl transition-all duration-500 ease-in-out transform ">
           {/* Text Section */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-8">
-            <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
-              Start Your Day with <br />
-              <span className="text-yellow-500 underline underline-offset-4">
-                iNaya Coffee
-              </span>
+            <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              Start Your Day in <br />
+              <img src={inaya} alt="" />
             </h1>
             <p className="text-lg lg:text-xl text-gray-700 font-medium max-w-lg mx-auto lg:mx-0">
               Boost your productivity and elevate your mood with the mystical
@@ -36,7 +35,7 @@ const Home = () => {
 
             {/* Button Section with Hover Effects */}
             <div className="flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
-              <Link to="/about">
+              {/* <Link to="/about">
                 <Button
                   title="ABOUT US"
                   color="primary"
@@ -49,7 +48,15 @@ const Home = () => {
                   color="secondary"
                   additionalClasses="hover:bg-gray-800 transform hover:scale-105 transition ease-in-out duration-300"
                 />
-              </Link>
+              </Link> */}
+              <div className="mt-8 z-20">
+                <button
+                  onClick={handleRedirect}
+                  className="bg-amber-900 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 hover:shadow-2xl hover:scale-105"
+                >
+                  Explore More
+                </button>
+              </div>
             </div>
           </div>
 
@@ -61,7 +68,7 @@ const Home = () => {
               alt="Mystical Coffee Cup"
             />
             {/* Floating Text Box with Animations */}
-            <div className="absolute top-4 right-0 bg-yellow-500 px-6 py-3 rounded-full shadow-lg animate-bounce transform hover:scale-105">
+            <div className="absolute top-4 right-0 bg-green-700 px-6 py-3 rounded-full shadow-lg animate-bounce transform hover:scale-105">
               <h2 className="text-white text-lg font-bold">
                 The Coffee Is Really Good!
               </h2>
@@ -70,14 +77,6 @@ const Home = () => {
         </div>
 
         {/* Redirect Button Section */}
-        <div className="mt-8 z-20">
-          <button
-            onClick={handleRedirect}
-            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 hover:shadow-2xl hover:scale-105"
-          >
-            Explore More
-          </button>
-        </div>
       </div>
     </>
   );

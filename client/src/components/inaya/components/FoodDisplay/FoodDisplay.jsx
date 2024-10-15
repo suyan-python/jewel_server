@@ -26,9 +26,6 @@ const FoodDisplay = ({ category }) => {
           }
         })}
       </div>
-      <Link to="/inaya/order">
-        <div>View Cart</div>
-      </Link>
     </div>
   );
 };

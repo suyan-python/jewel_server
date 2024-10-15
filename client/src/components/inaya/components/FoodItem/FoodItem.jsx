@@ -6,25 +6,35 @@ const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
 
   return (
-    <div className="food-item">
-      <img src={image} alt={name} className="food-item-image" />
-      <h3 className="food-item-info">{name}</h3>
-      <p className="food-item-desc"> {description}</p>
-      <p className="food-item-price">${price}</p>
-      {!cartItems[id] ? (
-        <button className="hover:text-green-500" onClick={() => addToCart(id)}>
-          Add to Cart
-        </button>
-      ) : (
-        <div>
-          <button
-            className="hover:text-red-500"
-            onClick={() => removeFromCart(id)}
-          >
-            Remove
-          </button>
+    <div className={`food-item ${cartItems[id] ? "added-to-cart" : ""}`}>
+      <div className="food-item-img-container">
+        <img src={image} alt={name} className="food-item-image" />
+      </div>
+
+      <div className="food-item-info">
+        <h3>{name}</h3>
+        <p className="food-item-desc">{description}</p>
+        <p className="food-item-price">${price}</p>
+
+        {/* Move the Add/Remove button below the price */}
+        <div className="food-item-actions text-lg">
+          {!cartItems[id] ? (
+            <button
+              className="hover:text-green-500"
+              onClick={() => addToCart(id)}
+            >
+              Add to Cart
+            </button>
+          ) : (
+            <button
+              className="hover:text-red-500"
+              onClick={() => removeFromCart(id)}
+            >
+              Remove from Cart
+            </button>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 };

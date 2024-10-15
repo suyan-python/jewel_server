@@ -6,7 +6,7 @@ import iNaya from "../../../../assets/pictures/png/iNaya.png";
 const Footer = () => {
   return (
     <div
-      className="footer bg-gradient-to-b from-orange-700 to-white text-white py-10 rounded-3xl mt-20"
+      className="footer bg-gradient-to-b from-green-800 to-white text-white py-10 rounded-3xl mt-20"
       id="footer"
     >
       <div className="container mx-auto px-4">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-700" />
-        <p className="footer-copyright text-center text-sm text-orange-500">
+        <p className="footer-copyright text-center text-sm text-green-800">
           &copy; {new Date().getFullYear()} All rights reserved
         </p>
       </div>

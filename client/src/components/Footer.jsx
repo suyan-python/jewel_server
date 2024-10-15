@@ -29,7 +29,7 @@ const Footer = () => {
         setBgColor("bg-gradient-to-b from-orange-500 to-white");
         break;
       case "/inaya":
-        setBgColor("bg-gradient-to-b from-yellow-600 to-white");
+        setBgColor("bg-gradient-to-b from-amber-900 to-white");
         break;
       default:
         setBgColor("bg-gradient-to-b from-seed to-white");
@@ -37,8 +37,11 @@ const Footer = () => {
     }
   }, [location]);
 
-  if (location.pathname === "/inaya/home") {
-    return null;
+  if (
+    location.pathname === "/inaya/home" ||
+    location.pathname === "/inaya/order"
+  ) {
+    return null; // Return null to hide the Navbar on this page
   }
 
   return (
