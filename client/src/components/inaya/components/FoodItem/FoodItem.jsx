@@ -14,7 +14,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
       <div className="food-item-info">
         <h3>{name}</h3>
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price">${price}</p>
+        <p className="food-item-price">Rs.{price}</p>
 
         {/* Move the Add/Remove button below the price */}
         <div className="food-item-actions text-lg">
