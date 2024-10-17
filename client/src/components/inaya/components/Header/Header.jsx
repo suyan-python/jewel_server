@@ -10,8 +10,8 @@ function Header() {
       <Navbar />
 
       <div className="bg-cafe bg-cover bg-center h-auto py-32">
-        <div className="p-8 md:p-16 rounded-xl shadow-lg" id="inaya-home">
-          <div className="header-contents max-w-xl mx-auto md:max-w-4xl flex flex-col items-center md:items-start bg-orange-500 bg-opacity-30 backdrop-blur-sm p-7 rounded-xl">
+        <div className="p-8 md:p-16 rounded-xl " id="inaya-home">
+          <div className="header-contents max-w-xl mx-auto md:max-w-4xl flex flex-col items-center md:items-start bg-orange-500 bg-opacity-30 backdrop-blur-sm p-7 py-20 rounded-xl">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 text-center md:text-left">
               Order your favorite food here
             </h2>

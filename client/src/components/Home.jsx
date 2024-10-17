@@ -1,9 +1,7 @@
 import React from "react";
-import Button from "../layouts/Button";
 import Cup from "../assets/pictures/person/avatar6.PNG";
 import { Link, useNavigate } from "react-router-dom";
 import inaya from "../assets/pictures/png/iNaya.png";
-import Home2 from "./Home2";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,12 +13,12 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen bg-cafe bg-cover bg-center flex flex-col items-center justify-center py-16 px-4 lg:px-16 rounded-3xl">
+      <div className="relative min-h-screen bg-cafe bg-cover bg-center bg-fixed right-0 left-0 w-full flex flex-col items-center justify-center py-16 px-4 lg:px-16  my-16">
         {/* Animated overlay with gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-0 opacity-75 animate-gradient-xy"></div>
 
         {/* Content Section */}
-        <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 rounded-3xl p-8 bg-white bg-opacity-40 backdrop-blur-md shadow-xl transition-all duration-500 ease-in-out transform ">
+        <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10  p-8 bg-white bg-opacity-40  shadow-xl transition-all duration-500 ease-in-out transform ">
           {/* Text Section */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-8">
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
@@ -49,14 +47,14 @@ const Home = () => {
                   additionalClasses="hover:bg-gray-800 transform hover:scale-105 transition ease-in-out duration-300"
                 />
               </Link> */}
-              <div className="mt-8 z-20">
+              {/* <div className="mt-8 z-20">
                 <button
                   onClick={handleRedirect}
                   className="bg-amber-900 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 hover:shadow-2xl hover:scale-105"
                 >
                   Explore More
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
