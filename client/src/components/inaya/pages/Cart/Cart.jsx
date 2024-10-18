@@ -41,14 +41,16 @@ const Cart = () => {
       {/* Button to toggle cart visibility */}
       <button
         onClick={() => setIsCartVisible(!isCartVisible)}
-        className="toggle-cart-btn"
+        className="toggle-cart-btn z-20"
       >
         {isCartVisible ? "Hide Cart" : "Show Cart"}
       </button>
 
       {/* Cart Container with sliding effect */}
       <div
-        className={`cart-container ${isCartVisible ? "slide-in" : "slide-out"}`}
+        className={`cart-container z-10 ${
+          isCartVisible ? "slide-in" : "slide-out"
+        }`}
       >
         <h2 className="text-3xl font-bold text-center mt-8">Your Cart</h2>
 
@@ -75,7 +77,7 @@ const Cart = () => {
                   {/* Item Details */}
                   <div className="text-center">
                     <span className="block text-xs">{itemNames[id]}</span>
-                    <span className="text-red-600 font-medium text-xs block">{`Price: $${(
+                    <span className="text-red-600 font-medium text-xs block">{`Price: Rs.${(
                       itemPrices[id] * cartItems[id]
                     ).toFixed(2)}`}</span>
 
@@ -129,7 +131,7 @@ const Cart = () => {
         {/* Fixed Total Price div at the bottom */}
         <div className="total-price fixed-bottom mt-8 text-center bg-white py-4">
           <h3 className="text-2xl font-semibold">
-            Total Amount: ${totalPrice.toFixed(2)}
+            Total Amount: Rs.{totalPrice.toFixed(2)}
           </h3>
         </div>
       </div>

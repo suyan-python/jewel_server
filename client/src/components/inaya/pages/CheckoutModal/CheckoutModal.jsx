@@ -14,7 +14,6 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Generate PDF receipt after confirming payment
     generatePDF();
     console.log("Proceeding to payment with details:", {
       name,
@@ -24,7 +23,7 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
       discount,
     });
 
-    onRequestClose(); // Close the modal after submission
+    onRequestClose();
   };
 
   const applyPromoCode = (code) => {
@@ -49,27 +48,27 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
   const generatePDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(18);
-    doc.text("Receipt", 20, 20);
+    doc.text("iNaya-Receipt", 20, 20);
     doc.setFontSize(12);
     doc.text(`Name: ${name}`, 20, 30);
     doc.text(`Email: ${email}`, 20, 40);
     doc.text(`Phone: ${phone}`, 20, 50);
     doc.text(`Promo Code: ${promoCode}`, 20, 60);
     doc.text(`Discount: ${discount * 100}%`, 20, 70);
-    doc.text(`Total Price: $${discountedTotal.toFixed(2)}`, 20, 80);
+    doc.text(`Total Price: Rs.${discountedTotal.toFixed(2)}`, 20, 80);
 
     // Add item details to PDF
     let yOffset = 90; // Starting y position for items
     items.forEach((item, index) => {
       doc.text(
-        `${item.name} - $${item.price} x ${item.quantity}: $${item.totalPrice}`,
+        `${item.name} - Rs.${item.price} x ${item.quantity}: Rs.${item.totalPrice}`,
         20,
         yOffset
       );
       yOffset += 10; // Increment y position for next item
     });
 
-    doc.save("receipt.pdf"); // Save the PDF
+    doc.save("Receipt-iNaya.pdf");
   };
 
   return (
@@ -77,9 +76,9 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       className="fixed inset-0 flex items-center justify-center p-4"
-      overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+      overlayClassName="fixed inset-0 bg-black bg-opacity-50 ReactModal__Overlay"
     >
-      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg flex flex-col gap-6">
+      <div className="ReactModal__Content bg-white rounded-lg shadow-lg p-6 w-full max-w-lg flex flex-col gap-6 ">
         <h2 className="text-2xl font-bold mb-4 text-center">Checkout</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="form-group">
@@ -157,7 +156,7 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
 
           <div className="total-price">
             <h3 className="font-semibold text-lg text-gray-900 text-center">
-              Total: ${discountedTotal.toFixed(2)}
+              Total: Rs.{discountedTotal.toFixed(2)}
             </h3>
           </div>
 
@@ -166,7 +165,7 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
             <ul className="list-disc pl-5">
               {items.map((item, index) => (
                 <li key={index}>
-                  {item.name} - ${item.price} x {item.quantity}: $
+                  {item.name} - Rs.{item.price} x {item.quantity}: Rs.
                   {item.totalPrice}
                 </li>
               ))}
@@ -177,7 +176,7 @@ const CheckoutModal = ({ isOpen, onRequestClose, totalPrice, items }) => {
             type="submit"
             className="w-full mt-4 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            Proceed to Payment
+            Get Receipt
           </button>
         </form>
 
