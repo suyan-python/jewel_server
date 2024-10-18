@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import CheckoutModal from "../CheckoutModal/CheckoutModal";
-import { Link } from "react-router-dom";
 import "./Cart.css"; // Import the CSS file for styles
 
 const Cart = () => {
@@ -51,29 +50,31 @@ const Cart = () => {
       <div
         className={`cart-container ${isCartVisible ? "slide-in" : "slide-out"}`}
       >
-        <h2 className="text-3xl font-bold text-center mt-36">Your Cart</h2>
+        <h2 className="text-3xl font-bold text-center mt-8">Your Cart</h2>
+
         {Object.keys(cartItems).length === 0 ? (
-          <p className="text-red-600 text-lg text-center">
+          <p className="text-red-600 text-lg text-center mt-4">
             Your cart is empty.
           </p>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 my-">
+            {/* Make this section scrollable */}
+            <div className="cart-items-container overflow-y-auto">
               {Object.keys(cartItems).map((id) => (
                 <div
                   key={id}
-                  className="cart-item card bg-gray-100 p-4 shadow-md rounded-lg flex flex-col items-center"
+                  className="cart-item card bg-gray-100 p-4 shadow-md rounded-lg flex flex-col items-center mb-4"
                 >
                   {/* Item Image */}
                   <img
                     src={itemImages[id]}
                     alt={itemNames[id]}
-                    className="w-full h-auto object-cover rounded mb-4" // Updated class
+                    className="w-full h-auto object-cover rounded mb-4"
                   />
 
                   {/* Item Details */}
                   <div className="text-center">
-                    <span className="block text-xs">{`${itemNames[id]} `}</span>
+                    <span className="block text-xs">{itemNames[id]}</span>
                     <span className="text-red-600 font-medium text-xs block">{`Price: $${(
                       itemPrices[id] * cartItems[id]
                     ).toFixed(2)}`}</span>
@@ -99,17 +100,17 @@ const Cart = () => {
               ))}
             </div>
 
-            <div className="flex flex-col items-center lg:flex-col lg:justify-center mt-6 gap-2">
+            <div className="flex flex-col items-center mt-6 gap-2">
               <button
                 onClick={clearCart}
-                className="w-full lg:w-auto bg-red-500 text-white py-2 px-4 rounded-lg mb-4 lg:mb-0 hover:bg-red-600 transition"
+                className="w-full bg-red-500 text-white py-2 px-4 rounded-lg mb-4 hover:bg-red-600 transition"
               >
                 Clear Cart
               </button>
 
               <button
                 onClick={() => setIsCheckoutOpen(true)}
-                className="w-full lg:w-auto bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
+                className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
               >
                 Proceed to Checkout
               </button>
@@ -125,7 +126,8 @@ const Cart = () => {
           </>
         )}
 
-        <div className="total-price mt-8 text-center">
+        {/* Fixed Total Price div at the bottom */}
+        <div className="total-price fixed-bottom mt-8 text-center bg-white py-4">
           <h3 className="text-2xl font-semibold">
             Total Amount: ${totalPrice.toFixed(2)}
           </h3>
