@@ -26,10 +26,7 @@ const FooterBT = () => {
     }
   };
 
-  if (
-    location.pathname === "/inaya/home" ||
-    location.pathname === "/inaya/order"
-  ) {
+  if (location.pathname === "/inaya/home") {
     return null; // Return null to hide the Navbar on this page
   }
 

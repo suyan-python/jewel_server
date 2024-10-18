@@ -97,21 +97,6 @@ function Home3() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center min-h-screen bg-gray-100">
-        <div className="w-80 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="title font-semibold text-xl">Hover to Expand</div>
-          <div className="relative overflow-hidden max-h-20 hover:max-h-64 transition-all duration-500 ease-in-out">
-            <div className="description text-gray-600 mt-3">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-              iste ea accusantium ad distinctio! Voluptatum, dolorum tempora?
-              Expanding this section will reveal more content that gives
-              additional information. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Consequuntur quod magnam reprehenderit nisi
-              sapiente velit.
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import iNaya from "../../../../assets/pictures/png/iNaya.png";
-import { assets } from "../../assets/assets";
 import Modal from "../../../Modal";
-import Cart from "../../pages/Cart/Cart";
 
 const Navbar = ({ esetShowLogin }) => {
   const [menu, setMenu] = useState("home");

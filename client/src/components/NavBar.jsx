@@ -17,10 +17,7 @@ const NavBar = () => {
   const closeMenu = () => setMenu(false);
 
   // Conditionally hide Navbar if on /inaya/home
-  if (
-    location.pathname === "/inaya/home" ||
-    location.pathname === "/inaya/order"
-  ) {
+  if (location.pathname === "/inaya/home") {
     return null; // Return null to hide the Navbar on this page
   }
 

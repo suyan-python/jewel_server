@@ -2,7 +2,7 @@ import basket_icon from "./basket_icon.png";
 import logo from "./logo.png";
 import header_img from "./header_img.png";
 import search_icon from "./search_icon.png";
-import menu_1 from "./menu_1.png";
+import menu_1 from "./coffee.jpeg";
 import menu_2 from "./menu_2.png";
 import menu_3 from "./menu_3.png";
 import menu_4 from "./menu_4.png";
@@ -44,6 +44,8 @@ import food_30 from "./food_30.png";
 import food_31 from "./food_31.png";
 import food_32 from "./food_32.png";
 
+import coffee from "./coffee.jpeg";
+
 import add_icon_white from "./add_icon_white.png";
 import add_icon_green from "./add_icon_green.png";
 import remove_icon_red from "./remove_icon_red.png";
@@ -84,35 +86,83 @@ export const assets = {
 
 export const menu_list = [
   {
-    menu_name: "MO:MO",
+    menu_name: "Coffee",
     menu_image: menu_1,
   },
   {
-    menu_name: "Rolls",
+    menu_name: "Non-Coffee",
     menu_image: menu_2,
   },
   {
-    menu_name: "Deserts",
+    menu_name: "Iced Drinks",
     menu_image: menu_3,
   },
   {
-    menu_name: "Sandwich",
+    menu_name: "Frosty Favor",
     menu_image: menu_4,
   },
   {
-    menu_name: "Cake",
+    menu_name: "Blended Items",
     menu_image: menu_5,
   },
   {
-    menu_name: "Pure Veg",
+    menu_name: "Chicken MO:MO",
     menu_image: menu_6,
   },
   {
-    menu_name: "Pasta",
+    menu_name: "Paneer MO:MO",
     menu_image: menu_7,
   },
   {
-    menu_name: "Noodles",
+    menu_name: "Buff MO:MO",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Tibetan Veg MO:MO",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Tibetan Chicken MO:MO",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Pizza",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Early Bites",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Quick Bites",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Spaghetti",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Pasta",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Chowmein",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Wrap",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Burritos",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Nachos",
+    menu_image: menu_8,
+  },
+  {
+    menu_name: "Rice Menu",
     menu_image: menu_8,
   },
 ];
@@ -120,290 +170,1009 @@ export const menu_list = [
 export const food_list = [
   {
     _id: "1",
-    name: "Chicken MO:MO",
+    name: "Espresso",
     image: food_1,
-    price: 12,
+    price: 120,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "MO:MO",
+    category: "Coffee",
   },
   {
     _id: "2",
-    name: "Veg MO:MO",
+    name: "Lungo",
     image: food_2,
-    price: 18,
+    price: 150,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "MO:MO",
+    category: "Coffee",
   },
   {
     _id: "3",
-    name: "Clover MO:MO",
+    name: "Americano Single Shot",
     image: food_3,
-    price: 16,
+    price: 150,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "MO:MO",
+    category: "Coffee",
   },
   {
     _id: "4",
-    name: "Paneer MO:MO",
+    name: "Americano Double Shot",
     image: food_4,
-    price: 24,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "MO:MO",
+    category: "Coffee",
   },
   {
     _id: "5",
-    name: "Lasagna Rolls",
+    name: "Cappuccino",
     image: food_5,
-    price: 14,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Rolls",
+    category: "Coffee",
   },
   {
     _id: "6",
-    name: "Peri Peri Rolls",
+    name: "Cafe Latte",
     image: food_6,
-    price: 12,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Rolls",
+    category: "Coffee",
   },
   {
     _id: "7",
-    name: "Chicken Rolls",
+    name: "Mocha Madness",
     image: food_7,
-    price: 20,
+    price: 300,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Rolls",
+    category: "Coffee",
   },
   {
     _id: "8",
-    name: "Veg Rolls",
+    name: "Green Tea",
     image: food_8,
-    price: 15,
+    price: 120,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Rolls",
+    category: "Non-Coffee",
   },
   {
     _id: "9",
-    name: "Ripple Ice Cream",
+    name: "Black Tea",
     image: food_9,
-    price: 14,
+    price: 120,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Deserts",
+    category: "Non-Coffee",
   },
   {
     _id: "10",
-    name: "Fruit Ice Cream",
+    name: "Honey Hot Lemon",
     image: food_10,
-    price: 22,
+    price: 160,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Deserts",
+    category: "Non-Coffee",
   },
   {
     _id: "11",
-    name: "Jar Ice Cream",
+    name: "Honey Hot Lemon and Ginger",
     image: food_11,
-    price: 10,
+    price: 185,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Deserts",
+    category: "Non-Coffee",
   },
   {
     _id: "12",
-    name: "Vanilla Ice Cream",
+    name: "Hot Chocolate",
     image: food_12,
-    price: 12,
+    price: 260,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Deserts",
+    category: "Non-Coffee",
   },
   {
     _id: "13",
-    name: "Chicken Sandwich",
+    name: "Iced Americano",
     image: food_13,
-    price: 12,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Sandwich",
+    category: "Iced Drinks",
   },
   {
     _id: "14",
-    name: "Vegan Sandwich",
+    name: "Iced Cafe Latte/Cappuccino",
     image: food_14,
-    price: 18,
+    price: 250,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Sandwich",
+    category: "Iced Drinks",
   },
   {
     _id: "15",
-    name: "Grilled Sandwich",
+    name: "Affogato",
     image: food_15,
-    price: 16,
+    price: 220,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Sandwich",
+    category: "Iced Drinks",
   },
   {
     _id: "16",
-    name: "Bread Sandwich",
+    name: "Blended Latte/Cappuccino",
     image: food_16,
-    price: 24,
+    price: 250,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Sandwich",
+    category: "Iced Drinks",
   },
   {
     _id: "17",
-    name: "Cup Cake",
+    name: "Blended  Mocha",
     image: food_17,
-    price: 14,
+    price: 300,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Cake",
+    category: "Iced Drinks",
   },
   {
     _id: "18",
-    name: "Vegan Cake",
+    name: "Coke/Fanta/Sprite",
     image: food_18,
-    price: 12,
+    price: 120,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Cake",
+    category: "Frosty Favor",
   },
   {
     _id: "19",
-    name: "Butterscotch Cake",
+    name: "Lime Lemonade",
     image: food_19,
-    price: 20,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Cake",
+    category: "Frosty Favor",
   },
   {
     _id: "20",
-    name: "Sliced Cake",
+    name: "Iced Peach/Lemon Tea",
     image: food_20,
-    price: 15,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Cake",
+    category: "Frosty Favor",
   },
   {
     _id: "21",
-    name: "Garlic Mushroom ",
+    name: "Virgin Mojito ",
     image: food_21,
-    price: 14,
+    price: 250,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Frosty Favor",
   },
   {
     _id: "22",
-    name: "Fried Cauliflower",
+    name: "Spicy Gauva",
     image: food_22,
-    price: 22,
+    price: 175,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Frosty Favor",
   },
   {
     _id: "23",
-    name: "Mix Veg Pulao",
+    name: "Blue Island",
     image: food_23,
-    price: 10,
+    price: 200,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Frosty Favor",
   },
   {
     _id: "24",
-    name: "Rice Zucchini",
+    name: "Vanilla Milkshake",
     image: food_24,
-    price: 12,
+    price: 300,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Blended Items",
   },
   {
     _id: "25",
-    name: "Cheese Pasta",
+    name: "Chocolate Milkshake",
     image: food_25,
-    price: 12,
+    price: 300,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pasta",
+    category: "Blended Items",
   },
   {
     _id: "26",
-    name: "Tomato Pasta",
+    name: "Oreo/Kitkat Milkshake",
     image: food_26,
-    price: 18,
+    price: 320,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pasta",
+    category: "Blended Items",
   },
   {
     _id: "27",
-    name: "Creamy Pasta",
+    name: "Mint Lemonade",
     image: food_27,
-    price: 16,
+    price: 250,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pasta",
+    category: "Blended Items",
   },
   {
     _id: "28",
-    name: "Chicken Pasta",
+    name: "Cucumber Cooler",
     image: food_28,
-    price: 24,
+    price: 200,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Blended Items",
+  },
+  {
+    _id: "29",
+    name: "Steam Mo:Mo",
+    image: food_29,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "30",
+    name: "Kothey Mo:Mo",
+    image: food_30,
+    price: 280,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "31",
+    name: "Peanuts Gravy",
+    image: food_31,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "32",
+    name: "Crunchy Mo:Mo",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "33",
+    name: "Clear Soup",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "34",
+    name: "Sandheko",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "35",
+    name: "Chilly",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "36",
+    name: "Tomato Gravy with Cheese",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "37",
+    name: "Cheesy Mo:Mozza",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chicken MO:MO",
+  },
+  {
+    _id: "38",
+    name: "Steam Mo:Mo",
+    image: food_32,
+    price: 225,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "39",
+    name: "Kothey Mo:Mo",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "40",
+    name: "Peanuts Gravy",
+    image: food_32,
+    price: 280,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "41",
+    name: "Crunchy Mo:Mo",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "42",
+    name: "Clear Soup",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "43",
+    name: "Sandheko",
+    image: food_32,
+    price: 290,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "44",
+    name: "Chilly",
+    image: food_32,
+    price: 280,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "45",
+    name: "Tomato Gravy with Cheese",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "46",
+    name: "Cheesy Mo:Mozza",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Paneer MO:MO",
+  },
+  {
+    _id: "47",
+    name: "Steam Mo:Mo",
+    image: food_32,
+    price: 210,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "48",
+    name: "Kothey Mo:Mo",
+    image: food_32,
+    price: 220,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "49",
+    name: "Peanuts Gravy",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "50",
+    name: "Crunchy Mo:Mo",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "51",
+    name: "Clear Soup",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "52",
+    name: "Sandheko",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "53",
+    name: "Chilly",
+    image: food_32,
+    price: 280,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "54",
+    name: "Tomato Gravy with Cheese",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "55",
+    name: "Cheesy Mo:Mozza",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Buff MO:MO",
+  },
+  {
+    _id: "56",
+    name: "Steam Mo:Mo",
+    image: food_32,
+    price: 200,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "57",
+    name: "Kothey Mo:Mo",
+    image: food_32,
+    price: 225,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "58",
+    name: "Peanuts Gravy",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "59",
+    name: "Crunchy Mo:Mo",
+    image: food_32,
+    price: 230,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "60",
+    name: "Clear Soup",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "61",
+    name: "Sandheko",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "62",
+    name: "Chilly",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "63",
+    name: "Tomato Gravy with Cheese",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+  {
+    _id: "64",
+    name: "Cheesy Mo:Mozza",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Veg MO:MO",
+  },
+
+  {
+    _id: "65",
+    name: "Steam Mo:Mo",
+    image: food_32,
+    price: 225,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "66",
+    name: "Kothey Mo:Mo",
+    image: food_32,
+    price: 250,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "67",
+    name: "Peanuts Gravy",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "68",
+    name: "Crunchy Mo:Mo",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "69",
+    name: "Clear Soup",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "70",
+    name: "Sandheko",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "71",
+    name: "Chilly",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "72",
+    name: "Tomato Gravy with Cheese",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "73",
+    name: "Cheesy Mo:Mozza",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Tibetan Chicken MO:MO",
+  },
+  {
+    _id: "74",
+    name: "Big Supreme",
+    image: food_32,
+    price: 625,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "75",
+    name: "Big Chicken",
+    image: food_32,
+    price: 525,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "76",
+    name: "Big Salami",
+    image: food_32,
+    price: 525,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "77",
+    name: "Big Mushroom",
+    image: food_32,
+    price: 475,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "78",
+    name: "Small Supreme",
+    image: food_32,
+    price: 450,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "79",
+    name: "Small Chicken",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "80",
+    name: "Small Salami",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "81",
+    name: "Small Mushroom",
+    image: food_32,
+    price: 325,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: "82",
+    name: "Chicken Carbonara",
+    image: food_32,
+    price: 390,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Spaghetti",
+  },
+  {
+    _id: "83",
+    name: "Chicken Meatball",
+    image: food_32,
+    price: 390,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Spaghetti",
+  },
+  {
+    _id: "84",
+    name: "Bolognese",
+    image: food_32,
+    price: 360,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Spaghetti",
+  },
+  {
+    _id: "85",
+    name: "Napolitano",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Spaghetti",
+  },
+  {
+    _id: "86",
+    name: "Chicken with White Sauce",
+    image: food_32,
+    price: 300,
     description:
       "Food provides essential nutrients for overall health and well-being",
     category: "Pasta",
   },
   {
-    _id: "29",
-    name: "Buttter Noodles",
-    image: food_29,
-    price: 14,
-    description:
-      "Food provides essential nutrients for overall health and well-being",
-    category: "Noodles",
-  },
-  {
-    _id: "30",
-    name: "Veg Noodles",
-    image: food_30,
-    price: 12,
-    description:
-      "Food provides essential nutrients for overall health and well-being",
-    category: "Noodles",
-  },
-  {
-    _id: "31",
-    name: "Somen Noodles",
-    image: food_31,
-    price: 20,
-    description:
-      "Food provides essential nutrients for overall health and well-being",
-    category: "Noodles",
-  },
-  {
-    _id: "32",
-    name: "Cooked Noodles",
+    _id: "87",
+    name: "Vegetable with With Sauce",
     image: food_32,
-    price: 15,
+    price: 250,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Noodles",
+    category: "Pasta",
+  },
+  {
+    _id: "88",
+    name: "Chicken",
+    image: food_32,
+    price: 225,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chowmein",
+  },
+  {
+    _id: "89",
+    name: "Vegetable",
+    image: food_32,
+    price: 190,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Chowmein",
+  },
+  {
+    _id: "90",
+    name: "Chicken",
+    image: food_32,
+    price: 225,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Wrap",
+  },
+  {
+    _id: "91",
+    name: "Vegetable",
+    image: food_32,
+    price: 190,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Wrap",
+  },
+  {
+    _id: "92",
+    name: "Chicken",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Burritos",
+  },
+  {
+    _id: "93",
+    name: "Vegetable",
+    image: food_32,
+    price: 300,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Burritos",
+  },
+  {
+    _id: "94",
+    name: "Chicken",
+    image: food_32,
+    price: 350,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Nachos",
+  },
+  {
+    _id: "95",
+    name: "Vegetable",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Nachos",
+  },
+  {
+    _id: "96",
+    name: "Teriyaki Chicken with Rice",
+    image: food_32,
+    price: 375,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Rice Menu",
+  },
+  {
+    _id: "97",
+    name: "Schezwan Chicken with Rice",
+    image: food_32,
+    price: 375,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Rice Menu",
+  },
+  {
+    _id: "98",
+    name: "Chicken Fried Rice",
+    image: food_32,
+    price: 275,
+    description:
+      "Food provides essential nutrients for overall health and well-being",
+    category: "Rice Menu",
+  },
+  {
+    _id: "99",
+    name: "Club Chicken Sandwich",
+    image: food_32,
+    price: 350,
+    description:
+      "Delicious Grilled Chicken Breast, and Chicken Salami, Crisp Lettuce. Juicy Tomato, Zesty Mayo on a fresh toasted bread, Served with golden & crispy  fries",
+    category: "Early Bites",
+  },
+  {
+    _id: "100",
+    name: "American Breakfast",
+    image: food_32,
+    price: 300,
+    description:
+      "Toasted Bread, Fried Egg, Chicken Sausage/Salami, Mix of Fresh Salad",
+    category: "Early Bites",
+  },
+  {
+    _id: "101",
+    name: "Corn & Paneer Sandwich",
+    image: food_32,
+    price: 300,
+    description: "Grilled Corn,Creamy Panner,Fresh Veggies on Toasted Bread",
+    category: "Early Bites",
+  },
+  {
+    _id: "102",
+    name: "Ham & Cheese Sandwich",
+    image: food_32,
+    price: 250,
+    description: "Ham with Cheese on a Fresh Toasted Bread",
+    category: "Early Bites",
+  },
+  {
+    _id: "103",
+    name: "Egg Sandwich",
+    image: food_32,
+    price: 200,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Early Bites",
+  },
+  {
+    _id: "104",
+    name: "Spicy Chicken Wings (4pcs)",
+    image: food_32,
+    price: 390,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "105",
+    name: "Cheese & Chicken Sausage Corn-Dog",
+    image: food_32,
+    price: 300,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "106",
+    name: "Panner Chilly",
+    image: food_32,
+    price: 300,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "107",
+    name: "Crispy Chicken",
+    image: food_32,
+    price: 300,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "108",
+    name: "Crunchy Paneer",
+    image: food_32,
+    price: 275,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "109",
+    name: "Chicken Corn-Dog",
+    image: food_32,
+    price: 275,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "110",
+    name: "Panner Corn-Dog",
+    image: food_32,
+    price: 250,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "111",
+    name: "Mustang Alu",
+    image: food_32,
+    price: 200,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
+  },
+  {
+    _id: "112",
+    name: "French Fries",
+    image: food_32,
+    price: 200,
+    description:
+      "Pan fried egg, Melted Cheese, Layer of coleslaw on Toasted Bread",
+    category: "Quick Bites",
   },
 ];
