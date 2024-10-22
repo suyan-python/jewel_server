@@ -4,8 +4,8 @@ const Button = (props) => {
   return (
     <div>
       <button
-        className="px-6 py-1 border-2 border-white hover:text-[#AB6B2E] transition-all rounded-full"
-        style={{ color: `${props.color}` }}
+        className={`${props.className}`}
+        // style={{ color: `${props.color}` }}
       >
         {props.title}
       </button>

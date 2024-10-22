@@ -17,14 +17,14 @@ const NavBar = () => {
   const closeMenu = () => setMenu(false);
 
   // Conditionally hide Navbar if on /inaya/home
-  if (location.pathname === "/inaya/home") {
+  if (location.pathname === "/inaya/home" || location.pathname === "/inaya") {
     return null; // Return null to hide the Navbar on this page
   }
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="flex justify-between items-center p-4 md:px-8 lg:px-16">
-        <div className="flex items-center text-orange-600">
+        <div className="flex items-center text-orange-600 text-2xl">
           <NavLink to={"/"}>
             <Title />
           </NavLink>

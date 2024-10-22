@@ -17,6 +17,7 @@ function Form() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Data: ", formData);
+    alert(`${formData.firstName}, Your Data Submitted Successfully!`);
     // Handle form submission logic here (e.g., send data to server)
   }
 

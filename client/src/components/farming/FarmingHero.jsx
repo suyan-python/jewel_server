@@ -7,9 +7,9 @@ function FarmingHero() {
     <div className="bg-aboutback bg-cover bg-center rounded-3xl">
       <div className="flex flex-col lg:flex-row h-full rounded-3xl shadow-xl py-24 lg:py-56">
         {/* Text Area */}
-        <div className="text-area flex flex-col w-full lg:w-3/4 text-center lg:text-left justify-center items-center lg:items-start text-white px-5 lg:px-10">
+        <div className="text-area flex flex-col w-full lg:w-3/4 text-center lg:text-left justify-center items-center lg:items-start px-5 lg:px-10 bg-black text-white  mx-7 py-4 bg-opacity-25 rounded-sm">
           <div className="slog rounded-full flex w-3/4 lg:w-2/5 justify-center lg:justify-start py-2 gap-3 mb-4">
-            <h1 className="text-3xl font-medium">
+            <h1 className="text-3xl font-semibold">
               Jewel Himalayan Coffee Beans
             </h1>
           </div>
@@ -23,7 +23,10 @@ function FarmingHero() {
           </div>
           <div className="book py-3">
             <Link to="/contact">
-              <Button title="Contact JHP for premium Arabic from the Himalaya ⤴" />
+              <Button
+                className="font-medium text-green-400 hover:text-green-500"
+                title="Contact JHP for premium Arabic from the Himalaya"
+              />
             </Link>
           </div>
         </div>

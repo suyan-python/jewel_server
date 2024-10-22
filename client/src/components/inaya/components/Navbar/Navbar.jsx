@@ -146,7 +146,7 @@ const Navbar = ({ esetShowLogin }) => {
           </li>
 
           {/* Search Section */}
-          <li className="md:flex md:items-center">
+          {/* <li className="md:flex md:items-center">
             <form onSubmit={handleSearch} className="flex items-center">
               <input
                 type="text"
@@ -162,7 +162,7 @@ const Navbar = ({ esetShowLogin }) => {
                 Search
               </button>
             </form>
-          </li>
+          </li> */}
 
           {/* Mobile Menu and Cart Buttons */}
           <li className="lg:hidden flex flex-col items-center space-y-2 my-4 ">
