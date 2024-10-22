@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
 import { useLocation } from "react-router-dom";
+import Jewel from "../assets/pictures/png/jhp.png";
 
 import "./Footer.css";
 
@@ -48,9 +49,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between p-6 md:p-8 md:px-32 px-5 gap-6 md:gap-8">
         {/* Company Name */}
         <div className="w-full md:w-1/4 flex justify-center md:justify-start items-center mb-4 md:mb-0">
-          <h1 className="font-semibold text-sm md:text-lg">
-            Jewel Himalayan Products
-          </h1>
+          <img src={Jewel} alt="" />
         </div>
 
         {/* Links */}

@@ -2,6 +2,7 @@ import React from "react";
 import Cafe from "../assets/pictures/background/cafe.jpg";
 import { Link } from "react-router-dom";
 import Navbar from "./inaya/components/Navbar/Navbar";
+import { MdArrowOutward } from "react-icons/md";
 
 function Home2() {
   return (
@@ -25,13 +26,16 @@ function Home2() {
             {/* Buttons */}
             <div className="mt-10 lg:mt-20 flex flex-col lg:flex-row gap-6 items-center">
               <Link to={"home"}>
-                <button className="explore-our-story bg-brightColor text-white text-sm lg:text-base px-6 py-3 rounded-full hover:bg-orange-500 transition duration-300">
-                  Explore More
+                <button className="flex items-center font-medium  gap-4 explore-our-story bg-brightColor text-white text-sm lg:text-xl px-6 py-3 rounded-full hover:bg-orange-500 transition duration-300">
+                  Order Now
+                  <div className="bg-white p-2 rounded-full  text-brightColor">
+                    <MdArrowOutward />
+                  </div>
                 </button>
               </Link>
-              <button className="meet-the-team text-orange-600 text-sm lg:text-base hover:text-orange-800 transition duration-300">
+              {/* <button className="meet-the-team text-orange-600 text-sm lg:text-base hover:text-orange-800 transition duration-300">
                 Meet the Team →
-              </button>
+              </button> */}
             </div>
 
             {/* Statistics */}

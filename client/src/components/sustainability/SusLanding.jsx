@@ -14,7 +14,7 @@ const Sustainability = () => {
         </h2>
 
         {/* Description */}
-        <p className="text-lg text-gray-700 text-center mb-12">
+        <p className="text-lg font-medium text-gray-700 text-center mb-12">
           We have envisioned a Women in Coffee project at our farm and with our
           smallholder farmers. We are planning women-led groups in planting and
           harvesting to encourage long-term participation in the coffee
@@ -47,10 +47,10 @@ const Sustainability = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Div */}
           <div className="bg-pink-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+            <h3 className="text-2xl font-semibold mb-4 text-white">
               Field Interviews & Project Impact
             </h3>
-            <p className="text-pink-700">
+            <p className="text-pink-700 font-medium">
               At Deumai, we conducted field interviews, visited 54 houses, and
               spoke to women farmers. They are extremely thrilled about the
               project and keen to join. We have already started this sustainable
@@ -61,10 +61,10 @@ const Sustainability = () => {
 
           {/* Second Div */}
           <div className="bg-pink-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+            <h3 className="text-2xl font-semibold mb-4 text-white">
               Future Goals
             </h3>
-            <p className="text-pink-700">
+            <p className="text-pink-700 font-medium">
               We aim to work more with this community and boost their incomes
               from coffee. We will teach them about plant nutrition, water
               resources, pest and disease management, and GAP. After 3-4 years,
@@ -75,10 +75,10 @@ const Sustainability = () => {
 
           {/* Third Div */}
           <div className="bg-pink-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+            <h3 className="text-2xl font-semibold mb-4 text-white">
               Improving Coffee Quality
             </h3>
-            <p className="text-pink-700">
+            <p className="text-pink-700 font-medium">
               We want to improve the quality of the coffee as well as the
               processing and roasting. We would like to see more ethical
               business practices and scientific farming.
@@ -87,10 +87,10 @@ const Sustainability = () => {
 
           {/* Fourth Div */}
           <div className="bg-pink-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-pink-700">
+            <h3 className="text-2xl font-semibold mb-4 text-white">
               Social Investment
             </h3>
-            <p className="text-pink-700">
+            <p className="text-pink-700 font-medium">
               Coffee is an important source of income to many small-scale women
               farmers to cover daily expenses. As a company, we look to invest
               in schools, education, transportation, and the welfare of farmers.
