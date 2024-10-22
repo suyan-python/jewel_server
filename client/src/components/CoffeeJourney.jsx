@@ -1,7 +1,7 @@
 import React from "react";
 import farmImage from "../assets/pictures/background/farm.jpeg";
 import roastingImage from "../assets/pictures/coffeepics/beans.jpg";
-// import brewingImage from "../assets/pictures/coffeepics/herdbean.jpg";
+import brewingImage from "../assets/pictures/person/women3.jpg";
 
 function CoffeeJourney() {
   return (
@@ -44,7 +44,7 @@ function CoffeeJourney() {
         {/* Step 3: Brewing */}
         <div className="flex flex-col items-center">
           <img
-            src={""}
+            src={brewingImage}
             alt="Brewing"
             className="w-full h-48 lg:h-64 object-cover rounded-lg shadow-lg"
           />
