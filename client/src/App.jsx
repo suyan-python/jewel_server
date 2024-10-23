@@ -15,7 +15,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import LandingFarm from "./components/farming/LandingFarm";
 import Contact from "./components/contact/Contact";
-import SourceHero from "./components/sources/SourceHero";
 import LandingProcess from "./components/processing/LandingProcess";
 import AddCart from "./components/addtocart/Cart";
 import Preloader from "./components/PreLoader";
@@ -27,6 +26,7 @@ import SusLanding from "./components/sustainability/SusLanding";
 import ScrollToTop from "./components/ScrollToTop";
 import Cart from "./components/inaya/pages/Cart/Cart";
 import Landing2 from "./components/Landing2";
+import SourceLanding from "./components/sources/SourceLanding";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -49,7 +49,7 @@ const App = () => {
             <Route exact path="/review" element={<Review />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/farming" element={<LandingFarm />} />
-            <Route exact path="/source" element={<SourceHero />} />
+            <Route exact path="/source" element={<SourceLanding />} />
             <Route exact path="/process" element={<LandingProcess />} />
             {/* <Route exact path="/order" element={<AddCart />} /> */}
             <Route exact path="/inaya/home" element={<Home2 />} />

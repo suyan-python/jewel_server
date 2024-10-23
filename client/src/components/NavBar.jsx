@@ -23,7 +23,7 @@ const NavBar = () => {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="flex justify-between items-center p-4 md:px-8 lg:px-16">
+      <div className="flex justify-between items-center py-2 md:px-8 lg:px-16">
         <div className="flex items-center  text-orange-600 text-2xl w-1/6 md:w-1/12">
           <NavLink to={"/"}>
             {/* <Title /> */}

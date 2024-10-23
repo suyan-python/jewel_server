@@ -44,9 +44,20 @@ export default {
             transform: "translateY(-15px)",
           },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
       animation: {
         bounce: "bounce 2s infinite",
+        fade_in: "fadeIn 1.5s ease-in-out forwards",
+        slide_up: "slideUp 1.5s ease-in-out forwards",
+        fade_in_delayed: "fadeIn 2s ease-in-out forwards",
       },
     },
   },
