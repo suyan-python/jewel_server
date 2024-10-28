@@ -14,12 +14,8 @@ const ExploreMenu = ({ category, setCategory }) => {
         delicious meal at a time.
       </p>
 
-      {/* Fixed Div at Top Right Corner */}
       <div className="fixed-top-right">
-        {/* Call your components here */}
-        {/* <p>Your fixed component or button here</p> */}
         <Cart />
-        {/* Example: <YourComponent /> */}
       </div>
 
       <div className="explore-menu-list">
@@ -36,12 +32,19 @@ const ExploreMenu = ({ category, setCategory }) => {
                 category === item.menu_name ? "active" : ""
               }`}
             >
-              <img
-                className="menu-image"
-                src={item.menu_image}
-                alt={item.menu_name}
-              />
-              <p className="menu-name">{item.menu_name}</p>
+              <div className="">
+                <a
+                  href="#food_display"
+                  className="flex flex-col justify-center items-center"
+                >
+                  <img
+                    className="menu-image"
+                    src={item.menu_image}
+                    alt={item.menu_name}
+                  />
+                  <p className="menu-name">{item.menu_name}</p>
+                </a>
+              </div>
             </div>
           );
         })}

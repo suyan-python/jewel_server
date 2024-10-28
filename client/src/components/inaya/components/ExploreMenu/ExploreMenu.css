@@ -76,3 +76,15 @@
 .fixed-top-right p {
   margin: 0; /* Remove default margin */
 }
+.explore-menu-list-item .menu-image,
+.explore-menu-list-item .menu-name {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.explore-menu-list-item:hover .menu-image {
+  transform: scale(1.1);
+}
+
+.explore-menu-list-item:hover .menu-name {
+  color: #ff9900; /* Change to your preferred hover color */
+}

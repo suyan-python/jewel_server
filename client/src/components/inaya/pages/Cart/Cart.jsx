@@ -105,14 +105,14 @@ const Cart = () => {
             <div className="flex flex-col items-center mt-6 gap-2">
               <button
                 onClick={clearCart}
-                className="w-full bg-red-500 text-white py-2 px-4 rounded-lg mb-4 hover:bg-red-600 transition"
+                className=" bg-red-500 text-white py-2 px-4 rounded-lg mb-4 hover:bg-red-600 transition"
               >
                 Clear Cart
               </button>
 
               <button
                 onClick={() => setIsCheckoutOpen(true)}
-                className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
+                className=" bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
               >
                 Proceed to Checkout
               </button>

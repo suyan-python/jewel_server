@@ -3,7 +3,7 @@ import Jewel from "../assets/pictures/png/jhp.png";
 
 function Hero() {
   return (
-    <div className="bg-herobean bg-cover bg-center rounded-3xl h-auto">
+    <div className="bg-herobean bg-cover bg-center rounded-3xl h-auto lg:mt-7">
       <div className="flex flex-col md:flex-row-reverse rounded-3xl shadow-xl py-16 md:py-32">
         <div className="text-area w-full flex flex-col text-center items-center px-6 bg-white bg-opacity-10 backdrop-blur-md rounded-lg py-24">
           <div className="slog text-3xl md:text-4xl  rounded-full flex justify-center w-3/4 md:w-2/6  py-3 px-4 gap-3  mb-4">

@@ -13,22 +13,31 @@ function Hero2() {
       </div>
       <div className="sub md:flex-row justify-around h-full py-2 mb-32 gap-3">
         {/* Farming Section */}
-        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-md">
-          <div className="two rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8 transition text-white">
+        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-lg overflow-hidden">
+          <div className="flex flex-col items-center justify-center h-96 gap-6 p-5 md:p-8 bg-black bg-opacity-10 hover:bg-opacity-30 rounded-2xl text-white text-center transition transform hover:scale-105">
+            {/* Title Section with Logo */}
             <div className="title flex justify-center">
-              <div className="text font-medium flex items-center justify-center text-3xl md:text-4xl">
-                <img className="w-1/12 rounded-full" src={JHCB} alt="" />
+              <div className="flex items-center justify-center gap-3 text-3xl md:text-4xl font-semibold">
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-lg"
+                  src={JHCB}
+                  alt="JHCB Logo"
+                />
+                Jewel Himalayan Coffee Beans
               </div>
             </div>
-            <Link to={"/farming"}>
+
+            {/* Visit Farm Button */}
+            <Link to="/farming">
               <Button
-                className="font-medium text-2xl hover:text-green-400 transition duration-100"
+                className="px-8 py-3 font-medium text-xl md:text-2xl bg-green-500 text-white rounded-full shadow-md hover:bg-green-600 transition-transform transform hover:scale-105"
                 title="Visit Our Farm"
               />
             </Link>
           </div>
-          {/* Arrow down shape */}
-          <div className="absolute bottom-0 left-0 right-0 h-0 w-0 mx-auto border-t-[50px] border-t-transparent border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-b-[50px] border-b-white"></div>
+
+          {/* Decorative Arrow Shape */}
+          <div className="absolute bottom-0 left-0 right-0 h-0 w-0 mx-auto border-t-[30px] md:border-t-[50px] border-t-transparent border-l-[25px] md:border-l-[50px] border-l-transparent border-r-[25px] md:border-r-[50px] border-r-transparent border-b-[30px] md:border-b-[50px] border-b-white opacity-80"></div>
         </div>
 
         {/* Coffee Trading Section */}
@@ -48,26 +57,31 @@ function Hero2() {
           </div>
         </div>
         {/* Food Coffee Conversation Section */}
-        <div className="bg-cafe w-full  rounded-2xl shadow-md bg-cover py-3">
-          <div className="three rounded-2xl p-3 h-96 flex flex-col text-center justify-center gap-8  bg-white bg-opacity-25 ">
-            <div className="images flex justify-center ">
+
+        <div className="bg-cafe w-full rounded-2xl shadow-lg bg-cover p-5 md:p-8 lg:p-10">
+          <div className="rounded-2xl h-96 flex flex-col text-center justify-center gap-6 bg-black bg-opacity-20  p-6 md:p-8 lg:p-10 shadow-lg">
+            {/* Logo Image */}
+            <div className="images flex justify-center">
               <img
-                className="w-1/6"
+                className="w-1/4 md:w-1/6 lg:w-1/8 transition-transform transform hover:scale-105 bg-white"
                 src={iNaya}
                 alt="iNaya"
-                loading="lazy" /* Lazy loading for faster page load */
+                loading="lazy"
               />
             </div>
+
+            {/* Title */}
             <div className="title flex justify-center">
-              <div className="text font-medium text-lg md:text-xl text-white">
-                Food Coffee Conversation
+              <div className="text font-semibold text-lg md:text-2xl lg:text-3xl text-white bg-orange-300  p-2 md:px-4 rounded-full shadow-sm  transition duration-300">
+                Food, Coffee, Conversation
               </div>
             </div>
+
+            {/* Button */}
             <Link to={"/inaya"}>
               <Button
-                className="font-medium text-2xl"
+                className="font-semibold text-lg md:text-2xl text-white bg-green-500 px-6 py-3 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105 shadow-lg"
                 title="Visit Us"
-                color="white"
               />
             </Link>
           </div>

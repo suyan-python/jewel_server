@@ -13,24 +13,26 @@ const ExpandableDivs = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 p-4 lg:p-10 mx-auto max-w-6xl my-10">
+    <div className="flex flex-col  gap-8 p-6 lg:p-12 mx-auto max-w-7xl my-10">
       {/* First Div */}
-      <div className="relative border p-4 rounded-2xl shadow-lg flex flex-col justify-between bg-processing bg-cover bg-center text-white w-full lg:w-1/2 h-auto max-w-md mx-auto overflow-hidden">
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 p-4 flex flex-col justify-between h-full">
-          <h2 className="text-2xl font-bold text-center mb-4">Processing</h2>
+      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105  bg-cover bg-center text-white w-full  h-auto max-w-md mx-auto overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+        <div className="relative z-10 p-6 flex flex-col h-full">
+          <h2 className="text-3xl font-extrabold text-center mb-6">
+            Processing
+          </h2>
           <div
-            className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+            className={` text-white transition-max-height duration-500 ease-in-out overflow-hidden ${
               isExpandedDiv1 ? "max-h-[500px] py-4" : "max-h-0 py-0"
             }`}
           >
-            <p className="text-justify">
+            <p className="text-lg text-justify">
               We have a newly set up coffee processing facility at our farm at
               Deumai, Ilam. It will do both natural and fully washed processing
               starting from 2023. We have a wet and dry mill and are planning
               experimental lots.
               {isExpandedDiv1 && (
-                <span>
+                <span className="text-white">
                   <br />
                   <br />
                   We also support two coffee washing stations (CWS) in Kavre and
@@ -40,9 +42,9 @@ const ExpandableDivs = () => {
               )}
             </p>
           </div>
-          <div className="mt-4 text-center">
+          <div className="mt-6 text-center">
             <button
-              className="px-6 py-2 border-2 border-white text-white hover:bg-gray-800 transition-all rounded-full"
+              className="px-8 py-2 border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all rounded-full font-medium shadow-md"
               onClick={toggleExpandDiv1}
             >
               {isExpandedDiv1 ? "Show Less" : "Learn More"}
@@ -52,19 +54,19 @@ const ExpandableDivs = () => {
       </div>
 
       {/* Second Div */}
-      <div className="relative border p-4 rounded-2xl shadow-lg flex flex-col justify-between bg-roasting bg-cover bg-center text-white w-full lg:w-1/2 h-auto max-w-md mx-auto overflow-hidden">
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 p-4 flex flex-col justify-between h-full">
-          <h2 className="text-2xl font-bold text-center mb-4">Roasting</h2>
+      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105  bg-cover bg-center text-white w-full  h-auto max-w-md mx-auto overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+        <div className="relative z-10 p-6 flex flex-col h-full">
+          <h2 className="text-3xl font-extrabold text-center mb-6">Roasting</h2>
           <div
-            className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+            className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
               isExpandedDiv2 ? "max-h-[500px] py-4" : "max-h-0 py-0"
             }`}
           >
-            <p className="text-justify">
+            <p className="text-lg text-justify">
               In Kathmandu, we plan to have our own roastery by 2023.
               {isExpandedDiv2 && (
-                <span>
+                <span className="text-white">
                   <br />
                   <br />
                   For now, Nepali coffee expert, Mr. Nima Tenzing Sherpa, roasts
@@ -76,9 +78,9 @@ const ExpandableDivs = () => {
               )}
             </p>
           </div>
-          <div className="mt-4 text-center">
+          <div className="mt-6 text-center">
             <button
-              className="px-6 py-2 border-2 border-white text-white hover:bg-gray-800 transition-all rounded-full"
+              className="px-8 py-2 border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all rounded-full font-medium shadow-md"
               onClick={toggleExpandDiv2}
             >
               {isExpandedDiv2 ? "Show Less" : "Learn More"}

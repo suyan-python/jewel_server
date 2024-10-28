@@ -20,7 +20,7 @@ const Footer = () => {
               eveniet, magnam harum quisquam, error deleniti, corporis ab vero
               totam atque eaque perspiciatis a aperiam laudantium.
             </p>
-            <div className="footer-social-icons flex space-x-4 mt-4">
+            <div className="footer-social-icons flex  mt-4">
               <img src={assets.facebook_icon} alt="Facebook" className="w-6" />
               <img src={assets.twitter_icon} alt="Twitter" className="w-6" />
               <img src={assets.linkedin_icon} alt="LinkedIn" className="w-6" />

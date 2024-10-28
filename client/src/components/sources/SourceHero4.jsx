@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function SourceHero4() {
   return (
-    <div>
-      <div className="relative h-screen w-full overflow-hidden">
+    <div className="lg:mt-7">
+      <div className="relative h-screen w-full overflow-hidden rounded-3xl">
         {/* Background Video */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover "
           autoPlay
           loop
           muted

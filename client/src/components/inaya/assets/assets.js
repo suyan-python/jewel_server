@@ -10,6 +10,18 @@ import menu_5 from "./menu_5.png";
 import menu_6 from "./menu_6.png";
 import menu_7 from "./menu_7.png";
 import menu_8 from "./menu_8.png";
+import menu_9 from "./menu_8.png";
+import menu_10 from "./menu_8.png";
+import menu_11 from "./menu_8.png";
+import menu_12 from "./menu_8.png";
+import menu_13 from "./corn.jpeg";
+import menu_14 from "./menu_8.png";
+import menu_15 from "./menu_8.png";
+import menu_16 from "./menu_8.png";
+import menu_17 from "./menu_8.png";
+import menu_18 from "./menu_8.png";
+import menu_19 from "./menu_8.png";
+import menu_20 from "./menu_8.png";
 
 import food_1 from "./food_1.png";
 import food_2 from "./food_2.png";
@@ -119,51 +131,51 @@ export const menu_list = [
   },
   {
     menu_name: "Tibetan Veg MO:MO",
-    menu_image: menu_8,
+    menu_image: menu_9,
   },
   {
     menu_name: "Tibetan Chicken MO:MO",
-    menu_image: menu_8,
+    menu_image: menu_10,
   },
   {
     menu_name: "Pizza",
-    menu_image: menu_8,
+    menu_image: menu_11,
   },
   {
     menu_name: "Early Bites",
-    menu_image: menu_8,
+    menu_image: menu_12,
   },
   {
     menu_name: "Quick Bites",
-    menu_image: menu_8,
+    menu_image: menu_13,
   },
   {
     menu_name: "Spaghetti",
-    menu_image: menu_8,
+    menu_image: menu_14,
   },
   {
     menu_name: "Pasta",
-    menu_image: menu_8,
+    menu_image: menu_15,
   },
   {
     menu_name: "Chowmein",
-    menu_image: menu_8,
+    menu_image: menu_16,
   },
   {
     menu_name: "Wrap",
-    menu_image: menu_8,
+    menu_image: menu_17,
   },
   {
     menu_name: "Burritos",
-    menu_image: menu_8,
+    menu_image: menu_18,
   },
   {
     menu_name: "Nachos",
-    menu_image: menu_8,
+    menu_image: menu_19,
   },
   {
     menu_name: "Rice Menu",
-    menu_image: menu_8,
+    menu_image: menu_20,
   },
 ];
 
