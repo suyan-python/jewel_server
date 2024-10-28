@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "../../layouts/Button";
+import Button from "../../layouts/Button"; // Assuming you still want to use this
 import "./Process.css";
 import ExpandableDivs from "./Expandable";
 
 function ProcessHero2() {
   return (
-    <div className="relative py-7 my-8 overflow-hidden rounded-lg">
+    <div className="relative w-full h-screen overflow-hidden rounded-3xl my-7">
       {/* Background Video */}
       <video
-        className="w-full h-full object-cover rounded-3xl"
+        className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
@@ -23,7 +23,7 @@ function ProcessHero2() {
       </video>
 
       {/* ExpandableDivs Content Overlay */}
-      <div className="absolute inset-0 flex items-center justify-center z-10">
+      <div className="absolute inset-0 flex items-center justify-center z-10 p-4 lg:p-12">
         <ExpandableDivs />
       </div>
     </div>

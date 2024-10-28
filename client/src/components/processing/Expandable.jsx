@@ -13,20 +13,20 @@ const ExpandableDivs = () => {
   };
 
   return (
-    <div className="flex flex-col  gap-8 p-6 lg:p-12 mx-auto max-w-7xl my-10">
+    <div className="flex flex-col gap-8 p-6 lg:p-12 mx-auto max-w-7xl my-10">
       {/* First Div */}
-      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105  bg-cover bg-center text-white w-full  h-auto max-w-md mx-auto overflow-hidden">
+      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 bg-cover bg-center text-white w-full h-auto max-w-md mx-auto overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
         <div className="relative z-10 p-6 flex flex-col h-full">
-          <h2 className="text-3xl font-extrabold text-center mb-6">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-center mb-6">
             Processing
           </h2>
           <div
-            className={` text-white transition-max-height duration-500 ease-in-out overflow-hidden ${
+            className={`text-white transition-max-height duration-500 ease-in-out overflow-hidden ${
               isExpandedDiv1 ? "max-h-[500px] py-4" : "max-h-0 py-0"
             }`}
           >
-            <p className="text-lg text-justify">
+            <p className="text-lg lg:text-xl text-justify">
               We have a newly set up coffee processing facility at our farm at
               Deumai, Ilam. It will do both natural and fully washed processing
               starting from 2023. We have a wet and dry mill and are planning
@@ -54,16 +54,18 @@ const ExpandableDivs = () => {
       </div>
 
       {/* Second Div */}
-      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105  bg-cover bg-center text-white w-full  h-auto max-w-md mx-auto overflow-hidden">
+      <div className="relative border rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105 bg-cover bg-center text-white w-full h-auto max-w-md mx-auto overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
         <div className="relative z-10 p-6 flex flex-col h-full">
-          <h2 className="text-3xl font-extrabold text-center mb-6">Roasting</h2>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-center mb-6">
+            Roasting
+          </h2>
           <div
             className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
               isExpandedDiv2 ? "max-h-[500px] py-4" : "max-h-0 py-0"
             }`}
           >
-            <p className="text-lg text-justify">
+            <p className="text-lg lg:text-xl text-justify">
               In Kathmandu, we plan to have our own roastery by 2023.
               {isExpandedDiv2 && (
                 <span className="text-white">
