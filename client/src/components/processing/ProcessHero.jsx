@@ -9,7 +9,7 @@ function ProcessHero() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-60 rounded-3xl"></div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between h-auto lg:h-[70vh] rounded-3xl shadow-lg py-10 lg:py-20 px-5 lg:px-16 lg:mt-7 relative z-10">
+      <div className="flex flex-col-reverse lg:flex-row justify-center items-center lg:items-start lg:justify-between h-auto lg:h-[70vh] rounded-3xl shadow-lg py-10 lg:py-20 px-5 lg:px-16 relative z-10">
         {/* Text Area */}
         <div className="text-area flex flex-col lg:items-start w-full lg:w-1/2 text-center lg:text-left">
           <div className="title text-3xl lg:text-5xl font-bold text-white mb-4 shadow-md">
@@ -23,16 +23,15 @@ function ProcessHero() {
           <div className="book">
             <Link to="/contact">
               <Button
-                title="Contact JHP for premium Arabica from the Himalaya ⤴"
-                color="white"
-                className="transition-transform transform hover:scale-105" // Added hover effect
+                title="Contact JHP for premium Arabica from the Himalaya"
+                className="transition-transform transform hover:scale-105 text-white" // Added hover effect
               />
             </Link>
           </div>
         </div>
 
         {/* Image Section */}
-        <div className="absolute top-0 right-0 w-1/3 lg:w-1/4 p-4">
+        <div className="relative w-2/4 lg:w-1/3 mt-5 lg:mt-0 lg:ml-4 p-4">
           <img
             className="w-full h-auto rounded-lg shadow-lg border-2 border-white" // Added border for the image
             src={JHCB}

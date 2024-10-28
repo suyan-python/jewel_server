@@ -4,7 +4,7 @@ import { FaFireAlt } from "react-icons/fa";
 
 function Home3() {
   return (
-    <div className="px-4 lg:px-56 py-24">
+    <div className="px-4 lg:px-56 py-24 shadow-lg mx-40 my-7">
       {/* Section Header */}
       <div className="font-medium text-center lg:text-left mb-10">
         <div className="super-title text-brightColor my-2 text-xl lg:text-xl">

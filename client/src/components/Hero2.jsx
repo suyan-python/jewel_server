@@ -13,17 +13,19 @@ function Hero2() {
       </div>
       <div className="sub md:flex-row justify-around h-full py-2 mb-32 gap-3">
         {/* Farming Section */}
-        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-lg overflow-hidden">
+        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-lg overflow-hidden py-10">
           <div className="flex flex-col items-center justify-center h-96 gap-6 p-5 md:p-8 bg-black bg-opacity-10 hover:bg-opacity-30 rounded-2xl text-white text-center transition transform hover:scale-105">
             {/* Title Section with Logo */}
-            <div className="title flex justify-center">
-              <div className="flex items-center justify-center gap-3 text-3xl md:text-4xl font-semibold">
-                <img
-                  className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-lg"
-                  src={JHCB}
-                  alt="JHCB Logo"
-                />
-                Jewel Himalayan Coffee Beans
+
+            <div className="title flex justify-center ">
+              <div className="flex flex-col items-center justify-center gap-4 text-3xl md:text-4xl font-semibold bg-red-">
+                <div className="w-16 md:w-36 ">
+                  <img
+                    className="rounded-2xl shadow-lg"
+                    src={JHCB}
+                    alt="JHCB Logo"
+                  />
+                </div>
               </div>
             </div>
 
@@ -49,7 +51,7 @@ function Hero2() {
           </div>
           <div className="images flex justify-center">
             <img
-              className="w-1/5"
+              className="w-1/2"
               src={Mystical}
               alt="Mystical Coffee"
               loading="lazy" /* Lazy loading for faster page load */
@@ -72,7 +74,7 @@ function Hero2() {
 
             {/* Title */}
             <div className="title flex justify-center">
-              <div className="text font-semibold text-lg md:text-2xl lg:text-3xl text-white bg-orange-300  p-2 md:px-4 rounded-full shadow-sm  transition duration-300">
+              <div className="text font-semibold text-lg md:text-2xl lg:text-3xl text-white bg-orange-400  p-2 md:px-4 rounded-full shadow-sm  transition duration-300">
                 Food, Coffee, Conversation
               </div>
             </div>
