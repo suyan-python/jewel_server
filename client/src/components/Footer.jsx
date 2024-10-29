@@ -94,22 +94,26 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Contact Info */}
-        {/* Contact Info */}
         <div className="w-full md:w-1/4 footer-contact">
           <h1 className="font-medium text-sm md:text-lg pb-3">Contact Us</h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">
             <a
               href="mailto:jewel.himalayan.2021@gmail.com"
-              className="hover:text-brightColor transition-all"
+              className="hover:text-white transition-all"
             >
               jewel.himalayan.2021@gmail.com
             </a>
             <a
               href="tel:+9779817576110"
-              className="hover:text-brightColor transition-all"
+              className="hover:text-white transition-all"
             >
-              +977 9817576110, 9841208219
+              +977 9817576110
+            </a>
+            <a
+              href="tel:++9779841208219"
+              className="hover:text-white transition-all"
+            >
+              +977 9841208219
             </a>
             <div className="social-medias flex gap-6 pt-2">
               <a
