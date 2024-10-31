@@ -7,6 +7,7 @@ import Jewel from "../assets/pictures/png/jhp.png";
 
 import "./NavBar.css";
 import NavbarTop from "./FooterBt";
+import Button from "../layouts/Button";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
@@ -83,7 +84,7 @@ const NavBar = () => {
           </NavLink>
         </nav>
 
-        <div className="hidden lg:flex">
+        {/* <div className="hidden lg:flex">
           <button
             className="menu-button"
             onClick={() => setShowModal(true)}
@@ -100,6 +101,12 @@ const NavBar = () => {
           ) : (
             <AiOutlineMenuUnfold size={25} onClick={handleMenuToggle} />
           )}
+        </div> */}
+        <div>
+          <Button
+            className="bg-black text-white p-2 hover:bg-gray-800  transition-colors"
+            title="Section"
+          ></Button>
         </div>
       </div>
 
@@ -152,14 +159,15 @@ const NavBar = () => {
         >
           Contact
         </NavLink>
-        <button
+
+        {/* <button
           className="menu-button"
           onClick={() => setShowModal(true)}
           title="Menu"
         >
           Menu
         </button>
-        {showModal && <Modal onClose={() => setShowModal(false)} />}
+        {showModal && <Modal onClose={() => setShowModal(false)} />} */}
       </div>
     </header>
   );

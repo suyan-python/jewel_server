@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Jewel from "../assets/pictures/png/jhp.png";
 
 import "./Footer.css";
@@ -54,48 +54,67 @@ const Footer = () => {
 
         {/* Links */}
         <div className="hidden md:block mb-4 md:mb-0">
-          <h1 className="font-medium text-sm md:text-lg pb-3">Links</h1>
+          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+            Links
+          </h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/menu"
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/"
             >
-              Menu
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/about"
+              Home
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/farming"
             >
               About Us
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/products"
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/source"
             >
-              Products
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/reviews"
+              Sources
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/process"
             >
-              Reviews
-            </a>
+              Process
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/sustainability"
+            >
+              Sustainability
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </nav>
         </div>
 
         {/* Mission Statement */}
         <div className="w-full md:w-1/4">
-          <h1 className="font-medium text-sm md:text-lg pb-3">Our Mission</h1>
-          <p className="text-xs md:text-base text-gray-600">
-            At iNaya Cafe, we’re passionate about crafting the finest coffee
-            from the rich soils of Illam. Every cup tells the story of our
-            commitment to sustainability, quality, and supporting women in
-            coffee farming.
+          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+            Our Vision
+          </h1>
+          <p className="text-xs md:text-base text-gray-900 hover:text-white transition">
+            Our vision is to be an epitome of a producer-consumer company by
+            serving the finest coffee beans. We offer 100% natural Arabica
+            coffee beans to our customers, while delivering on our promise to
+            give more than we take from our farmers, the environment, and
+            planet.
           </p>
         </div>
 
         <div className="w-full md:w-1/4 footer-contact">
-          <h1 className="font-medium text-sm md:text-lg pb-3">Contact Us</h1>
+          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+            Contact Us
+          </h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">
             <a
               href="mailto:jewel.himalayan.2021@gmail.com"
@@ -120,7 +139,7 @@ const Footer = () => {
                 href="https://www.instagram.com/inaya_cafe_2023/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-red transition-all"
+                className="hover:text-white transition"
               >
                 <SiInstagram size={30} />
               </a>
@@ -128,7 +147,7 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=61556765843404"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-brightColor transition-all"
+                className="hover:text-white transition-all"
               >
                 <SiFacebook size={30} />
               </a>

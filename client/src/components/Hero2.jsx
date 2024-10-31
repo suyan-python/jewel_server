@@ -7,7 +7,7 @@ import JHCB from "../assets/pictures/png/JHCB.jpg";
 
 function Hero2() {
   return (
-    <div className=" shadow-md ">
+    <div className="  ">
       <div className="mt-32 text-center font-medium text-5xl ">
         Our Businesses
       </div>
