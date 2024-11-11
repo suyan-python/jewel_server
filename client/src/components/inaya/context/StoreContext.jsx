@@ -48,6 +48,13 @@ const StoreContextProvider = (props) => {
       return { ...prev, [itemId]: newQuantity }; // Otherwise, update the quantity
     });
   };
+  const decrementCartItem = (id) => {
+    setCartItems((prevItems) => {
+      const updatedItems = { ...prevItems };
+      delete updatedItems[id]; // Removes the item from the cart entirely
+      return updatedItems;
+    });
+  };
 
   const clearCart = () => {
     setCartItems({}); // Reset cartItems to an empty object
@@ -64,6 +71,7 @@ const StoreContextProvider = (props) => {
     removeFromCart,
     clearCart,
     getTotalPrice,
+    decrementCartItem,
     itemPrices, // Provide itemPrices
     itemImages, // Provide itemImages
     itemNames,

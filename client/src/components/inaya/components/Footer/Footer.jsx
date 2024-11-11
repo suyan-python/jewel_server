@@ -13,12 +13,11 @@ const Footer = () => {
         <div className="footer-content flex flex-col md:flex-row justify-between">
           <div className="footer-content-left w-full md:w-1/3 mb-8 md:mb-0">
             <div className="footer-logo mb-4">
-              <img src={iNaya} alt="iNaya Cafe Logo" className="h-12" />
+              <img src={iNaya} alt="iNaya Cafe Logo" className="h-20" />
             </div>
-            <p className="text-sm leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              eveniet, magnam harum quisquam, error deleniti, corporis ab vero
-              totam atque eaque perspiciatis a aperiam laudantium.
+            <p className="text-base font-bold leading-relaxed">
+              We got the best cafe in town. Its not only the cafe but also you
+              can find many other different items.
             </p>
             <div className="footer-social-icons flex  mt-4">
               <img src={assets.facebook_icon} alt="Facebook" className="w-6" />
@@ -44,9 +43,11 @@ const Footer = () => {
           <div className="footer-content-right w-full md:w-1/3">
             <h2 className="text-lg font-semibold mb-2">Get in Touch</h2>
             <ul className="text-sm">
-              <li className="mb-1">9828293162</li>
+              <li className="mb-1">
+                <a href="tel:+977 9828293162">9828293162</a>
+              </li>
               <li className="hover:text-green-400 cursor-pointer">
-                inayacafe@gmail.com
+                <a href="mailto: inayacafe@gmail.com"> inayacafe@gmail.com</a>
               </li>
             </ul>
           </div>

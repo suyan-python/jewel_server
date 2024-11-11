@@ -3,7 +3,7 @@ import { StoreContext } from "../../context/StoreContext";
 import "./FoodItem.css";
 
 const FoodItem = ({ id, name, price, description, image }) => {
-  const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+  const { cartItems, addToCart, decrementCartItem } = useContext(StoreContext);
 
   return (
     <div className={`food-item ${cartItems[id] ? "added-to-cart" : ""}`}>
@@ -16,7 +16,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
         <p className="food-item-desc">{description}</p>
         <p className="food-item-price">Rs.{price}</p>
 
-        {/* Move the Add/Remove button below the price */}
+        {/* Add or Remove button below the price */}
         <div className="food-item-actions text-lg">
           {!cartItems[id] ? (
             <button
@@ -28,7 +28,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           ) : (
             <button
               className="hover:text-red-500"
-              onClick={() => removeFromCart(id)}
+              onClick={() => decrementCartItem(id)}
             >
               Remove from Cart
             </button>
