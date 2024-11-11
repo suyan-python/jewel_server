@@ -157,7 +157,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-xs md:text-sm text-center py-4 font-medium">
+      <div className="text-[10px] md:text-sm text-center py-4 font-medium">
         <p>
           &copy;2022 developed by{" "}
           <b className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">

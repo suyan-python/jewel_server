@@ -84,15 +84,10 @@ const NavBar = () => {
           </NavLink>
         </nav>
 
-        {/* <div className="hidden lg:flex">
-          <button
-            className="menu-button"
-            onClick={() => setShowModal(true)}
-            title="Menu"
-          >
-            Menu
+        <div className="hidden lg:flex">
+          <button className="menu-button" title="Section">
+            Section
           </button>
-          {showModal && <Modal onClose={() => setShowModal(false)} />}
         </div>
 
         <div className="md:hidden flex items-center">
@@ -101,13 +96,14 @@ const NavBar = () => {
           ) : (
             <AiOutlineMenuUnfold size={25} onClick={handleMenuToggle} />
           )}
-        </div> */}
-        <div>
+        </div>
+
+        {/* <div>
           <Button
             className="bg-black text-white p-2 hover:bg-gray-800  transition-colors"
             title="Section"
           ></Button>
-        </div>
+        </div> */}
       </div>
 
       <div className={`mobile-menu ${menu ? "open" : ""}`}>
