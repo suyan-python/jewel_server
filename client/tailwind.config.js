@@ -29,6 +29,7 @@ export default {
         cafe: "url('/src/assets/pictures/background/cafe.jpg')",
 
         herobean: "url('/src/assets/pictures/coffeepics/herobean.jpg')",
+        mystical: "url('/src/assets/pictures/logo.jpg')",
 
         person: "url('/src/assets/pictures/person/1.jpg')",
       },

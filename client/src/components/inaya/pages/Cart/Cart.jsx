@@ -76,7 +76,9 @@ const Cart = () => {
 
                   {/* Item Details */}
                   <div className="text-center">
-                    <span className="block text-xs">{itemNames[id]}</span>
+                    <span className="block text-xs font-semibold ">
+                      {itemNames[id]}
+                    </span>
                     <span className="text-red-600 font-medium text-xs block">{`Price: Rs.${(
                       itemPrices[id] * cartItems[id]
                     ).toFixed(2)}`}</span>

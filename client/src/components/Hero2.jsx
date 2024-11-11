@@ -8,12 +8,12 @@ import JHCB from "../assets/pictures/png/JHCB.jpg";
 function Hero2() {
   return (
     <div className="  ">
-      <div className="mt-32 text-center font-medium text-5xl ">
+      <div className="mt-32 text-center font-medium text-5xl text-red-700">
         Our Businesses
       </div>
-      <div className="sub lg:flex justify-around h-full py-2 mb-32 gap-3">
-        {/* Farming Section */}
-        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-lg overflow-hidden py-10 p-10">
+      <div className="lg:flex justify-around h-full py-2 mb-32 gap-10 ">
+        {/* JHCB Section */}
+        <div className="relative bg-farm bg-cover w-full rounded-2xl shadow-lg overflow-hidden py-10 p-10 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center justify-center h-96 gap-6  md:p-8 bg-black bg-opacity-10 hover:bg-opacity-30 rounded-2xl text-white text-center transition transform hover:scale-105">
             {/* Title Section with Logo */}
 
@@ -39,30 +39,22 @@ function Hero2() {
           </div>
         </div>
 
-        {/* Coffee Trading Section */}
-        <div className="two rounded-2xl p-3 w-full  h-96 flex flex-col text-center justify-center gap-6">
+        {/* Mystical Section */}
+        <div className="two rounded-2xl p-3 w-full  h-[72vh] bg-mystical bg-cover  flex flex-col text-center justify-center gap-6 shadow-xl my-7 ">
           <div className="title flex justify-center">
             {/* <div className="text font-medium text-3xl md:text-5xl">
               Coffee Trading
             </div> */}
           </div>
-          <div className="images flex justify-center">
-            <img
-              className="w-10/12 lg:w-1/3"
-              src={Mystical}
-              alt="Mystical Coffee"
-              loading="lazy" /* Lazy loading for faster page load */
-            />
-          </div>
         </div>
-        {/* Food Coffee Conversation Section */}
 
-        <div className="bg-cafe w-full rounded-2xl shadow-lg bg-cover p-5 md:p-8 lg:p-10">
+        {/* iNaya Cafe Section */}
+        <div className="bg-cafe w-full rounded-2xl shadow-lg bg-cover p-5 md:p-8 lg:p-10 flex flex-col justify-center items-center">
           <div className="rounded-2xl h-96 flex flex-col text-center justify-center gap-6 bg-black bg-opacity-20  p-6 md:p-8 lg:p-10 shadow-lg transition transform hover:scale-105 hover:bg-opacity-30">
             {/* Logo Image */}
             <div className="images flex justify-center">
               <img
-                className="w-1/4 md:w-1/6 lg:w-1/3 rounded-2xl transition-transform transform hover:scale-105 bg-white"
+                className="w-1/2 rounded-2xl transition-transform transform hover:scale-105 bg-white"
                 src={iNaya}
                 alt="iNaya"
                 loading="lazy"
