@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Header.css";
 import Cart from "../../pages/Cart/Cart";
+import Modal from "../../../Modal";
 
 function Header() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <Navbar />
@@ -21,9 +23,25 @@ function Header() {
               mission is to satisfy your cravings and elevate your dining
               experience, one delicious meal at a time.
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg">
-              View Menu
-            </button>
+            <div className="flex gap-8">
+              <div>
+                <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out shadow-md hover:shadow-lg">
+                  View Menu
+                </button>
+              </div>
+              <div className="navbar-right hidden md:flex items-center space-x-4 ">
+                <div className="hidden lg:flex">
+                  <button
+                    className="menu-button"
+                    onClick={() => setShowModal(true)}
+                    title="Menu"
+                  >
+                    Download Menu
+                  </button>
+                  {showModal && <Modal onClose={() => setShowModal(false)} />}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

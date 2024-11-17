@@ -29,7 +29,7 @@ function SourceHero4() {
             We source coffee from small-scale Arabica farmers:
           </p>
 
-          <div className="flex flex-col lg:flex-row justify-center gap-7 text-2xl lg:text-3xl font-medium py-7 transition-opacity duration-1000 opacity-0 animate-fade_in_delayed">
+          <div className="flex flex-col lg:flex-row justify-center gap-7 text-2xl lg:text-3xl font-medium py-7 transition-opacity duration-1000 opacity-0 animate-fade_in_delayed cursor-pointer">
             <div className="hover:text-green-400 transition-colors duration-300">
               Kavre
             </div>
@@ -38,6 +38,15 @@ function SourceHero4() {
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
               Illam
+            </div>
+            <div className="hover:text-green-400 transition-colors duration-300">
+              Nuwakot
+            </div>
+            <div className="hover:text-green-400 transition-colors duration-300">
+              Phidim
+            </div>
+            <div className="hover:text-green-400 transition-colors duration-300">
+              Syanja
             </div>
           </div>
 

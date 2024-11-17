@@ -171,7 +171,7 @@ const Navbar = ({ esetShowLogin }) => {
               onClick={() => setShowModal(true)}
               title="Menu"
             >
-              Menu
+              Download Menu
             </button>
             {showModal && <Modal onClose={() => setShowModal(false)} />}
           </li>
@@ -184,7 +184,7 @@ const Navbar = ({ esetShowLogin }) => {
               onClick={() => setShowModal(true)}
               title="Menu"
             >
-              Menu
+              Download Menu
             </button>
             {showModal && <Modal onClose={() => setShowModal(false)} />}
           </div>
