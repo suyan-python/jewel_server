@@ -177,7 +177,7 @@ const Navbar = ({ esetShowLogin }) => {
           </li>
         </ul>
 
-        <div className="navbar-right hidden md:flex items-center space-x-4 ">
+        {/* <div className="navbar-right hidden md:flex items-center space-x-4 ">
           <div className="hidden lg:flex">
             <button
               className="menu-button"
@@ -188,7 +188,7 @@ const Navbar = ({ esetShowLogin }) => {
             </button>
             {showModal && <Modal onClose={() => setShowModal(false)} />}
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
