@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
 import Home2 from "./components/inaya/pages/Home/Home";
 import Menu from "./components/Menu";
 import About from "./components/About";
@@ -16,8 +15,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingFarm from "./components/farming/LandingFarm";
 import Contact from "./components/contact/Contact";
 import LandingProcess from "./components/processing/LandingProcess";
-import AddCart from "./components/addtocart/Cart";
-import Preloader from "./components/PreLoader";
 import LoginPopup from "./components/inaya/components/LoginPopup/LoginPopup";
 
 import "./App.css";

@@ -20,7 +20,7 @@ export default {
         backfarm: "url('/src/assets/pictures/background/backfarm.jpeg')",
         farm: "url('/src/assets/pictures/background/farm.jpeg')",
         illam: "url('/src/assets/pictures/background/illam.jpg')",
-        cafe: "url('/src/assets/pictures/background/cafe.jpeg')",
+        // cafe: "url('/src/assets/pictures/background/cafe.jpeg')",
         backpurple: "url('/src/assets/pictures/background/backpurple.jpg')",
         aboutback: "url('/src/assets/pictures/background/aboutus.jpg')",
         processback: "url('/src/assets/pictures/background/processback.jpg')",

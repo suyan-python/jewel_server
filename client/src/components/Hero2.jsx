@@ -1,7 +1,5 @@
-import React from "react";
 import Button from "../layouts/Button";
 import { Link } from "react-router-dom";
-import Mystical from "../assets/pictures/png/mystical.jpg";
 import iNaya from "../assets/pictures/png/iNaya.png";
 import JHCB from "../assets/pictures/png/JHCB.jpg";
 
