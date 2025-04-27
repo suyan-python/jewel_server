@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
-import Modal from "./Modal";
-import Title from "../layouts/Title";
+
 import Jewel from "../assets/pictures/png/jhp.png";
 
 import "./NavBar.css";
-import NavbarTop from "./FooterBt";
-import Button from "../layouts/Button";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
-  const [showModal, setShowModal] = useState(false);
   const location = useLocation();
 
   const handleMenuToggle = () => setMenu(!menu);
@@ -22,7 +18,7 @@ const NavBar = () => {
   }
 
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 py-2">
       <div className="flex items-center justify-between py-2 mx-4 md:mx-8 lg:mx-16 relative">
         {/* JHP Store Button (Mobile Left) */}
         <div className="flex md:hidden absolute left-4">
