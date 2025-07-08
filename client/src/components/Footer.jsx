@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SiInstagram, SiFacebook } from "react-icons/si";
 import { NavLink, useLocation } from "react-router-dom";
-import Jewel from "../assets/pictures/png/jhp.png";
+import Jewel from "../assets/pictures/logo/logo2.png";
 
 import "./Footer.css";
 
@@ -21,7 +21,7 @@ const Footer = () => {
         setBgColor("bg-gradient-to-b from-black to-white");
         break;
       case "/sustainability":
-        setBgColor("bg-gradient-to-b from-pink-700 to-white");
+        setBgColor("bg-gradient-to-b from-orange-700 to-white");
         break;
       case "/contact":
         setBgColor("bg-gradient-to-b from-gray-500 to-white");
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Links */}
         <div className="hidden md:block mb-4 md:mb-0">
-          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+          <h1 className="font-semibold text-sm text-white md:text-lg pb-3">
             Links
           </h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">
@@ -99,7 +99,7 @@ const Footer = () => {
 
         {/* Mission Statement */}
         <div className="w-full md:w-1/4">
-          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+          <h1 className="font-semibold text-sm text-white md:text-lg pb-3">
             Our Vision
           </h1>
           <p className="text-xs md:text-base text-gray-900 hover:text-white transition">
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full md:w-1/4 footer-contact">
-          <h1 className="font-medium text-sm text-white md:text-lg pb-3">
+          <h1 className="font-semibold text-sm text-white md:text-lg pb-3">
             Contact Us
           </h1>
           <nav className="flex flex-col gap-2 text-xs md:text-base">

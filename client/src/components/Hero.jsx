@@ -1,4 +1,4 @@
-import Jewel from "../assets/pictures/png/jhp.png";
+import Jewel from "../assets/pictures/logo/logo.jpg";
 import JHPback from "../assets/pictures/coffeepics/herobean.jpg";
 
 function Hero() {
@@ -37,7 +37,7 @@ function Hero() {
       {/* Overlay Content */}
       <div className="relative z-10 text-center px-6 flex flex-col items-center gap-6">
         {/* Logo */}
-        <div className="bg-white bg-opacity-90 rounded-full p-3 shadow-md w-52 h-52 flex items-center justify-center mb-6">
+        <div className="bg-white  rounded-full p-5 shadow-md w-52 h-52 flex items-center justify-center mb-6">
           <img src={Jewel} alt="Jewel Logo" className="object-contain h-full" />
         </div>
 

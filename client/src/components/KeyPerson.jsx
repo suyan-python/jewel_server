@@ -1,4 +1,4 @@
-import Binayak from "../assets/pictures/person/binayak.jpg";
+import Pranit from "../assets/pictures/person/pranit.jpg";
 import Dilasha from "../assets/pictures/person/dilasha.jpg";
 
 function KeyPerson() {
@@ -29,7 +29,7 @@ function KeyPerson() {
               {" "}
               {/* Adjusted for square shape */}
               <img
-                src={""}
+                src={Pranit}
                 alt="Mr. Pranit Gurung"
                 className="rounded-full w-full h-full shadow-lg border-4 border-[#6A3E36] object-cover" // Full width and height
               />

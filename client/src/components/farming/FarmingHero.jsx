@@ -1,43 +1,48 @@
+import React from "react";
 import Button from "../../layouts/Button";
 import { Link } from "react-router-dom";
+import background from "../../assets/pictures/background/aboutus.JPG";
 
 function FarmingHero() {
   return (
-    <div className="bg-aboutback bg-cover bg-center rounded-3xl mt-7">
-      <div className="flex flex-col lg:flex-row h-full rounded-3xl shadow-xl py-16 lg:py-56">
-        {/* Text Area */}
-        <div className="text-area flex flex-col lg:w-3/4 text-center lg:text-left justify-center items-center lg:items-start px-5 lg:px-10 bg-black text-white mx-7 py-4 bg-opacity-40 rounded-sm">
-          {/* Logo / Slogan */}
-          <div className="slog rounded-full flex w-full lg:w-3/4 justify-center lg:justify-start py-2 gap-3 mb-4">
-            <h1 className="text-2xl lg:text-3xl font-semibold">
-              Jewel Himalayan Coffee Beans
-            </h1>
-          </div>
+    <section
+      className="relative rounded-3xl overflow-hidden mt-7"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      aria-label="Premium Arabica Coffee Farming Section"
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-0" />
 
-          {/* Title */}
-          <div className="title text-2xl md:text-3xl lg:text-5xl py-3 font-medium w-full lg:w-3/4">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between px-6 lg:px-16 py-20 lg:py-44 text-white">
+        {/* Text Section */}
+        <div className="w-full lg:w-3/4 max-w-5xl text-center lg:text-left">
+          <h2 className="text-2xl lg:text-3xl font-semibold mb-3">
+            Jewel Himalayan Coffee Beans
+          </h2>
+
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             Premium Arabica Coffee from the Himalayas
-          </div>
+          </h1>
 
-          {/* Description */}
-          <div className="description text-slate-200 text-xs sm:text-sm lg:text-base w-full lg:w-2/3 font-medium">
+          <p className="text-slate-200 text-sm sm:text-base lg:text-lg font-medium max-w-2xl mx-auto lg:mx-0 mb-6">
             We source our delicious, premium Arabica from our sister company,
-            Jewel Himalayan Coffee Beans (JHCB), in Province No 1, Ilam
+            Jewel Himalayan Coffee Beans (JHCB), in Province No. 1, Ilam
             district.
-          </div>
+          </p>
 
-          {/* Call to Action */}
-          <div className="book py-4">
-            <Link to="/contact">
-              <Button
-                className="font-medium text-green-400 hover:text-green-500"
-                title="Contact JHP for Premium Arabica from the Himalaya"
-              />
-            </Link>
-          </div>
+          <Link to="/contact">
+            <Button
+              className="text-green-400 hover:text-green-500 font-medium transition duration-300"
+              title="Contact JHP for Premium Arabica from the Himalaya"
+            />
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

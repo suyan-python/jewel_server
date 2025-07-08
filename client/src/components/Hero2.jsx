@@ -6,7 +6,7 @@ import JHCB from "../assets/pictures/png/JHCB.jpg";
 function Hero2() {
   return (
     <div className="  ">
-      <div className="mt-32 text-center font-medium text-5xl text-red-700">
+      <div className="mt-32 text-center font-bold text-5xl text-red-700">
         Our Businesses
       </div>
       <div className="lg:flex justify-around h-full py-2 mb-32 gap-10 ">

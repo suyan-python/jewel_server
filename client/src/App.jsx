@@ -24,6 +24,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Cart from "./components/inaya/pages/Cart/Cart";
 import Landing2 from "./components/Landing2";
 import SourceLanding from "./components/sources/SourceLanding";
+import Store from "./components/Store";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -37,6 +38,7 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             <Route exact path="/" element={<Landing />} />
+            <Route exact path="/store" element={<Store />} />
             <Route exact path="/inaya" element={<Landing2 />} />
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/about" element={<About />} />
