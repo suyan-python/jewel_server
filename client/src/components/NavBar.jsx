@@ -23,7 +23,7 @@ const NavBar = () => {
         {/* JHP Store Button (Mobile Left) */}
         <div className="flex md:hidden absolute left-4">
           <a
-            href="https://jewelhimalayanproducts.com/store"
+            href="https://store.jewelhimalayanproducts.com/store"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-md bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold text-sm md:text-base lg:text-lg transition-transform duration-300 hover:scale-105"
@@ -96,10 +96,13 @@ const NavBar = () => {
         {/* JHP Store Button (Desktop Right) */}
         <div className="hidden md:flex">
           <a
-            href="https://jewelhimalayanproducts.com/store"
+            href="https://store.jewelhimalayanproducts.com/store"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-md bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold text-sm md:text-base lg:text-lg transition-transform duration-300 hover:scale-105"
+            className="px-4 py-2 rounded-md text-white font-semibold text-sm md:text-base lg:text-lg 
+               bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 
+               bg-[length:200%_200%] animate-gradient-x 
+               transition-transform duration-300 hover:scale-105"
           >
             JHP Store
           </a>

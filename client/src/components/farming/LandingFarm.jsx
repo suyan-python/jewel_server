@@ -1,4 +1,3 @@
-import React from "react";
 import FarmingHero from "./FarmingHero";
 import FarmingHero2 from "./FarmingHero2";
 import FarmingHero3 from "./FarmingHero3";

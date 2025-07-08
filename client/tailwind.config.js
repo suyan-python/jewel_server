@@ -53,12 +53,22 @@ export default {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+        "gradient-x": {
+          "0%, 100%": {
+            backgroundSize: "200% 200%",
+            backgroundPosition: "left center",
+          },
+          "50%": {
+            backgroundPosition: "right center",
+          },
+        },
       },
       animation: {
         bounce: "bounce 2s infinite",
         fade_in: "fadeIn 1.5s ease-in-out forwards",
         slide_up: "slideUp 1.5s ease-in-out forwards",
         fade_in_delayed: "fadeIn 2s ease-in-out forwards",
+        "gradient-x": "gradient-x 4s ease infinite",
       },
     },
   },

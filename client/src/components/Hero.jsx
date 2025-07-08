@@ -25,7 +25,7 @@ function Hero() {
     //     </div>
     //   </div>
     // </div>
-    <div className="relative w-full h-[90vh] md:h-screen flex items-center justify-center overflow-hidden rounded-3xl shadow-lg">
+    <div className="relative w-full h-[72vh] md:h-screen flex items-center justify-center overflow-hidden rounded-3xl shadow-lg mt-7">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center filter brightness-50 blur-sm scale-110"
