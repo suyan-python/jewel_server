@@ -1,5 +1,6 @@
 import Binayak from "../../assets/pictures/person/binayak.jpg";
 import Shekhar from "../../assets/pictures/person/shekhar.jpg";
+import Bijaya from "../../assets/pictures/person/bijaya.jpeg";
 
 function FarmingHero2() {
   return (
@@ -29,7 +30,7 @@ function FarmingHero2() {
               {" "}
               {/* Adjusted for square shape */}
               <img
-                src={""}
+                src={Bijaya}
                 alt="Mr. Bijaya Padma Malla"
                 className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover" // Full width and height
               />
