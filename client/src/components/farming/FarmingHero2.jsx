@@ -2,87 +2,90 @@ import Binayak from "../../assets/pictures/person/binayak.jpg";
 import Shekhar from "../../assets/pictures/person/shekhar.jpg";
 import Bijaya from "../../assets/pictures/person/bijaya.jpeg";
 
-function FarmingHero2() {
+function FarmingHero2()
+{
   return (
-    <div className="flex flex-col justify-center items-center p-5">
+    <section className="flex flex-col justify-center items-center p-5 bg-[#F9FAF9]">
       {/* Title Section */}
-      <div className="title flex flex-col justify-center items-center my-8 p-7 w-full lg:w-3/4 shadow-lg rounded-2xl ">
-        <h2 className="text-3xl lg:text-5xl font-medium text-green-600 text-center">
-          Behind the Business
+      <div className="title flex flex-col justify-center items-center my-8 p-7 w-full lg:w-3/4 shadow-lg rounded-2xl bg-white">
+        <h2 className="text-3xl lg:text-5xl font-semibold text-green-700 text-center">
+          Meet the Leadership Behind Jewel Himalayan Coffee Beans
         </h2>
-        <p className="text-center py-4 text-base lg:text-lg text-gray-700">
-          Jewel Himalayan Coffee Beans is officially registered as a{" "}
-          <b>Private Limited Company.</b>
+        <p className="text-center py-4 text-base lg:text-lg text-gray-700 max-w-2xl">
+          <strong>Jewel Himalayan Coffee Beans (JHCB)</strong> is a Nepal-based, officially registered <strong>Private Limited Company</strong> committed to quality and sustainability in the Himalayan coffee market.
         </p>
 
-        {/* Key Persons Section */}
-        <div className="key-person mt-10 lg:mt-16">
-          <h3 className="font-semibold text-2xl lg:text-3xl text-center text-green-600">
-            Key persons associated with JHCB:
+        {/* Subheading */}
+        <div className="mt-10">
+          <h3 className="font-semibold text-2xl lg:text-3xl text-center text-green-700">
+            Key Leaders Guiding JHCB’s Vision:
           </h3>
         </div>
 
-        {/* Images and Descriptions */}
-        <div className="images flex flex-col lg:flex-row justify-around items-center w-full gap-8 mt-8 lg:mt-12">
-          {/* Binayak Malla */}
-          <div className="person w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
+        {/* Team Members */}
+        <div className="flex flex-col lg:flex-row justify-around items-center w-full gap-8 mt-10 lg:mt-12">
+          {/* Bijaya Padma Malla */}
+          <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
             <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
-              {" "}
-              {/* Adjusted for square shape */}
               <img
                 src={Bijaya}
-                alt="Mr. Bijaya Padma Malla"
-                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover" // Full width and height
+                alt="Chairman Mr. Bijaya Padma Malla of Jewel Himalayan Coffee Beans"
+                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover"
               />
             </div>
-            <h4 className="font-semibold text-center text-green-600 text-xl mt-4">
+            <h4 className="font-semibold text-xl text-green-700 text-center mt-4">
               Mr. Bijaya Padma Malla
             </h4>
-            <p className="text-center text-sm lg:text-base text-gray-600 px-3 font-semibold">
+            <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
               Chairman
             </p>
-          </div>
+            <p className="text-center text-sm text-gray-600 mt-2 px-2">
+              Mr. Malla brings strategic leadership and decades of business insight to the forefront of JHCB’s mission in the Nepali specialty coffee sector.
+            </p>
+          </article>
 
           {/* Shekhar Singh */}
-          <div className="person w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
+          <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
             <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
-              {" "}
-              {/* Adjusted for square shape */}
               <img
                 src={Shekhar}
-                alt="Mr. Shekhar Singh"
-                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover" // Full width and height
+                alt="Director Mr. Shekhar Singh - Jewel Himalayan Coffee"
+                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover"
               />
             </div>
-            <h4 className="font-semibold text-center text-green-600 text-xl mt-4">
+            <h4 className="font-semibold text-xl text-green-700 text-center mt-4">
               Mr. Shekhar Singh
             </h4>
-            <p className="text-center text-sm lg:text-base text-gray-600 px-3 font-semibold">
+            <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
               Director
             </p>
-          </div>
+            <p className="text-center text-sm text-gray-600 mt-2 px-2">
+              Mr. Singh focuses on business operations and stakeholder development, guiding JHCB’s expansion and ethical sourcing practices across Nepal.
+            </p>
+          </article>
 
           {/* Binayak Malla */}
-          <div className="person w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
+          <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
             <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
-              {" "}
-              {/* Adjusted for square shape */}
               <img
-                src={Binayak} // Assuming you have the image for Pranit
-                alt="Mr. Binayak Malla"
-                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover" // Full width and height
+                src={Binayak}
+                alt="Mr. Binayak Malla - Director of Jewel Himalayan Coffee Beans"
+                className="rounded-full w-full h-full shadow-lg border-4 border-green-600 object-cover"
               />
             </div>
-            <h4 className="font-semibold text-center text-green-600 text-xl mt-4">
+            <h4 className="font-semibold text-xl text-green-700 text-center mt-4">
               Mr. Binayak Malla
             </h4>
-            <p className="text-center text-sm lg:text-base text-gray-600 px-3 font-semibold">
+            <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
               Director
             </p>
-          </div>
+            <p className="text-center text-sm text-gray-600 mt-2 px-2">
+              A driving force in operations and logistics, Mr. Malla ensures high-quality standards from coffee farm to final export, strengthening JHCB’s global reputation.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

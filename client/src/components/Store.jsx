@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FaShoppingBag } from "react-icons/fa";
 import storeImage from "../assets/pictures/background/store.JPG"; // Optional background image
 
-const Store = () => {
+const Store = () =>
+{
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#fdfaf6] to-[#f5f3ed] flex items-center justify-center px-6 py-20 rounded-3xl">
       {/* Optional Background Image Overlay */}
@@ -24,7 +25,7 @@ const Store = () => {
         </p>
 
         <Link
-          to="https://store.jewelhimalayanproducts.com/store"
+          to="https://store.jewelhimalayanproducts.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold text-lg px-6 py-3 rounded-full transition duration-200 shadow-lg hover:shadow-xl"
