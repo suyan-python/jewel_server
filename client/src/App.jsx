@@ -25,11 +25,16 @@ import Cart from "./components/inaya/pages/Cart/Cart";
 import Landing2 from "./components/Landing2";
 import SourceLanding from "./components/sources/SourceLanding";
 import Store from "./components/Store";
+import SEOOptimizationBlog from "./components/SEOoptimization";
+import SeoBlogPage from "./components/Blog";
+import Popup from "./components/Popup";
 
-const App = () => {
+const App = () =>
+{
   const [showLogin, setShowLogin] = useState(false);
   return (
     <div className="min-h-screen flex flex-col">
+      <Popup />
       {showLogin ? <LoginPopup nesetShowLogin={setShowLogin} /> : <></>}
       {/* <Preloader /> */}
       <Router>
@@ -50,6 +55,8 @@ const App = () => {
             <Route exact path="/farming" element={<LandingFarm />} />
             <Route exact path="/source" element={<SourceLanding />} />
             <Route exact path="/process" element={<LandingProcess />} />
+            <Route exact path="/blog" element={<SeoBlogPage />} />
+            <Route exact path="/seoblog" element={<SEOOptimizationBlog />} />
             {/* <Route exact path="/order" element={<AddCart />} /> */}
             <Route exact path="/inaya/home" element={<Home2 />} />
             <Route exact path="/inaya/order" element={<Cart />} />

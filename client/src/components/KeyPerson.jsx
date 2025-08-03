@@ -35,8 +35,9 @@ function KeyPerson()
             <h4 className="font-semibold text-xl text-[#6A3E36] text-center mt-4">
               Mr. Pranit Gurung
             </h4>
-            <p className="text-center text-sm lg:text-base text-gray-700 px-3">
-              As the <strong>Operation Head</strong>, Mr. Gurung oversees logistics, accounting, and distribution. He ensures seamless supply chain operations and manages vendor coordination with precision.
+            {/* <span className="font-bold text-brownn">(COO)</span> */}
+            <p className="text-center text-sm lg:text-base text-gray-700   max-w-max">
+              As the <strong className="text-brownn">Chief Operating Officer (COO)</strong>, Mr. Gurung oversees logistics, accounting, and distribution. He ensures seamless supply chain operations and manages vendor coordination with precision.
             </p>
           </article>
 
@@ -52,7 +53,7 @@ function KeyPerson()
             <h4 className="font-semibold text-xl text-[#6A3E36] text-center mt-4">
               Ms. Moonmoon Hada
             </h4>
-            <p className="text-center text-sm lg:text-base text-gray-700 px-3">
+            <p className="text-center text-sm lg:text-base text-gray-700 ">
               Ms. Hada serves as the <strong>Advisor</strong> for marketing, sales, and financial strategy. She plays a vital role in expanding Jewel Himalayan Products to international markets and shaping strategic growth.
             </p>
           </article>

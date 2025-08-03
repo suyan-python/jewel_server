@@ -5,12 +5,15 @@ import Jewel from "../assets/pictures/logo/logo2.png";
 
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = () =>
+{
   const location = useLocation();
   const [bgColor, setBgColor] = useState("bg-gradient-to-b from-seed to-white");
 
-  useEffect(() => {
-    switch (location.pathname) {
+  useEffect(() =>
+  {
+    switch (location.pathname)
+    {
       case "/":
         setBgColor("bg-gradient-to-b from-brownn to-white");
         break;
@@ -38,7 +41,8 @@ const Footer = () => {
     }
   }, [location]);
 
-  if (location.pathname === "/inaya/home" || location.pathname === "/inaya") {
+  if (location.pathname === "/inaya/home" || location.pathname === "/inaya")
+  {
     return null; // Return null to hide the Navbar on this page
   }
 
@@ -93,6 +97,12 @@ const Footer = () => {
               to="/contact"
             >
               Contact
+            </NavLink>
+            <NavLink
+              className="hover:text-white transition-all cursor-pointer"
+              to="/blog"
+            >
+              Blog
             </NavLink>
           </nav>
         </div>

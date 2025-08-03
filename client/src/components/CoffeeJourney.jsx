@@ -3,59 +3,73 @@ import farmImage from "../assets/pictures/background/farm.jpeg";
 import roastingImage from "../assets/pictures/coffeepics/beans.jpg";
 import brewingImage from "../assets/pictures/person/women3.jpg";
 
-function CoffeeJourney() {
+function CoffeeJourney()
+{
   return (
-    <div
-      className="bg-gradient-to-l from-[#6A3E36] via-[#9B5E55] to-[#F0B67F]
- py-12 px-6 lg:px-20 rounded-lg my-28"
+    <section
+      className="bg-gradient-to-l from-[#6A3E36] via-[#9B5E55] to-[#F0B67F] py-12 px-6 lg:px-20 rounded-lg my-28"
+      aria-labelledby="journey-title"
     >
-      <h2 className="text-4xl lg:text-5xl font-bold text-center text-white mb-10">
-        Our Coffee Journey
+      <h2
+        id="journey-title"
+        className="text-4xl lg:text-5xl font-bold text-center text-white mb-10"
+      >
+        The Journey from Seeds to Cup
       </h2>
+
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Step 1: Farming */}
+        {/* 1: Farm to Bean */}
         <div className="flex flex-col items-center">
           <img
             src={farmImage}
-            alt="Farm"
+            alt="Organic coffee farm in Ilam, Nepal"
             className="w-full h-48 lg:h-64 object-cover rounded-lg shadow-lg"
+            loading="lazy"
           />
-          <h3 className="text-xl font-semibold text-white mt-4">Farming</h3>
+          <h3 className="text-xl font-semibold text-white mt-4">
+            Organic Farming
+          </h3>
           <p className="text-center text-white font-medium">
-            Our coffee beans are grown sustainably on organic farms in Illam,
-            with care for the environment and local communities.
+            Single-origin Arabica beans grown sustainably in the high-altitude
+            farms of Ilam, Nepal.
           </p>
         </div>
 
-        {/* Step 2: Roasting */}
+        {/* 2: Expert Roasting */}
         <div className="flex flex-col items-center">
           <img
             src={roastingImage}
-            alt="Roasting"
+            alt="Artisan coffee bean roasting process"
             className="w-full h-48 lg:h-64 object-cover rounded-lg shadow-lg"
+            loading="lazy"
           />
-          <h3 className="text-xl font-semibold text-white mt-4">Roasting</h3>
+          <h3 className="text-xl font-semibold text-white mt-4">
+            Precision Roasting
+          </h3>
           <p className="text-center text-white font-medium">
-            We roast our beans with precision, using techniques that enhance the
-            natural flavors and create a smooth, rich taste.
+            Small-batch roasting to unlock the rich, nuanced flavors of each
+            bean.
           </p>
         </div>
 
-        {/* Step 3: Brewing */}
+        {/* 3: Perfect Brew */}
         <div className="flex flex-col items-center">
           <img
             src={brewingImage}
-            alt="Brewing"
+            alt="Brewing a cup of fresh Himalayan coffee"
             className="w-full h-48 lg:h-64 object-cover rounded-lg shadow-lg"
+            loading="lazy"
           />
-          <h3 className="text-xl font-semibold text-white mt-4">Brewing</h3>
+          <h3 className="text-xl font-semibold text-white mt-4">
+            Artisan Brewing
+          </h3>
           <p className="text-center text-white font-medium">
-            Enjoy our expertly brewed coffee, perfected by generations of
-            farmers and craftsmen, in every cup you savor.
+            Enjoy your cup—direct-trade, single origin, and freshly roasted for
+            maximum aroma.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,12 +1,15 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const FooterBT = () => {
+const FooterBT = () =>
+{
   const location = useLocation();
 
   // Determine background color based on the current path
-  const getNavbarBackgroundColor = () => {
-    switch (location.pathname) {
+  const getNavbarBackgroundColor = () =>
+  {
+    switch (location.pathname)
+    {
       case "/":
         return "bg-[#6A3E36]";
       case "/process":
@@ -26,7 +29,8 @@ const FooterBT = () => {
     }
   };
 
-  if (location.pathname === "/inaya/home") {
+  if (location.pathname === "/inaya/home")
+  {
     return null; // Return null to hide the Navbar on this page
   }
 
@@ -77,10 +81,10 @@ const FooterBT = () => {
             </div>
             <div>
               <a
-                href="tel:+9779851174646"
+                href="tel:+9779817576110"
                 className="text-yellow-300  md:text-sm"
               >
-                +977 9851174646
+                +977 9817576110
               </a>
             </div>
           </div>
