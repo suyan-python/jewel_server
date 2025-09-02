@@ -28,6 +28,13 @@ import Store from "./components/Store";
 import SEOOptimizationBlog from "./components/SEOoptimization";
 import SeoBlogPage from "./components/Blog";
 import Popup from "./components/Popup";
+import Kavre from "./components/sources/places/Kavre";
+import Sindupalchok from "./components/sources/places/Sindupalchok";
+import Illam from "./components/sources/places/illam";
+import Nuwakot from "./components/sources/places/Nuwakot";
+import Phidim from "./components/sources/places/Phidim";
+import Syanja from "./components/sources/places/Syanja";
+import Rasuwa from "./components/sources/places/Rasuwa";
 
 const App = () =>
 {
@@ -53,7 +60,17 @@ const App = () =>
             <Route exact path="/review" element={<Review />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/farming" element={<LandingFarm />} />
+
             <Route exact path="/source" element={<SourceLanding />} />
+            <Route exact path="/source/kavre" element={<Kavre />} />
+            <Route exact path="/source/sindupalchok" element={<Sindupalchok />} />
+            <Route exact path="/source/illam" element={<Illam />} />
+            <Route exact path="/source/nuwakot" element={<Nuwakot />} />
+            <Route exact path="/source/phidim" element={<Phidim />} />
+            <Route exact path="/source/syanja" element={<Syanja />} />
+            <Route exact path="/source/rasuwa" element={<Rasuwa />} />
+
+
             <Route exact path="/process" element={<LandingProcess />} />
             <Route exact path="/blog" element={<SeoBlogPage />} />
             <Route exact path="/seoblog" element={<SEOOptimizationBlog />} />

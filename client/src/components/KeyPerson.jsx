@@ -23,6 +23,22 @@ function KeyPerson()
 
         {/* Key Person Cards */}
         <div className="flex flex-col lg:flex-row justify-around items-center w-full gap-8 mt-10 lg:mt-12">
+          {/* Moonmoon Hada */}
+          <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
+            <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
+              <img
+                src={Moonmoon}
+                alt="Moonmoon Hada - Marketing and Finance Advisor of Jewel Himalayan Products"
+                className="rounded-full w-full h-full shadow-lg border-4 border-[#6A3E36] object-cover"
+              />
+            </div>
+            <h4 className="font-semibold text-xl text-[#6A3E36] text-center mt-4">
+              Ms. Moonmoon Hada
+            </h4>
+            <p className="text-center text-sm lg:text-base text-gray-700 ">
+              Ms. Hada serves as the <strong>Co-Founder</strong> for marketing, sales, and financial strategy. She plays a vital role in expanding Jewel Himalayan Products to international markets and shaping strategic growth.
+            </p>
+          </article>
           {/* Pranit Gurung */}
           <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
             <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
@@ -41,22 +57,7 @@ function KeyPerson()
             </p>
           </article>
 
-          {/* Moonmoon Hada */}
-          <article className="w-full h-auto lg:w-1/4 py-7 flex flex-col items-center bg-gray-50 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105">
-            <div className="w-48 h-48 lg:w-56 lg:h-56 mb-4">
-              <img
-                src={Moonmoon}
-                alt="Moonmoon Hada - Marketing and Finance Advisor of Jewel Himalayan Products"
-                className="rounded-full w-full h-full shadow-lg border-4 border-[#6A3E36] object-cover"
-              />
-            </div>
-            <h4 className="font-semibold text-xl text-[#6A3E36] text-center mt-4">
-              Ms. Moonmoon Hada
-            </h4>
-            <p className="text-center text-sm lg:text-base text-gray-700 ">
-              Ms. Hada serves as the <strong>Advisor</strong> for marketing, sales, and financial strategy. She plays a vital role in expanding Jewel Himalayan Products to international markets and shaping strategic growth.
-            </p>
-          </article>
+
         </div>
       </div>
     </section>

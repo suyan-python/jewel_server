@@ -25,12 +25,12 @@ function FarmingHero()
             Jewel Himalayan Coffee Beans (JHCB)
           </h2>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
             Premium Himalayan Arabica Coffee <br className="hidden md:inline" />
             Grown in the Heart of Ilam
           </h1>
 
-          <p className="text-slate-200 text-base sm:text-lg lg:text-xl font-normal max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+          <p className="subheader text-slate-200 text-base sm:text-lg lg:text-xl font-normal max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
             Discover the rich flavors of <strong>Jewel Himalayan Arabica Coffee</strong>, cultivated at high altitudes in the lush hills of
             <strong> Ilam, Province No. 1</strong>. Handpicked, carefully processed, and ethically sourced, our beans offer a smooth and aromatic taste experience cherished by coffee lovers globally.
           </p>

@@ -11,7 +11,7 @@ function FarmingHero2()
         <h2 className="text-3xl lg:text-5xl font-semibold text-green-700 text-center">
           Meet the Leadership Behind Jewel Himalayan Coffee Beans
         </h2>
-        <p className="text-center py-4 text-base lg:text-lg text-gray-700 max-w-2xl">
+        <p className="subheader text-center py-4 text-base lg:text-lg text-gray-700 max-w-2xl">
           <strong>Jewel Himalayan Coffee Beans (JHCB)</strong> is a Nepal-based, officially registered <strong>Private Limited Company</strong> committed to quality and sustainability in the Himalayan coffee market.
         </p>
 
@@ -37,7 +37,7 @@ function FarmingHero2()
               Mr. Bijaya Padma Malla
             </h4>
             <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
-              Chairman
+              Co-Founder
             </p>
             <p className="text-center text-sm text-gray-600 mt-2 px-2">
               Mr. Malla brings strategic leadership and decades of business insight to the forefront of JHCB’s mission in the Nepali specialty coffee sector.
@@ -57,7 +57,7 @@ function FarmingHero2()
               Mr. Shekhar Singh
             </h4>
             <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
-              Director
+              Co-Founder
             </p>
             <p className="text-center text-sm text-gray-600 mt-2 px-2">
               Mr. Singh focuses on business operations and stakeholder development, guiding JHCB’s expansion and ethical sourcing practices across Nepal.
@@ -77,7 +77,7 @@ function FarmingHero2()
               Mr. Binayak Malla
             </h4>
             <p className="text-sm lg:text-base text-gray-600 font-semibold text-center">
-              Director
+              Co-Founder
             </p>
             <p className="text-center text-sm text-gray-600 mt-2 px-2">
               A driving force in operations and logistics, Mr. Malla ensures high-quality standards from coffee farm to final export, strengthening JHCB’s global reputation.

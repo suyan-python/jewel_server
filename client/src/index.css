@@ -11,6 +11,7 @@ body {
   font-weight: 200;
   padding: 0 22px;
 }
+
 @keyframes gradient-x {
   0%,
   100% {
@@ -19,6 +20,10 @@ body {
   50% {
     background-position: 100% 50%;
   }
+}
+
+.subheader {
+  font-family: "Dosis", sans-serif;
 }
 
 .animate-gradient-x {

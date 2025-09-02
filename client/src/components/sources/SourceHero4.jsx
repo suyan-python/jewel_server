@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SourcesOverview from "./SourcesOverview";
 
-function SourceHero4() {
+function SourceHero4()
+{
   return (
     <div className="lg:mt-7">
-      <div className="relative h-screen w-full overflow-hidden rounded-3xl">
+      <div className="w-full">
         {/* Background Video */}
-        <video
+        <SourcesOverview />
+        {/* <video
           className="absolute inset-0 w-full h-full object-cover "
           autoPlay
           loop
@@ -18,10 +21,10 @@ function SourceHero4() {
             type="video/mp4"
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
 
         {/* Content over the video */}
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">
+        {/* <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold tracking-wide drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fade_in">
             Our Sources
           </h1>
@@ -31,22 +34,45 @@ function SourceHero4() {
 
           <div className="flex flex-col lg:flex-row justify-center gap-7 text-2xl lg:text-3xl font-medium py-7 transition-opacity duration-1000 opacity-0 animate-fade_in_delayed cursor-pointer">
             <div className="hover:text-green-400 transition-colors duration-300">
-              Kavre
+              <Link to={'/source/kavre'}>
+                Kavre
+              </Link>
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
-              Sindupalchok
+              <Link to={'/source/sindupalchok'}>
+                Sindupalchok
+              </Link>
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
-              Illam
+              <Link to={"/source/illam"}>
+
+                Illam
+              </Link>
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
-              Nuwakot
+              <Link to={"/source/nuwakot"}>
+
+                Nuwakot
+              </Link>
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
-              Phidim
+              <Link to={"/source/phidim"}>
+
+                Phidim
+              </Link>
             </div>
             <div className="hover:text-green-400 transition-colors duration-300">
-              Syanja
+              <Link to={"/source/syanja"}>
+
+                Syanja
+              </Link>
+            </div>
+
+            <div className="hover:text-green-400 transition-colors duration-300">
+              <Link to={"/source/Rasuwa"}>
+
+                Rasuwa
+              </Link>
             </div>
           </div>
 
@@ -55,11 +81,13 @@ function SourceHero4() {
               Explore More
             </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* Overlay to darken the video */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div> */}
+
       </div>
+
     </div>
   );
 }
