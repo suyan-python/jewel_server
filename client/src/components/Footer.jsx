@@ -24,7 +24,7 @@ const Footer = () =>
         setBgColor("bg-gradient-to-b from-black to-white");
         break;
       case "/sustainability":
-        setBgColor("bg-gradient-to-b from-orange-700 to-white");
+        setBgColor("bg-gradient-to-b from-green-800 to-white");
         break;
       case "/contact":
         setBgColor("bg-gradient-to-b from-gray-500 to-white");
@@ -48,7 +48,7 @@ const Footer = () =>
 
   return (
     <footer
-      className={`${bgColor} text-black rounded-t-3xl mt-12 md:mt-16 mx-4 md:mx-14 mb-16 lg:mb-14 md:mb-32 `}
+      className={`${bgColor} text-black rounded-t-3xl mt-12 md:mt-16  mb-16 lg:mb-14 md:mb-32 `}
     >
       <div className="flex flex-col md:flex-row justify-between p-6 md:p-8 md:px-32 px-5 gap-6 md:gap-8">
         {/* Company Name */}
@@ -154,7 +154,7 @@ const Footer = () =>
                 <SiInstagram size={30} />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61556765843404"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-all"

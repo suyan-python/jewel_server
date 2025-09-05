@@ -23,7 +23,8 @@ body {
 }
 
 .subheader {
-  font-family: "Dosis", sans-serif;
+  /* font-family: "Dosis", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .animate-gradient-x {

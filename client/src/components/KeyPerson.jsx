@@ -4,7 +4,7 @@ import Moonmoon from "../assets/pictures/person/Moonmoon.jpeg";
 function KeyPerson()
 {
   return (
-    <section className="flex flex-col justify-center items-center p-5 bg-[#FAFAFA]">
+    <section className="flex flex-col justify-center items-center p-5">
       {/* Title Section */}
       <div className="title flex flex-col justify-center items-center my-8 p-7 w-full lg:w-3/4 shadow-lg rounded-2xl bg-white">
         <h2 className="text-3xl lg:text-5xl font-semibold text-[#6A3E36] text-center">
@@ -36,7 +36,7 @@ function KeyPerson()
               Ms. Moonmoon Hada
             </h4>
             <p className="text-center text-sm lg:text-base text-gray-700 ">
-              Ms. Hada serves as the <strong>Co-Founder</strong> for marketing, sales, and financial strategy. She plays a vital role in expanding Jewel Himalayan Products to international markets and shaping strategic growth.
+              Ms. Hada serves as the <strong className="text-brownn">Co-Founder</strong> for marketing, sales, and financial strategy. She plays a vital role in expanding Jewel Himalayan Products to international markets and shaping strategic growth.
             </p>
           </article>
           {/* Pranit Gurung */}

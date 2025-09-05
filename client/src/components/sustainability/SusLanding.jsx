@@ -1,101 +1,88 @@
 import React from "react";
-
-// You can replace these with the actual image paths
 import ProjectImage1 from "../../assets/pictures/person/women1.jpg";
 import ProjectImage2 from "../../assets/pictures/person/women3.jpg";
 import ProjectImage3 from "../../assets/pictures/person/women2.jpg";
-const Sustainability = () => {
+
+const Sustainability = () =>
+{
   return (
-    <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
-      <div className="container mx-auto">
+    <section className="py-16 px-6 md:px-12 lg:px-24 ">
+      <div className="container mx-auto max-w-7xl">
         {/* Title */}
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-orange-500 mb-6">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-green-800 mb-6 tracking-tight">
           Women in Coffee Project
         </h2>
 
-        {/* Description */}
-        <p className="text-lg font-medium text-gray-700 text-center mb-12">
-          We have envisioned a Women in Coffee project at our farm and with our
-          smallholder farmers. We are planning women-led groups in planting and
-          harvesting to encourage long-term participation in the coffee
-          industry.
+        {/* Subtitle */}
+        <p className="subheader text-lg md:text-xl text-gray-700 text-center max-w-3xl mx-auto mb-14 leading-relaxed">
+          Empowering women farmers through sustainable coffee farming, training,
+          and community investment — building a future where women lead the way
+          in the coffee industry.
         </p>
 
-        {/* Photo Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <img
-            src={ProjectImage1}
-            alt="Women Farmers 1"
-            className="w-full h-64 object-cover rounded-lg shadow-md"
-            loading="lazy"
-          />
-          <img
-            src={ProjectImage2}
-            alt="Women Farmers 2"
-            className="w-full h-64 object-cover rounded-lg shadow-md"
-            loading="lazy"
-          />
-          <img
-            src={ProjectImage3}
-            alt="Women Farmers 3"
-            className="w-full h-64 object-cover rounded-lg shadow-md"
-            loading="lazy"
-          />
+        {/* Image Gallery */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {[ProjectImage1, ProjectImage2, ProjectImage3].map((src, i) => (
+            <div
+              key={i}
+              className="relative overflow-hidden rounded-2xl shadow-lg group"
+            >
+              <img
+                src={src}
+                alt={`Women Farmers ${i + 1}`}
+                className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-2xl"></div>
+            </div>
+          ))}
         </div>
 
-        {/* Details in Divs */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* First Div */}
-          <div className="bg-orange-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold mb-4 text-yellow-700">
+        {/* Info Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Card */}
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-green-600">
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
               Field Interviews & Project Impact
             </h3>
-            <p className="text-white font-medium">
-              At Deumai, we conducted field interviews, visited 54 houses, and
-              spoke to women farmers. They are extremely thrilled about the
-              project and keen to join. We have already started this sustainable
-              project. In 2021, JHP farm helped 50 women farmers with free
-              coffee seedlings.
+            <p className="subheader text-gray-600 leading-relaxed">
+              At Deumai, we visited 54 houses and spoke to women farmers. They
+              are thrilled about the project. In 2021, JHP farm supported 50
+              women farmers with free coffee seedlings — a small step towards a
+              sustainable future.
             </p>
           </div>
 
-          {/* Second Div */}
-          <div className="bg-orange-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold mb-4 text-yellow-700">
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-green-600">
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
               Future Goals
             </h3>
-            <p className=" text-white font-medium">
-              We aim to work more with this community and boost their incomes
-              from coffee. We will teach them about plant nutrition, water
-              resources, pest and disease management, and GAP. After 3-4 years,
-              we will offer a buyback guarantee for their coffee cherries and
-              parchment.
+            <p className="subheader text-gray-600 leading-relaxed">
+              We aim to boost women’s incomes through coffee, offering training
+              on nutrition, water, pest control, and GAP. Within 3–4 years, we
+              plan to provide a buyback guarantee for their coffee harvests.
             </p>
           </div>
 
-          {/* Third Div */}
-          <div className="bg-orange-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold mb-4 text-yellow-700">
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-green-600">
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
               Improving Coffee Quality
             </h3>
-            <p className="text-white font-medium">
-              We want to improve the quality of the coffee as well as the
-              processing and roasting. We would like to see more ethical
-              business practices and scientific farming.
+            <p className="subheader text-gray-600 leading-relaxed">
+              Our goal is to enhance coffee quality with better processing and
+              roasting while promoting ethical, scientific, and sustainable
+              farming practices in the region.
             </p>
           </div>
 
-          {/* Fourth Div */}
-          <div className="bg-orange-300 p-6 rounded-lg shadow-lg">
-            <h3 className="text-3xl font-bold mb-4 text-yellow-700">
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-green-600">
+            <h3 className="text-2xl font-semibold text-green-800 mb-4">
               Social Investment
             </h3>
-            <p className="text-white font-medium">
-              Coffee is an important source of income to many small-scale women
-              farmers to cover daily expenses. As a company, we look to invest
-              in schools, education, transportation, and the welfare of farmers.
-              We want to have these sorts of social dimensions attached to our
-              business.
+            <p className="subheader text-gray-600 leading-relaxed">
+              Coffee sustains many women farmers’ households. As JHP, we also
+              invest in schools, education, transport, and welfare programs to
+              build stronger communities around coffee.
             </p>
           </div>
         </div>

@@ -42,7 +42,7 @@ function Illam()
                     layered cup.
                 </p>
                 <ul className="list-disc list-inside text-gray-700 text-lg space-y-1">
-                    <li>Altitude: 1,400 – 2,000 meters</li>
+                    <li>Altitude: 800 – 1,000 meters</li>
                     <li>Flavor Notes: Berry, Floral, Wine-like</li>
                     <li>Body: Rich and Complex</li>
                     <li>Best For: Pour-over & French Press</li>

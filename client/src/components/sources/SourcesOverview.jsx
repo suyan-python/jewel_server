@@ -70,7 +70,7 @@ function SourcesOverview()
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brownn">
                 Our Coffee Sources
             </h1>
-            <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+            <p className="subheader text-lg text-gray-700 font-medium text-center max-w-3xl mx-auto mb-12">
                 From the eastern hills of Illam to the mid-hills of Kavre and the
                 mountains of Rasuwa, our coffee journey spans Nepal’s diverse regions.
                 Each source tells a story of unique flavors, hardworking farmers, and
@@ -92,13 +92,13 @@ function SourcesOverview()
                             <h2 className="text-2xl font-semibold text-brownn mb-3">
                                 {source.name}
                             </h2>
-                            <p className="text-gray-700 text-lg mb-4 flex-grow">
+                            <p className="subheader font-medium text-gray-700 text-lg mb-4 flex-grow">
                                 {source.description}
                             </p>
                             <div className="mt-auto">
                                 <Link
                                     to={source.link}
-                                    className="text-brownn font-medium hover:underline"
+                                    className="text-brownn font-semibold hover:underline"
                                 >
                                     Explore {source.name} →
                                 </Link>

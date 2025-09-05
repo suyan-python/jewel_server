@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Jewel from "../assets/pictures/logo/logo.jpg";
+// import Jewel from "../assets/pictures/logo/logo.jpg";
+import Jewel from "../assets/pictures/logo/logo2.png";
+
 
 const NavBar = () =>
 {
@@ -48,7 +50,7 @@ const NavBar = () =>
       <div className="flex items-center justify-between mx-2 sm:mx-6 lg:mx-16 relative">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
-          <img src={Jewel} alt="Logo" className="h-12 sm:h-14 w-auto" />
+          <img src={Jewel} alt="Logo" className="lg:h-24 h-14  " />
         </NavLink>
 
         {/* Desktop Navigation */}

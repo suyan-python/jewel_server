@@ -6,7 +6,7 @@ import storeImage from "../assets/pictures/background/store.JPG"; // Optional ba
 const Store = () =>
 {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#fdfaf6] to-[#f5f3ed] flex items-center justify-center px-6 py-20 rounded-3xl">
+    <div className="relative min-h-screen bg-gradient-to-b from-[#fdfaf6] to-[#f5f3ed] flex items-center justify-center px-6 py-20 rounded-3xl mt-7">
       {/* Optional Background Image Overlay */}
       <div
         className="absolute inset-0  bg-cover bg-center rounded-3xl"
@@ -18,7 +18,7 @@ const Store = () =>
           Your Himalayan Wellness Journey Begins Here
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-600 mb-8">
+        <p className="subheader text-lg md:text-xl text-gray-600 mb-8">
           Explore our exclusive store filled with naturally processed coffee,
           herbal blends, and organic treasures from Illam. Sourced ethically,
           crafted with care.
@@ -30,11 +30,11 @@ const Store = () =>
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold text-lg px-6 py-3 rounded-full transition duration-200 shadow-lg hover:shadow-xl"
         >
-          <FaShoppingBag className="text-xl" />
+          <FaShoppingBag className="text-xl subheader" />
           Visit Our Online Store
         </Link>
 
-        <p className="text-sm text-white mt-6 font-semibold">
+        <p className="subheader text-md text-white mt-6 font-semibold">
           Secure checkout · Fast delivery · Direct from the Himalayas
         </p>
       </div>
